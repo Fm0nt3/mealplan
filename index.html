@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan Ginevra</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; }
+        h1 { text-align: center; color: #0056b3; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .tabs { display: flex; margin-bottom: 20px; }
+        .tab { flex: 1; padding: 10px; text-align: center; background: #e9ecef; cursor: pointer; font-weight: bold; }
+        .tab.active { background: #0056b3; color: white; }
+        .content { display: none; }
+        .content.active { display: block; }
+        .meal-day { border-bottom: 1px solid #ddd; padding: 10px 0; }
+        .meal-day h3 { margin: 0 0 10px 0; color: #d9534f; }
+        .shopping-item { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px dashed #ccc; }
+        .total { font-size: 1.2em; font-weight: bold; text-align: right; margin-top: 20px; color: #28a745; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🥗 Meal Planner (Lidl CH)</h1>
+    
+    <div class="tabs">
+        <div class="tab active" onclick="showTab('plan')">Piano Settimanale</div>
+        <div class="tab" onclick="showTab('shopping')">Lista della Spesa</div>
+    </div>
+
+    <div id="plan" class="content active">
+        <div class="meal-day">
+            <h3>Lunedì</h3>
+            <p><strong>Colazione:</strong> Porridge di avena e yogurt greco</p>
+            <p><strong>Pranzo:</strong> Riso basmati con zucchine</p>
+            <p><strong>Cena:</strong> Petto di pollo alla piastra con broccoli</p>
+        </div>
+        <div class="meal-day">
+            <h3>Martedì</h3>
+            <p><strong>Colazione:</strong> Uova strapazzate</p>
+            <p><strong>Pranzo:</strong> Riso e pollo avanzato</p>
+            <p><strong>Cena:</strong> Salmone al forno con zucchine</p>
+        </div>
+        <!-- Puoi aggiungere gli altri giorni qui -->
+        <p><em>(Piano dimostrativo. Nella prossima versione aggiungeremo la selezione dinamica dei pasti!)</em></p>
+    </div>
+
+    <div id="shopping" class="content">
+        <h2>Da comprare questa settimana:</h2>
+        <div id="shopping-list">Caricamento prodotti...</div>
+        <div class="total">Totale stimato: <span id="total-price">0.00</span> CHF</div>
+    </div>
+</div>
+
+<script>
+    function showTab(tabId) {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+        event.target.classList.add('active');
+        document.getElementById(tabId).classList.add('active');
+    }
+
+    // Carica i dati dal JSON
+    fetch('data/products.json')
+        .then(response => response.json())
+        .then(data => {
+            const listDiv = document.getElementById('shopping-list');
+            listDiv.innerHTML = '';
+            let total = 0;
+
+            data.forEach(item => {
+                // Genera la riga della lista della spesa
+                const row = document.createElement('div');
+                row.className = 'shopping-item';
+                row.innerHTML = `<span><input type="checkbox"> ${item.name} (${item.unit})</span> <span>${item.price.toFixed(2)} CHF</span>`;
+                listDiv.appendChild(row);
+                total += item.price;
+            });
+
+            document.getElementById('total-price').innerText = total.toFixed(2);
+        })
+        .catch(error => {
+            document.getElementById('shopping-list').innerHTML = '<p style="color:red;">Errore nel caricamento del file products.json.</p>';
+            console.error('Error:', error);
+        });
+</script>
+
+</body>
+</html>
