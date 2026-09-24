@@ -43,31 +43,9 @@ def scarica_offerte_lidl():
         print(f"Scraping fallito: {e}")
         return None
 
-vere_offerte = scarica_offerte_lidl()
-
-        # Costruiamo il link completo
-        if not link_offerte.startswith('http'):
-            link_offerte = base_url + link_offerte
-            
-        print(f"Trovato il link aggiornato della settimana: {link_offerte}")
-        
-        # SECONDO SALTO: Visitiamo la pagina vera e propria delle offerte
-        response_offerte = requests.get(link_offerte, headers=headers, timeout=15)
-        soup_offerte = BeautifulSoup(response_offerte.text, 'html.parser')
-        
-        # Estraiamo i prodotti
-        prodotti_html = soup_offerte.find_all('article')
-        for prodotto in prodotti_html[:10]:
-            titolo_tag = prodotto.find(['h2', 'h3'])
-            if titolo_tag:
-                nome_pulito = titolo_tag.text.strip().split('\n')[0]
-                offerte_estratte.append(nome_pulito)
-                
-        return offerte_estratte
-        
-    except Exception as e:
-        print(f"Scraping fallito durante la navigazione autonoma: {e}")
-        return None
+# ==========================================
+# FASE 2: PREPARAZIONE DATI PER L'AI
+# ==========================================
         
 # Avviamo lo scraper
 vere_offerte = scarica_offerte_lidl()
