@@ -1,30 +1,29 @@
 import json
 import os
-import google.generativeai as genai
+from google import genai
 from datetime import datetime
 
 print(f"[{datetime.now()}] Avvio generazione intelligente del Meal Plan...")
 
-# 1. Configura la chiave API (che metteremo nei segreti di GitHub)
+# 1. Configura la chiave API
 api_key = os.environ.get("GEMINI_API_KEY")
 if not api_key:
     print("Errore: GEMINI_API_KEY non trovata. Configura i Secrets su GitHub!")
     exit(1)
 
-genai.configure(api_key=api_key)
-# Usiamo il modello Flash, velocissimo e gratuito
-model = genai.GenerativeModel('gemini-1.5-flash')
+# Inizializza il nuovo client Google GenAI
+client = genai.Client(api_key=api_key)
 
 # 2. Leggi i prodotti dal database per capire cosa è in offerta
 with open('data/products.json', 'r', encoding='utf-8') as f:
     products = json.load(f)
 
-# Trova i prodotti attualmente in promo (inPromo == true)
+# Trova i prodotti attualmente in promo
 prodotti_in_offerta = [p['name'] for p in products if p.get('inPromo', False)]
 offerte_testo = ", ".join(prodotti_in_offerta)
 print(f"Prodotti in offerta trovati: {offerte_testo}")
 
-# 3. Il "Prompt": le istruzioni per l'Intelligenza Artificiale
+# 3. Il "Prompt": le istruzioni per l'AI
 prompt = f"""
 Sei un nutrizionista e chef esperto in meal prep. 
 Crea un piano pasti di 3 giorni (Lunedì, Martedì, Mercoledì) per due piani dietetici: 'economico' e 'bilanciato'.
@@ -36,22 +35,32 @@ Restituisci ESCLUSIVAMENTE un file JSON valido che segua ESATTAMENTE questa stru
     {{
       "day": "Lunedì",
       "meals": [
-        {{ "type": "Colazione", "name": "Nome Ricetta", "qty": "Dosi per 1 persona", "steps": "Procedimento", "link": "" }},
-        {{ "type": "Pranzo", "name": "Nome Ricetta", "qty": "Dosi per 1 persona", "steps": "Procedimento", "link": "" }},
-        {{ "type": "Cena", "name": "Nome Ricetta", "qty": "Dosi per 1 persona", "steps": "Procedimento", "link": "" }}
+        {{ "type": "Colazione", "name": "Nome", "qty": "Dosi per 1", "steps": "Procedimento", "link": "" }},
+        {{ "type": "Pranzo", "name": "Nome", "qty": "Dosi per 1", "steps": "Procedimento", "link": "" }},
+        {{ "type": "Cena", "name": "Nome", "qty": "Dosi per 1", "steps": "Procedimento", "link": "" }}
       ]
     }}
   ],
   "bilanciato": [
-    // Stessa struttura per il bilanciato
+    {{
+      "day": "Lunedì",
+      "meals": [
+        {{ "type": "Colazione", "name": "Nome", "qty": "Dosi per 1", "steps": "Procedimento", "link": "" }},
+        {{ "type": "Pranzo", "name": "Nome", "qty": "Dosi per 1", "steps": "Procedimento", "link": "" }},
+        {{ "type": "Cena", "name": "Nome", "qty": "Dosi per 1", "steps": "Procedimento", "link": "" }}
+      ]
+    }}
   ]
 }}
-Assicurati di generare Lunedì, Martedì e Mercoledì per entrambi i piani.
+Assicurati di generare tutti e 3 i giorni per entrambi i piani.
 """
 
-# 4. Chiama l'AI
+# 4. Chiama l'AI con il nuovo metodo
 try:
-    response = model.generate_content(prompt)
+    response = client.models.generate_content(
+        model='gemini-2.5-flash',
+        contents=prompt
+    )
     
     # Pulisce la risposta da eventuali backtick del markdown ```json ... ```
     result_text = response.text.strip()
