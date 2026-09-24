@@ -68,23 +68,23 @@
 </div>
 
 <script>
-    // DATABASE DELLE RICETTE
+    // DATABASE DELLE RICETTE AGGIORNATO
     const recipesData = {
         economico: [
             {
                 day: "Lunedì",
                 meals: [
-                    { type: "Colazione", name: "Porridge d'avena all'acqua", qty: "50g avena, 150ml acqua", steps: "Metti l'avena e l'acqua in un pentolino. Cuoci a fuoco lento per 5 minuti mescolando finché non si addensa." },
-                    { type: "Pranzo", name: "Riso e Zucchine", qty: "80g riso basmati, 200g zucchine, 1 cucchiaio d'olio", steps: "Lessa il riso in acqua salata. Taglia le zucchine a cubetti e saltale in padella con l'olio per 10 min. Unisci il riso scolato." },
-                    { type: "Cena", name: "Frittata e Fagioli", qty: "2 uova, 150g fagioli rossi sgocciolati", steps: "Sbatti le uova con sale e pepe, cuoci in padella antiaderente 3 min per lato. Scalda i fagioli come contorno." }
+                    { type: "Colazione", name: "Porridge d'avena all'acqua e cannella", qty: "50g avena, 150ml acqua", steps: "Cuoci l'avena a fuoco lento per 5 min. Aggiungi un pizzico di cannella." },
+                    { type: "Pranzo", name: "Riso e Tonno", qty: "80g riso basmati, 1 scatoletta di tonno sgocciolato", steps: "Lessa il riso. Una volta freddo, uniscilo al tonno sgocciolato con un filo d'olio." },
+                    { type: "Cena", name: "Pollo alla piastra con Zucchine", qty: "150g petto di pollo, 200g zucchine", steps: "Taglia le zucchine a rondelle e saltale in padella. Cuoci il pollo sulla piastra ben calda 5 min per lato." }
                 ]
             },
             {
                 day: "Martedì",
                 meals: [
-                    { type: "Colazione", name: "Uova sode", qty: "2 uova", steps: "Bollisci le uova per 8-9 minuti. Sbucciale e mangiale fredde o calde." },
-                    { type: "Pranzo", name: "Riso e Fagioli Rossi", qty: "80g riso basmati, 150g fagioli rossi", steps: "Lessa il riso. Uniscilo ai fagioli rossi, condisci con sale, pepe e un filo d'olio a crudo." },
-                    { type: "Cena", name: "Zucchine al forno", qty: "300g zucchine, olio, spezie", steps: "Taglia le zucchine a rondelle, disponile su una teglia, aggiungi un filo d'olio e cuoci a 200°C per 20 minuti." }
+                    { type: "Colazione", name: "Uova sode", qty: "2 uova", steps: "Bollisci le uova per 8-9 minuti. Sbucciale e mangiale con un pizzico di sale." },
+                    { type: "Pranzo", name: "Riso con pollo avanzato", qty: "80g riso, 100g pollo avanzato", steps: "Lessa il riso. Taglia a striscioline il pollo della sera prima e mescola tutto." },
+                    { type: "Cena", name: "Hamburger di Macinato con Broccoli", qty: "150g carne macinata, 200g broccoli", steps: "Lessa i broccoli. Forma un hamburger con la carne macinata, sale e pepe, e cuocilo in padella." }
                 ]
             }
         ],
@@ -92,22 +92,22 @@
             {
                 day: "Lunedì",
                 meals: [
-                    { type: "Colazione", name: "Porridge proteico", qty: "40g avena, 100g yogurt greco", steps: "Cuoci l'avena con poca acqua. Lascia intiepidire e mescola con lo yogurt greco per renderlo cremoso." },
-                    { type: "Pranzo", name: "Riso e Zucchine saltate", qty: "80g riso, 200g zucchine", steps: "Lessa il riso. Salta le zucchine a rondelle in padella per 8 minuti. Unisci tutto." },
-                    { type: "Cena", name: "Pollo e Broccoli", qty: "150g petto di pollo, 200g broccoli", steps: "Cuoci i broccoli al vapore per 10 min. Griglia il petto di pollo su piastra ben calda (4-5 min per lato). Servi insieme." }
+                    { type: "Colazione", name: "Porridge proteico allo Yogurt Greco", qty: "40g avena, 100g yogurt greco", steps: "Cuoci l'avena. Lascia intiepidire e mescola con lo yogurt greco per renderlo cremoso." },
+                    { type: "Pranzo", name: "Riso, Pollo e Zucchine", qty: "80g riso, 120g pollo, 150g zucchine", steps: "Lessa il riso. Salta il pollo a cubetti e le zucchine in padella per 10 minuti. Unisci tutto." },
+                    { type: "Cena", name: "Trancio di Salmone con Broccoli", qty: "150g salmone surgelato, 200g broccoli", steps: "Scongela il salmone e cuocilo in forno a 190°C per 15 min. Lessa i broccoli come contorno." }
                 ]
             },
             {
                 day: "Martedì",
                 meals: [
-                    { type: "Colazione", name: "Uova strapazzate", qty: "2 uova, 1 cucchiaino d'olio", steps: "Sbatti le uova in una ciotola. Cuocile in padella mescolando continuamente per 2-3 minuti." },
-                    { type: "Pranzo", name: "Riso con pollo avanzato", qty: "80g riso, 100g petto di pollo", steps: "Lessa il riso. Taglia il pollo avanzato a striscioline e mescolalo col riso tiepido." },
-                    { type: "Cena", name: "Salmone al forno con Zucchine", qty: "150g salmone surgelato, 200g zucchine", steps: "Scongela il salmone. Mettilo in teglia con le zucchine a fette. Cuoci a 190°C per 15-20 minuti." }
+                    { type: "Colazione", name: "Uova strapazzate", qty: "2 uova, 1 cucchiaino d'olio", steps: "Sbatti le uova e cuocile in padella mescolando continuamente per 2 minuti." },
+                    { type: "Pranzo", name: "Insalata di Riso e Salmone avanzato", qty: "80g riso, 100g salmone", steps: "Lessa il riso. Sbriciola il salmone avanzato e uniscilo al riso freddo con un filo d'olio." },
+                    { type: "Cena", name: "Petto di pollo al limone", qty: "150g petto di pollo, 200g zucchine", steps: "Cuoci il pollo in padella sfumando con succo di limone. Servi con zucchine grigliate." }
                 ]
             }
         ]
     };
-
+    
     let globalProducts = [];
 
     // Gestione visualizzazione Tab
