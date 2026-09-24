@@ -1,10 +1,10 @@
-name: Aggiornamento Prezzi Settimanale
+name: Aggiornamento Offerte Lidl (Giovedi)
 
 on:
   schedule:
-    # Esegue ogni lunedì alle 02:00 di notte
-    - cron: '0 2 * * 1'
-  workflow_dispatch: # Permette di avviarlo manualmente dal tab "Actions"
+    # Esegue ogni giovedì alle 03:00 del mattino
+    - cron: '0 3 * * 4'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -30,5 +30,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action Bot"
           git add data/products.json
-          git diff --quiet && git diff --staged --quiet || git commit -m "Aggiornamento automatico prezzi [skip ci]"
+          git diff --quiet && git diff --staged || git commit -m "Aggiornamento settimanale offerte Lidl del giovedi [skip ci]"
           git push
