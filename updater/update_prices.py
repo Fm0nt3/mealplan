@@ -39,10 +39,11 @@ def scarica_offerte_lidl():
                 
                 # Lista nera: escludiamo i titoli grandi dei reparti e parole di menu
                 parole_ignorate = [
-                    "Offerte", "Azioni", "Newsletter", "Servizio", "Lidl", "Menu", 
-                    "Filtra", "Categorie", "Frutta", "verdura", "forno", "Pesce", 
-                    "carne", "Lista filiali", "Visualizza", "Scopri"
-                ]
+                "Offerte", "Azioni", "Newsletter", "Servizio", "Lidl", "Menu", 
+                "Filtra", "Categorie", "Frutta", "verdura", "forno", "Pesce", 
+                "carne", "Lista filiali", "Visualizza", "Scopri", 
+                "browser", "supported", "caution", "attention"
+                ]        
                 
                 # Il testo deve essere lungo almeno 4 lettere e non essere nella lista nera
                 if len(testo) > 3 and not any(parola.lower() in testo.lower() for parola in parole_ignorate):
@@ -91,19 +92,24 @@ if not api_key:
 client = genai.Client(api_key=api_key)
 
 prompt = f"""
-Sei uno chef svizzero esperto in meal prep e risparmio. 
-Crea un piano pasti di 3 giorni (Lunedì, Martedì, Mercoledì) per due piani dietetici: 'economico' e 'bilanciato'.
-Regola TASSATIVA: Costruisci le ricette attorno a questi prodotti attualmente in offerta: {offerte_testo}.
+Sei un nutrizionista e Masterchef svizzero. 
+Devi creare un piano pasti di 7 giorni (Lunedì, Martedì, Mercoledì, Giovedì, Venerdì, Sabato, Domenica) per due piani dietetici: 'economico' e 'bilanciato'.
+Regola TASSATIVA: Costruisci le ricette attorno a questi prodotti: {offerte_testo}.
 
-Restituisci ESCLUSIVAMENTE un file JSON valido:
+REGOLE PER COMPILARE IL MENU:
+1. "qty": Non scrivere solo "Dosi per 1". Devi fare un elenco ESATTO di tutti gli ingredienti necessari con grammi e millilitri (es. "150g pollo, 60g riso, 10g burro, sale, pepe").
+2. "steps": Non essere riassuntivo. Scrivi un procedimento DETTAGLIATO, passo dopo passo, su come tagliare, cuocere e impiattare (es. "1. Taglia a cubetti. 2. Scalda la padella...").
+3. "link": Crea un link di ricerca su Google per trovare ricette simili. Il link deve avere ESATTAMENTE questo formato: "https://www.google.com/search?q=ricetta+" seguito dalle parole principali del piatto separate dal segno +. (Esempio: per il "Pollo al forno", il link sarà "https://www.google.com/search?q=ricetta+pollo+al+forno").
+
+Restituisci ESCLUSIVAMENTE un file JSON valido che segua ESATTAMENTE questa struttura. Non usare formattazioni Markdown, solo il JSON puro:
 {{
   "economico": [
     {{
       "day": "Lunedì",
       "meals": [
-        {{ "type": "Colazione", "name": "Nome", "qty": "Dosi", "steps": "Procedimento breve", "link": "" }},
-        {{ "type": "Pranzo", "name": "Nome", "qty": "Dosi", "steps": "Procedimento", "link": "" }},
-        {{ "type": "Cena", "name": "Nome", "qty": "Dosi", "steps": "Procedimento", "link": "" }}
+        {{ "type": "Colazione", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento lungo", "link": "https://www.google.com/search?q=..." }},
+        {{ "type": "Pranzo", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento lungo", "link": "https://www.google.com/search?q=..." }},
+        {{ "type": "Cena", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento lungo", "link": "https://www.google.com/search?q=..." }}
       ]
     }}
   ],
@@ -111,15 +117,14 @@ Restituisci ESCLUSIVAMENTE un file JSON valido:
     {{
       "day": "Lunedì",
       "meals": [
-        {{ "type": "Colazione", "name": "Nome", "qty": "Dosi", "steps": "Procedimento", "link": "" }},
-        {{ "type": "Pranzo", "name": "Nome", "qty": "Dosi", "steps": "Procedimento", "link": "" }},
-        {{ "type": "Cena", "name": "Nome", "qty": "Dosi", "steps": "Procedimento", "link": "" }}
+        {{ "type": "Colazione", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento lungo", "link": "https://www.google.com/search?q=..." }},
+        {{ "type": "Pranzo", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento lungo", "link": "https://www.google.com/search?q=..." }},
+        {{ "type": "Cena", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento lungo", "link": "https://www.google.com/search?q=..." }}
       ]
     }}
   ]
 }}
 """
-
 max_retries = 3
 
 for attempt in range(max_retries):
