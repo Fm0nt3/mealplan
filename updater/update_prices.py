@@ -58,7 +58,7 @@ Assicurati di generare tutti e 3 i giorni per entrambi i piani.
 # 4. Chiama l'AI con il nuovo metodo
 try:
     response = client.models.generate_content(
-        model='gemini-2.5-flash',
+        model='gemini-3.6-flash',
         contents=prompt
     )
     
