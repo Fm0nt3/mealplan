@@ -9,39 +9,42 @@ from datetime import datetime
 print(f"[{datetime.now()}] Avvio Motore Completo: Scraping Lidl CH + AI...")
 
 # ==========================================
-# FASE 1: WEB SCRAPING SUL SITO LIDL CH (Doppio Salto)
+# FASE 1: WEB SCRAPING SUL SITO LIDL CH (Ricerca Ampia)
 # ==========================================
 def scarica_offerte_lidl():
-    print("Fase 1: Cerco il link aggiornato delle offerte sulla homepage Lidl CH...")
-    base_url = "https://www.lidl.ch"
-    start_url = "https://www.lidl.ch/it" # Pagina principale in italiano
+    print("Tentativo di connessione al sito Lidl CH (Offerte)...")
+    url = "https://www.lidl.ch/c/it-CH/azioni-della-settimana/a10103198"
     
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept-Language': 'it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
     }
     
     offerte_estratte = []
     
     try:
-        # PRIMO SALTO: Visitiamo la homepage per trovare il link delle offerte
-        response_start = requests.get(start_url, headers=headers, timeout=15)
-        response_start.raise_for_status()
-        soup_start = BeautifulSoup(response_start.text, 'html.parser')
+        response = requests.get(url, headers=headers, timeout=15)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, 'html.parser')
         
-        # Cerchiamo un link che contenga le parole chiave delle offerte
-        link_offerte = None
-        for a_tag in soup_start.find_all('a', href=True):
-            href = a_tag['href']
-            # Cerca link tipici delle offerte Lidl (es. /it/c/azioni o offerte)
-            if '/c/' in href and ('azioni' in href.lower() or 'offerte' in href.lower()):
-                link_offerte = href
-                break
-                
-        if not link_offerte:
-            print("Non sono riuscito a trovare il bottone delle offerte sulla homepage.")
-            return None
+        # RICERCA AGGRESSIVA: Cerchiamo tutti i titoli nella pagina
+        for tag in soup.find_all(['h3', 'h2']):
+            testo = tag.text.strip()
+            # Escludiamo titoli generici del sito o testi troppo corti
+            parole_ignorate = ["Offerte", "Azioni", "Newsletter", "Servizio", "Lidl", "Menu", "Filtra", "Categorie"]
             
+            if len(testo) > 4 and not any(parola.lower() in testo.lower() for parola in parole_ignorate):
+                offerte_estratte.append(testo)
+                
+        # Rimuoviamo i doppioni e prendiamo solo i primi 10 prodotti veri
+        offerte_uniche = list(dict.fromkeys(offerte_estratte))
+        return offerte_uniche[:10]
+        
+    except Exception as e:
+        print(f"Scraping fallito: {e}")
+        return None
+
+vere_offerte = scarica_offerte_lidl()
+
         # Costruiamo il link completo
         if not link_offerte.startswith('http'):
             link_offerte = base_url + link_offerte
