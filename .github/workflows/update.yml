@@ -1,8 +1,7 @@
-name: Aggiornamento Offerte Lidl (Giovedi)
+name: Intelligenza Artificiale Lidl (Giovedi)
 
 on:
   schedule:
-    # Esegue ogni giovedì alle 03:00 del mattino
     - cron: '0 3 * * 4'
   workflow_dispatch:
 
@@ -20,15 +19,20 @@ jobs:
       - name: Configura Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: '3.10'
 
-      - name: Esegui script aggiornamento prezzi
+      - name: Installa librerie
+        run: pip install -r updater/requirements.txt
+
+      - name: Genera nuove ricette con AI
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python updater/update_prices.py
 
-      - name: Salva e carica le modifiche (Commit & Push)
+      - name: Salva e pubblica sul sito (Commit & Push)
         run: |
           git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action Bot"
-          git add data/products.json
-          git diff --quiet && git diff --staged || git commit -m "Aggiornamento settimanale offerte Lidl del giovedi [skip ci]"
+          git config --local user.name "MealPlan AI Bot"
+          git add data/recipes.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "🤖 Nuove ricette generate dall'AI in base alle offerte"
           git push
