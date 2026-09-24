@@ -21,6 +21,8 @@
         .recipe-title { color: #d9534f; font-size: 1.1em; margin-bottom: 8px; }
         .recipe-qty { font-size: 0.9em; color: #28a745; margin-bottom: 5px; }
         .recipe-step { font-size: 0.95em; color: #555; line-height: 1.4; }
+        .recipe-link { display: inline-block; margin-top: 5px; color: #0056b3; text-decoration: none; font-size: 0.9em; font-weight: bold; }
+        .recipe-link:hover { text-decoration: underline; }
         .shopping-item { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px dashed #ccc; align-items: center; }
         .tag-promo { background: #ff4d4d; color: white; padding: 3px 8px; font-size: 0.8em; border-radius: 12px; margin-left: 10px; font-weight: bold; }
         .prices { text-align: right; }
@@ -39,19 +41,19 @@
     <div class="plan-selector">
         <label for="planType"><strong>Seleziona il tuo piano:</strong></label><br><br>
         <select id="planType" onchange="updateApp()">
-            <option value="economico">Piano Super Economico (Più legumi e uova)</option>
-            <option value="bilanciato" selected>Piano Bilanciato (Con carne e pesce)</option>
+            <option value="economico">Piano Economico (Ottimizzato sui costi)</option>
+            <option value="bilanciato" selected>Piano Bilanciato (Più varietà di proteine)</option>
         </select>
     </div>
 
     <div class="tabs">
-        <div class="tab active" onclick="showTab('plan')">🍽️ Ricette e Dosi</div>
+        <div class="tab active" onclick="showTab('plan')">🍽️ Ricette e Menu</div>
         <div class="tab" onclick="showTab('shopping')">🛒 Lista Spesa & Budget</div>
     </div>
 
     <div id="plan" class="content active">
         <div id="meals-container">
-            <!-- I pasti verranno generati qui dal JavaScript -->
+            <p>Caricamento ricette...</p>
         </div>
     </div>
 
@@ -60,57 +62,17 @@
         <div id="shopping-list">Caricamento prodotti...</div>
         
         <div class="summary-box">
-            <div class="summary-row"><span>Costo senza offerte:</span> <span id="total-normal">0.00 CHF</span></div>
-            <div class="summary-row"><span>Risparmio con offerte (Gio):</span> <span class="savings" id="total-saved">-0.00 CHF</span></div>
-            <div class="summary-row total"><span>Budget da spendere in cassa:</span> <span id="total-price">0.00 CHF</span></div>
+            <div class="summary-row"><span>Costo base stimato:</span> <span id="total-normal">0.00 CHF</span></div>
+            <div class="summary-row"><span>Risparmio con offerte:</span> <span class="savings" id="total-saved">-0.00 CHF</span></div>
+            <div class="summary-row total"><span>Totale cassa stimato:</span> <span id="total-price">0.00 CHF</span></div>
         </div>
     </div>
 </div>
 
 <script>
-    // DATABASE DELLE RICETTE AGGIORNATO
-    const recipesData = {
-        economico: [
-            {
-                day: "Lunedì",
-                meals: [
-                    { type: "Colazione", name: "Porridge d'avena all'acqua e cannella", qty: "50g avena, 150ml acqua", steps: "Cuoci l'avena a fuoco lento per 5 min. Aggiungi un pizzico di cannella." },
-                    { type: "Pranzo", name: "Riso e Tonno", qty: "80g riso basmati, 1 scatoletta di tonno sgocciolato", steps: "Lessa il riso. Una volta freddo, uniscilo al tonno sgocciolato con un filo d'olio." },
-                    { type: "Cena", name: "Pollo alla piastra con Zucchine", qty: "150g petto di pollo, 200g zucchine", steps: "Taglia le zucchine a rondelle e saltale in padella. Cuoci il pollo sulla piastra ben calda 5 min per lato." }
-                ]
-            },
-            {
-                day: "Martedì",
-                meals: [
-                    { type: "Colazione", name: "Uova sode", qty: "2 uova", steps: "Bollisci le uova per 8-9 minuti. Sbucciale e mangiale con un pizzico di sale." },
-                    { type: "Pranzo", name: "Riso con pollo avanzato", qty: "80g riso, 100g pollo avanzato", steps: "Lessa il riso. Taglia a striscioline il pollo della sera prima e mescola tutto." },
-                    { type: "Cena", name: "Hamburger di Macinato con Broccoli", qty: "150g carne macinata, 200g broccoli", steps: "Lessa i broccoli. Forma un hamburger con la carne macinata, sale e pepe, e cuocilo in padella." }
-                ]
-            }
-        ],
-        bilanciato: [
-            {
-                day: "Lunedì",
-                meals: [
-                    { type: "Colazione", name: "Porridge proteico allo Yogurt Greco", qty: "40g avena, 100g yogurt greco", steps: "Cuoci l'avena. Lascia intiepidire e mescola con lo yogurt greco per renderlo cremoso." },
-                    { type: "Pranzo", name: "Riso, Pollo e Zucchine", qty: "80g riso, 120g pollo, 150g zucchine", steps: "Lessa il riso. Salta il pollo a cubetti e le zucchine in padella per 10 minuti. Unisci tutto." },
-                    { type: "Cena", name: "Trancio di Salmone con Broccoli", qty: "150g salmone surgelato, 200g broccoli", steps: "Scongela il salmone e cuocilo in forno a 190°C per 15 min. Lessa i broccoli come contorno." }
-                ]
-            },
-            {
-                day: "Martedì",
-                meals: [
-                    { type: "Colazione", name: "Uova strapazzate", qty: "2 uova, 1 cucchiaino d'olio", steps: "Sbatti le uova e cuocile in padella mescolando continuamente per 2 minuti." },
-                    { type: "Pranzo", name: "Insalata di Riso e Salmone avanzato", qty: "80g riso, 100g salmone", steps: "Lessa il riso. Sbriciola il salmone avanzato e uniscilo al riso freddo con un filo d'olio." },
-                    { type: "Cena", name: "Petto di pollo al limone", qty: "150g petto di pollo, 200g zucchine", steps: "Cuoci il pollo in padella sfumando con succo di limone. Servi con zucchine grigliate." }
-                ]
-            }
-        ]
-    };
-    
     let globalProducts = [];
+    let globalRecipes = {};
 
-    // Gestione visualizzazione Tab
     function showTab(tabId) {
         document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
         document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
@@ -118,52 +80,60 @@
         document.getElementById(tabId).classList.add('active');
     }
 
-    // Caricamento Iniziale dei prodotti
-    fetch('data/products.json')
-        .then(response => response.json())
-        .then(data => {
-            globalProducts = data;
-            updateApp(); // Chiama la funzione per popolare l'app
-        })
-        .catch(error => {
-            document.getElementById('shopping-list').innerHTML = '<p style="color:red;">Errore nel caricamento dei prodotti. Controlla che products.json sia su GitHub.</p>';
-        });
+    // Carica SIMULTANEAMENTE sia i prodotti che le ricette
+    Promise.all([
+        fetch('data/products.json').then(res => res.json()),
+        fetch('data/recipes.json').then(res => res.json())
+    ])
+    .then(([productsData, recipesData]) => {
+        globalProducts = productsData;
+        globalRecipes = recipesData;
+        updateApp();
+    })
+    .catch(error => {
+        document.getElementById('meals-container').innerHTML = '<p style="color:red;">Errore: file data/recipes.json non trovato.</p>';
+        document.getElementById('shopping-list').innerHTML = '<p style="color:red;">Errore: file data/products.json non trovato.</p>';
+        console.error('Error loading JSON:', error);
+    });
 
-    // Funzione principale che si aggiorna quando cambi piano
     function updateApp() {
         const selectedPlan = document.getElementById('planType').value;
         
-        // 1. AGGIORNA LE RICETTE
+        // 1. GENERA LE RICETTE
         const mealsContainer = document.getElementById('meals-container');
-        mealsContainer.innerHTML = ''; // Svuota il contenitore
+        mealsContainer.innerHTML = ''; 
         
-        const currentMeals = recipesData[selectedPlan];
+        const currentMeals = globalRecipes[selectedPlan];
         
-        currentMeals.forEach(day => {
-            let dayHTML = `<div class="meal-day"><h3>🗓️ ${day.day}</h3>`;
-            
-            day.meals.forEach(meal => {
-                dayHTML += `
-                    <div class="recipe-block">
-                        <div class="recipe-title"><strong>${meal.type}:</strong> ${meal.name}</div>
-                        <div class="recipe-qty">⚖️ <strong>Ingredienti:</strong> ${meal.qty}</div>
-                        <div class="recipe-step">👨‍🍳 <strong>Procedimento:</strong> ${meal.steps}</div>
-                    </div>
-                `;
+        if(currentMeals) {
+            currentMeals.forEach(day => {
+                let dayHTML = `<div class="meal-day"><h3>🗓️ ${day.day}</h3>`;
+                
+                day.meals.forEach(meal => {
+                    // Se la ricetta ha un link, crea il bottone
+                    let linkHTML = meal.link ? `<br><a href="${meal.link}" target="_blank" class="recipe-link">🔗 Vai alla ricetta completa</a>` : '';
+                    
+                    dayHTML += `
+                        <div class="recipe-block">
+                            <div class="recipe-title"><strong>${meal.type}:</strong> ${meal.name}</div>
+                            <div class="recipe-qty">⚖️ <strong>Ingredienti:</strong> ${meal.qty}</div>
+                            <div class="recipe-step">👨‍🍳 <strong>Procedimento:</strong> ${meal.steps} ${linkHTML}</div>
+                        </div>
+                    `;
+                });
+                
+                dayHTML += `</div>`;
+                mealsContainer.innerHTML += dayHTML;
             });
-            
-            dayHTML += `</div>`;
-            mealsContainer.innerHTML += dayHTML;
-        });
+        }
 
-        // 2. AGGIORNA LA LISTA DELLA SPESA
+        // 2. GENERA LA LISTA SPESA
         const listDiv = document.getElementById('shopping-list');
         listDiv.innerHTML = '';
         let sumNormal = 0;
         let sumFinal = 0;
 
-        // Filtra i prodotti: mostra SOLO quelli che contengono il piano selezionato nel loro array "plans"
-        const filteredProducts = globalProducts.filter(item => item.plans.includes(selectedPlan));
+        const filteredProducts = globalProducts.filter(item => item.plans && item.plans.includes(selectedPlan));
 
         filteredProducts.forEach(item => {
             const row = document.createElement('div');
@@ -189,7 +159,6 @@
             listDiv.appendChild(row);
         });
 
-        // Aggiorna i totali
         let saved = sumNormal - sumFinal;
         document.getElementById('total-normal').innerText = sumNormal.toFixed(2) + ' CHF';
         document.getElementById('total-saved').innerText = '-' + saved.toFixed(2) + ' CHF';
