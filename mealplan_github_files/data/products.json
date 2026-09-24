@@ -1,0 +1,105 @@
+{
+  "updated_at": "2026-09-24",
+  "currency": "CHF",
+  "source": "https://www.lidl.ch/",
+  "products": [
+    {
+      "name": "Latte",
+      "unit": "1 l",
+      "price": 1.55,
+      "normal_price": 1.75,
+      "estimated_meal_cost": 0.39
+    },
+    {
+      "name": "Mele",
+      "unit": "1 kg",
+      "price": 2.79,
+      "normal_price": 2.79,
+      "estimated_meal_cost": 0.7
+    },
+    {
+      "name": "Pasta",
+      "unit": "500 g",
+      "price": 1.39,
+      "normal_price": 1.59,
+      "estimated_meal_cost": 0.7
+    },
+    {
+      "name": "Tonno",
+      "unit": "4x104 g",
+      "price": 5.99,
+      "normal_price": 6.99,
+      "estimated_meal_cost": 1.5
+    },
+    {
+      "name": "Zucchine",
+      "unit": "1 kg",
+      "price": 2.79,
+      "normal_price": 2.79,
+      "estimated_meal_cost": 0.7
+    },
+    {
+      "name": "Pollo",
+      "unit": "1 kg",
+      "price": 3.39,
+      "normal_price": 4.29,
+      "estimated_meal_cost": 1.7
+    },
+    {
+      "name": "Riso",
+      "unit": "1 kg",
+      "price": 2.49,
+      "normal_price": 2.99,
+      "estimated_meal_cost": 0.5
+    },
+    {
+      "name": "Carote",
+      "unit": "1 kg",
+      "price": 1.95,
+      "normal_price": 1.95,
+      "estimated_meal_cost": 0.4
+    },
+    {
+      "name": "Uova",
+      "unit": "10 pz",
+      "price": 3.49,
+      "normal_price": 3.49,
+      "estimated_meal_cost": 0.7
+    },
+    {
+      "name": "Patate",
+      "unit": "2 kg",
+      "price": 2.99,
+      "normal_price": 3.49,
+      "estimated_meal_cost": 0.6
+    },
+    {
+      "name": "Funghi",
+      "unit": "500 g",
+      "price": 1.49,
+      "normal_price": 1.99,
+      "estimated_meal_cost": 0.75
+    },
+    {
+      "name": "Macinato di manzo",
+      "unit": "500 g",
+      "price": 4.99,
+      "normal_price": 5.99,
+      "estimated_meal_cost": 2.5
+    },
+    {
+      "name": "Formaggio grattugiato",
+      "unit": "200 g",
+      "price": 2.49,
+      "normal_price": 2.99,
+      "estimated_meal_cost": 1.25
+    },
+    {
+      "name": "Pane",
+      "unit": "500 g",
+      "price": 1.69,
+      "normal_price": 1.99,
+      "estimated_meal_cost": 0.85
+    }
+  ]
+}
