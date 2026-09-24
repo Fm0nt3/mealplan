@@ -14,7 +14,7 @@ print(f"[{datetime.now()}] Avvio Motore Completo: Scraping Lidl CH + AI...")
 def scarica_offerte_lidl():
     print("Tentativo di connessione al sito Lidl CH (Offerte)...")
     # URL della pagina delle offerte (potrebbe variare nel tempo)
-    url = "https://www.lidl.ch/it/c/offerte-della-settimana/s100060"
+    url = "https://www.lidl.ch/c/it-CH/azioni-della-settimana/a10103198"
     
     # Ci fingiamo un normale browser per non farci bloccare
     headers = {
