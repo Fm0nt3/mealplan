@@ -13,17 +13,21 @@
         .tab.active { background: #0056b3; color: white; }
         .content { display: none; }
         .content.active { display: block; }
-        .plan-selector { margin-bottom: 20px; text-align: center; background: #e8f4fd; padding: 10px; border-radius: 5px; }
-        .plan-selector select { padding: 5px 10px; font-size: 1em; border-radius: 4px; border: 1px solid #ccc; }
-        .meal-day { border-bottom: 1px solid #ddd; padding: 10px 0; }
-        .meal-day h3 { margin: 0 0 10px 0; color: #d9534f; }
-        .shopping-item { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px dashed #ccc; align-items: center; }
-        .tag-promo { background: #ff4d4d; color: white; padding: 2px 6px; font-size: 0.8em; border-radius: 4px; margin-left: 5px; }
+        .plan-selector { margin-bottom: 20px; text-align: center; background: #e8f4fd; padding: 15px; border-radius: 5px; border: 1px solid #b8daff; }
+        .plan-selector select { padding: 8px 12px; font-size: 1em; border-radius: 4px; border: 1px solid #ccc; font-weight: bold; }
+        .meal-day { border-bottom: 2px solid #eee; padding: 15px 0; margin-bottom: 10px; }
+        .meal-day h3 { margin: 0 0 15px 0; color: #0056b3; text-transform: uppercase; font-size: 1.2em; }
+        .recipe-block { background: #fdfdfd; border-left: 4px solid #ffc107; padding: 10px 15px; margin-bottom: 15px; border-radius: 0 4px 4px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .recipe-title { color: #d9534f; font-size: 1.1em; margin-bottom: 8px; }
+        .recipe-qty { font-size: 0.9em; color: #28a745; margin-bottom: 5px; }
+        .recipe-step { font-size: 0.95em; color: #555; line-height: 1.4; }
+        .shopping-item { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px dashed #ccc; align-items: center; }
+        .tag-promo { background: #ff4d4d; color: white; padding: 3px 8px; font-size: 0.8em; border-radius: 12px; margin-left: 10px; font-weight: bold; }
         .prices { text-align: right; }
         .old-price { text-decoration: line-through; color: #888; font-size: 0.9em; margin-right: 8px; }
-        .summary-box { background: #e6ffed; border: 1px solid #b7eb8c; padding: 15px; border-radius: 5px; margin-top: 20px; }
-        .summary-row { display: flex; justify-content: space-between; margin: 5px 0; font-size: 1.1em; }
-        .total { font-size: 1.3em; font-weight: bold; color: #28a745; }
+        .summary-box { background: #e6ffed; border: 1px solid #b7eb8c; padding: 15px; border-radius: 5px; margin-top: 25px; }
+        .summary-row { display: flex; justify-content: space-between; margin: 8px 0; font-size: 1.1em; }
+        .total { font-size: 1.4em; font-weight: bold; color: #28a745; border-top: 1px solid #b7eb8c; padding-top: 10px; margin-top: 10px; }
         .savings { color: #d9534f; font-weight: bold; }
     </style>
 </head>
@@ -32,49 +36,81 @@
 <div class="container">
     <h1>🥗 Meal Planner Ginevra (Lidl CH)</h1>
     
-    <div class="tabs">
-        <div class="tab active" onclick="showTab('plan')">Piano Settimanale</div>
-        <div class="tab" onclick="showTab('shopping')">Lista Spesa & Budget</div>
-    </div>
-
-    <!-- SELETTORE DEL PIANO -->
     <div class="plan-selector">
-        <label for="planType"><strong>Seleziona Profilo Piano:</strong></label>
+        <label for="planType"><strong>Seleziona il tuo piano:</strong></label><br><br>
         <select id="planType" onchange="updateApp()">
-            <option value="economico">Super Economico (Ottimizzato al massimo sul risparmio)</option>
-            <option value="bilanciato" selected>Bilanciato (Più vari e ricchi di proteine)</option>
+            <option value="economico">Piano Super Economico (Più legumi e uova)</option>
+            <option value="bilanciato" selected>Piano Bilanciato (Con carne e pesce)</option>
         </select>
     </div>
 
+    <div class="tabs">
+        <div class="tab active" onclick="showTab('plan')">🍽️ Ricette e Dosi</div>
+        <div class="tab" onclick="showTab('shopping')">🛒 Lista Spesa & Budget</div>
+    </div>
+
     <div id="plan" class="content active">
-        <div class="meal-day">
-            <h3>Lunedì</h3>
-            <p><strong>Colazione:</strong> Porridge di avena e yogurt greco</p>
-            <p><strong>Pranzo:</strong> Riso basmati con zucchine saltate</p>
-            <p><strong>Cena:</strong> Petto di pollo alla piastra con broccoli</p>
+        <div id="meals-container">
+            <!-- I pasti verranno generati qui dal JavaScript -->
         </div>
-        <div class="meal-day">
-            <h3>Martedì</h3>
-            <p><strong>Colazione:</strong> Uova strapazzate su pane</p>
-            <p><strong>Pranzo:</strong> Riso con pollo avanzato</p>
-            <p><strong>Cena:</strong> Salmone al forno con contorno di zucchine</p>
-        </div>
-        <p><em>(I pasti si adattano automaticamente in base al budget e alle offerte attive del giovedì).</em></p>
     </div>
 
     <div id="shopping" class="content">
-        <h2>Lista della spesa stimata (Lidl Ginevra):</h2>
+        <h2>Lista della spesa per il piano selezionato:</h2>
         <div id="shopping-list">Caricamento prodotti...</div>
         
         <div class="summary-box">
             <div class="summary-row"><span>Costo senza offerte:</span> <span id="total-normal">0.00 CHF</span></div>
-            <div class="summary-row"><span>Risparmio grazie alle offerte del Giovedì:</span> <span class="savings" id="total-saved">-0.00 CHF</span></div>
-            <div class="summary-row total"><span>Budget Totale Stimato:</span> <span id="total-price">0.00 CHF</span></div>
+            <div class="summary-row"><span>Risparmio con offerte (Gio):</span> <span class="savings" id="total-saved">-0.00 CHF</span></div>
+            <div class="summary-row total"><span>Budget da spendere in cassa:</span> <span id="total-price">0.00 CHF</span></div>
         </div>
     </div>
 </div>
 
 <script>
+    // DATABASE DELLE RICETTE
+    const recipesData = {
+        economico: [
+            {
+                day: "Lunedì",
+                meals: [
+                    { type: "Colazione", name: "Porridge d'avena all'acqua", qty: "50g avena, 150ml acqua", steps: "Metti l'avena e l'acqua in un pentolino. Cuoci a fuoco lento per 5 minuti mescolando finché non si addensa." },
+                    { type: "Pranzo", name: "Riso e Zucchine", qty: "80g riso basmati, 200g zucchine, 1 cucchiaio d'olio", steps: "Lessa il riso in acqua salata. Taglia le zucchine a cubetti e saltale in padella con l'olio per 10 min. Unisci il riso scolato." },
+                    { type: "Cena", name: "Frittata e Fagioli", qty: "2 uova, 150g fagioli rossi sgocciolati", steps: "Sbatti le uova con sale e pepe, cuoci in padella antiaderente 3 min per lato. Scalda i fagioli come contorno." }
+                ]
+            },
+            {
+                day: "Martedì",
+                meals: [
+                    { type: "Colazione", name: "Uova sode", qty: "2 uova", steps: "Bollisci le uova per 8-9 minuti. Sbucciale e mangiale fredde o calde." },
+                    { type: "Pranzo", name: "Riso e Fagioli Rossi", qty: "80g riso basmati, 150g fagioli rossi", steps: "Lessa il riso. Uniscilo ai fagioli rossi, condisci con sale, pepe e un filo d'olio a crudo." },
+                    { type: "Cena", name: "Zucchine al forno", qty: "300g zucchine, olio, spezie", steps: "Taglia le zucchine a rondelle, disponile su una teglia, aggiungi un filo d'olio e cuoci a 200°C per 20 minuti." }
+                ]
+            }
+        ],
+        bilanciato: [
+            {
+                day: "Lunedì",
+                meals: [
+                    { type: "Colazione", name: "Porridge proteico", qty: "40g avena, 100g yogurt greco", steps: "Cuoci l'avena con poca acqua. Lascia intiepidire e mescola con lo yogurt greco per renderlo cremoso." },
+                    { type: "Pranzo", name: "Riso e Zucchine saltate", qty: "80g riso, 200g zucchine", steps: "Lessa il riso. Salta le zucchine a rondelle in padella per 8 minuti. Unisci tutto." },
+                    { type: "Cena", name: "Pollo e Broccoli", qty: "150g petto di pollo, 200g broccoli", steps: "Cuoci i broccoli al vapore per 10 min. Griglia il petto di pollo su piastra ben calda (4-5 min per lato). Servi insieme." }
+                ]
+            },
+            {
+                day: "Martedì",
+                meals: [
+                    { type: "Colazione", name: "Uova strapazzate", qty: "2 uova, 1 cucchiaino d'olio", steps: "Sbatti le uova in una ciotola. Cuocile in padella mescolando continuamente per 2-3 minuti." },
+                    { type: "Pranzo", name: "Riso con pollo avanzato", qty: "80g riso, 100g petto di pollo", steps: "Lessa il riso. Taglia il pollo avanzato a striscioline e mescolalo col riso tiepido." },
+                    { type: "Cena", name: "Salmone al forno con Zucchine", qty: "150g salmone surgelato, 200g zucchine", steps: "Scongela il salmone. Mettilo in teglia con le zucchine a fette. Cuoci a 190°C per 15-20 minuti." }
+                ]
+            }
+        ]
+    };
+
+    let globalProducts = [];
+
+    // Gestione visualizzazione Tab
     function showTab(tabId) {
         document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
         document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
@@ -82,33 +118,58 @@
         document.getElementById(tabId).classList.add('active');
     }
 
-    let globalData = [];
-
+    // Caricamento Iniziale dei prodotti
     fetch('data/products.json')
         .then(response => response.json())
         .then(data => {
-            globalData = data;
-            updateApp();
+            globalProducts = data;
+            updateApp(); // Chiama la funzione per popolare l'app
         })
         .catch(error => {
-            document.getElementById('shopping-list').innerHTML = '<p style="color:red;">Errore nel caricamento del database prodotti.</p>';
-            console.error('Error:', error);
+            document.getElementById('shopping-list').innerHTML = '<p style="color:red;">Errore nel caricamento dei prodotti. Controlla che products.json sia su GitHub.</p>';
         });
 
+    // Funzione principale che si aggiorna quando cambi piano
     function updateApp() {
         const selectedPlan = document.getElementById('planType').value;
+        
+        // 1. AGGIORNA LE RICETTE
+        const mealsContainer = document.getElementById('meals-container');
+        mealsContainer.innerHTML = ''; // Svuota il contenitore
+        
+        const currentMeals = recipesData[selectedPlan];
+        
+        currentMeals.forEach(day => {
+            let dayHTML = `<div class="meal-day"><h3>🗓️ ${day.day}</h3>`;
+            
+            day.meals.forEach(meal => {
+                dayHTML += `
+                    <div class="recipe-block">
+                        <div class="recipe-title"><strong>${meal.type}:</strong> ${meal.name}</div>
+                        <div class="recipe-qty">⚖️ <strong>Ingredienti:</strong> ${meal.qty}</div>
+                        <div class="recipe-step">👨‍🍳 <strong>Procedimento:</strong> ${meal.steps}</div>
+                    </div>
+                `;
+            });
+            
+            dayHTML += `</div>`;
+            mealsContainer.innerHTML += dayHTML;
+        });
+
+        // 2. AGGIORNA LA LISTA DELLA SPESA
         const listDiv = document.getElementById('shopping-list');
         listDiv.innerHTML = '';
-        
         let sumNormal = 0;
         let sumFinal = 0;
 
-        globalData.forEach(item => {
-            // Filtra in base al piano o mostra tutto se economico include tutto
+        // Filtra i prodotti: mostra SOLO quelli che contengono il piano selezionato nel loro array "plans"
+        const filteredProducts = globalProducts.filter(item => item.plans.includes(selectedPlan));
+
+        filteredProducts.forEach(item => {
             const row = document.createElement('div');
             row.className = 'shopping-item';
             
-            let promoBadge = item.inPromo ? '<span class="tag-promo">OFFERTA GIO</span>' : '';
+            let promoBadge = item.inPromo ? '<span class="tag-promo">OFFERTA SETTIMANA</span>' : '';
             let priceDisplay = '';
 
             sumNormal += item.normalPrice;
@@ -122,14 +183,14 @@
             }
 
             row.innerHTML = `
-                <span><input type="checkbox"> ${item.name} ${promoBadge}</span>
+                <span><input type="checkbox"> <strong>${item.name}</strong> ${promoBadge}</span>
                 ${priceDisplay}
             `;
             listDiv.appendChild(row);
         });
 
+        // Aggiorna i totali
         let saved = sumNormal - sumFinal;
-
         document.getElementById('total-normal').innerText = sumNormal.toFixed(2) + ' CHF';
         document.getElementById('total-saved').innerText = '-' + saved.toFixed(2) + ' CHF';
         document.getElementById('total-price').innerText = sumFinal.toFixed(2) + ' CHF';
