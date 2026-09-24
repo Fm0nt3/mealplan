@@ -1,0 +1,38 @@
+{
+  "economico": [
+    {
+      "day": "Lunedì",
+      "meals": [
+        { "type": "Colazione", "name": "Pancake morbidi di avena", "qty": "50g avena, 1 uovo, un goccio d'acqua o latte", "steps": "Frulla l'avena per farne una farina. Sbatti con l'uovo e cuoci in una padellina antiaderente girandolo a metà cottura.", "link": "https://www.giallozafferano.it/ricerca-ricette/pancake+avena/" },
+        { "type": "Pranzo", "name": "Insalata fredda di riso, tonno e zucchine marinate", "qty": "80g riso basmati, 1 scatoletta di tonno, 150g zucchine, limone", "steps": "Lessa il riso. Taglia le zucchine a julienne sottile e marinale a crudo con limone, olio e sale. Unisci riso, tonno sgocciolato e zucchine." },
+        { "type": "Cena", "name": "Pollo speziato alla paprika con patate", "qty": "150g pollo, 200g patate", "steps": "Taglia le patate a cubetti e infornale a 200° per 25 min. Taglia il pollo a bocconcini, infarinalo leggermente con la paprika e saltalo in padella finché non fa la crosticina." }
+      ]
+    },
+    {
+      "day": "Martedì",
+      "meals": [
+        { "type": "Colazione", "name": "Uova sode e pane tostato", "qty": "2 uova, 2 fette di pane", "steps": "Cuoci le uova per 8 minuti in acqua bollente. Tosta il pane. Sbuccia le uova e schiacciale sul pane con sale e pepe." },
+        { "type": "Pranzo", "name": "Wrap / Piadina di pollo avanzato", "qty": "Pollo speziato avanzato, 1 piadina, insalata", "steps": "Scalda la piadina. Farciscila con il pollo della sera prima e foglie di insalata fresca per un pranzo veloce da asporto." },
+        { "type": "Cena", "name": "Polpette di macinato e zucchine al forno", "qty": "150g carne macinata, 1 zucchina piccola, spezie", "steps": "Grattugia la zucchina, strizzala per togliere l'acqua e impastala con il macinato, sale e pepe. Forma delle polpette e cuoci al forno a 190° per 20 minuti.", "link": "https://ricette.giallozafferano.it/Polpette-di-zucchine-e-carne.html" }
+      ]
+    }
+  ],
+  "bilanciato": [
+    {
+      "day": "Lunedì",
+      "meals": [
+        { "type": "Colazione", "name": "Bowl di Yogurt Greco, Avena e Frutta", "qty": "150g yogurt greco, 40g avena, mezza mela", "steps": "Mescola lo yogurt con l'avena. Aggiungi la mela a cubetti in cima. (Puoi prepararlo la sera prima per un effetto 'overnight oats' morbidissimo)." },
+        { "type": "Pranzo", "name": "Poke bowl casalinga al Salmone", "qty": "80g riso basmati, 100g salmone, 150g zucchine crude a julienne", "steps": "Cuoci il riso e lascialo raffreddare. Cuoci rapidamente il salmone a vapore o in padella. Componi la ciotola con riso, salmone a scaglie, zucchine crude croccanti e 1 cucchiaio di salsa di soia." },
+        { "type": "Cena", "name": "Straccetti di manzo (o pollo) saltati ai broccoli", "qty": "150g carne, 200g broccoli, salsa di soia", "steps": "Sbollenta i broccoli. Taglia la carne a striscioline sottili, saltala a fuoco vivo in una padella tipo wok con un filo d'olio. Aggiungi i broccoli, sfuma con la soia e fai restringere." }
+      ]
+    },
+    {
+      "day": "Martedì",
+      "meals": [
+        { "type": "Colazione", "name": "Pancake proteici veloci", "qty": "1 uovo, 30g avena, 50g yogurt greco", "steps": "Frulla tutto insieme per creare una pastella liscia, cuoci l'impasto in una padellina antiaderente ben calda da ambo i lati." },
+        { "type": "Pranzo", "name": "Insalata ricca di Riso e Tonno", "qty": "80g riso, 1 scatoletta di tonno, pomodorini freschi", "steps": "Lessa il riso. Condisci con tonno e pomodorini tagliati in quattro. Completa con un filo d'olio extravergine per un pasto fresco." },
+        { "type": "Cena", "name": "Trancio di Salmone in crosta con verdure", "qty": "150g salmone, pangrattato, erbe aromatiche, verdure miste", "steps": "Passa la parte superiore del salmone in un mix di erbe tritate e poco pangrattato. Cuoci al forno a 190° per 15-20 min. Accompagna con verdure di stagione spadellate." }
+      ]
+    }
+  ]
+}
