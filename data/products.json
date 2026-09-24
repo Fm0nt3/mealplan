@@ -1,0 +1,10 @@
+[
+  { "id": "p1", "name": "Petto di Pollo", "category": "Carne", "price": 8.50, "unit": "500g" },
+  { "id": "p2", "name": "Riso Basmati", "category": "Dispensa", "price": 2.20, "unit": "1kg" },
+  { "id": "p3", "name": "Zucchine", "category": "Verdura", "price": 1.90, "unit": "1kg" },
+  { "id": "p4", "name": "Uova (10 pz)", "category": "Freschi", "price": 3.50, "unit": "10 pz" },
+  { "id": "p5", "name": "Yogurt Greco", "category": "Freschi", "price": 1.50, "unit": "200g" },
+  { "id": "p6", "name": "Avena", "category": "Dispensa", "price": 1.20, "unit": "500g" },
+  { "id": "p7", "name": "Salmone surgelato", "category": "Pesce", "price": 9.90, "unit": "500g" },
+  { "id": "p8", "name": "Broccoli", "category": "Verdura", "price": 2.10, "unit": "500g" }
+]
