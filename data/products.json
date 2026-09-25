@@ -9,7 +9,8 @@
     "plans": [
       "economico",
       "bilanciato"
-    ]
+    ],
+    "inCasa": true
   },
   {
     "id": "p2",
