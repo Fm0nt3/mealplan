@@ -75,16 +75,20 @@ catalogo_nomi = [p['name'] for p in products]
 in_dispensa = [p['name'] for p in products if p.get('inCasa', False)]
 
 if vere_offerte and len(vere_offerte) > 0:
+    print(f"🎉 SUCCESSO! Offerte lette dal sito Lidl: {vere_offerte}")
     offerte_attive = vere_offerte
 else:
+    print("⚠️ Uso il piano B: Prendo le offerte salvate nel database locale (products.json).")
     offerte_attive = [p['name'] for p in products if p.get('inPromo', False)]
 
 testo_catalogo = ", ".join(catalogo_nomi)
 testo_dispensa = ", ".join(in_dispensa) if in_dispensa else "Nessuno"
 testo_offerte = ", ".join(offerte_attive) if offerte_attive else "Nessuna"
 
-print(f"Catalogo inviato all'AI: {len(catalogo_nomi)} prodotti.")
-
+# Queste righe ti faranno vedere tutto nel log!
+print(f"🛒 Prodotti IN OFFERTA che l'AI dovrà usare: {testo_offerte}")
+print(f"📦 Prodotti GIA' IN DISPENSA: {testo_dispensa}")
+print(f"📚 Catalogo totale inviato all'AI: {len(catalogo_nomi)} prodotti.")
 
 # ==========================================
 # FASE 3: INTELLIGENZA ARTIFICIALE (Con Prompt Restrittivo)
@@ -130,7 +134,7 @@ Restituisci ESCLUSIVAMENTE un file JSON puro:
 }}
 """
 
-max_retries = 3
+max_retries = 6
 for attempt in range(max_retries):
     try:
         print(f"Contatto Gemini (Tentativo {attempt + 1}/{max_retries})...")
@@ -156,6 +160,7 @@ for attempt in range(max_retries):
     except Exception as e:
         print(f"Errore AI: {e}")
         if attempt < max_retries - 1:
-            time.sleep(15)
+            print("Server occupati. Attendo 20 secondi prima di riprovare...")
+            time.sleep(20)
         else:
             print("❌ Tentativi esauriti.")
