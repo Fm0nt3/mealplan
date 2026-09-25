@@ -1,12 +1,120 @@
 [
-  { "id": "p1", "name": "Petto di Pollo (500g)", "category": "Carne", "normalPrice": 9.50, "promoPrice": 7.50, "inPromo": true, "plans": ["economico", "bilanciato"] },
-  { "id": "p2", "name": "Carne Macinata mista (500g)", "category": "Carne", "normalPrice": 6.50, "promoPrice": 5.00, "inPromo": true, "plans": ["economico"] },
-  { "id": "p3", "name": "Salmone surgelato (500g)", "category": "Pesce", "normalPrice": 11.90, "promoPrice": 9.90, "inPromo": true, "plans": ["bilanciato"] },
-  { "id": "p4", "name": "Tonno in scatola (3x80g)", "category": "Dispensa", "normalPrice": 3.20, "promoPrice": 2.50, "inPromo": false, "plans": ["economico", "bilanciato"] },
-  { "id": "p5", "name": "Riso Basmati (1kg)", "category": "Dispensa", "normalPrice": 2.20, "promoPrice": 2.20, "inPromo": false, "plans": ["economico", "bilanciato"] },
-  { "id": "p6", "name": "Zucchine (1kg)", "category": "Verdura", "normalPrice": 2.90, "promoPrice": 1.90, "inPromo": true, "plans": ["economico", "bilanciato"] },
-  { "id": "p7", "name": "Uova (10 pz)", "category": "Freschi", "normalPrice": 3.50, "promoPrice": 3.50, "inPromo": false, "plans": ["economico", "bilanciato"] },
-  { "id": "p8", "name": "Yogurt Greco (200g)", "category": "Freschi", "normalPrice": 1.80, "promoPrice": 1.40, "inPromo": true, "plans": ["bilanciato"] },
-  { "id": "p9", "name": "Avena (500g)", "category": "Dispensa", "normalPrice": 1.20, "promoPrice": 1.20, "inPromo": false, "plans": ["economico", "bilanciato"] },
-  { "id": "p10", "name": "Broccoli (500g)", "category": "Verdura", "normalPrice": 2.80, "promoPrice": 2.10, "inPromo": true, "plans": ["economico", "bilanciato"] }
+  {
+    "id": "p1",
+    "name": "Petto di Pollo (500g)",
+    "category": "Carne",
+    "normalPrice": 9.5,
+    "promoPrice": 7.5,
+    "inPromo": true,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p2",
+    "name": "Carne Macinata mista (500g)",
+    "category": "Carne",
+    "normalPrice": 6.5,
+    "promoPrice": 5,
+    "inPromo": true,
+    "plans": [
+      "economico"
+    ]
+  },
+  {
+    "id": "p3",
+    "name": "Salmone surgelato (500g)",
+    "category": "Pesce",
+    "normalPrice": 11.9,
+    "promoPrice": 9.9,
+    "inPromo": true,
+    "plans": [
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p4",
+    "name": "Tonno in scatola (3x80g)",
+    "category": "Dispensa",
+    "normalPrice": 3.2,
+    "promoPrice": 2.5,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p5",
+    "name": "Riso Basmati (1kg)",
+    "category": "Dispensa",
+    "normalPrice": 2.2,
+    "promoPrice": 2.2,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p6",
+    "name": "Zucchine (1kg)",
+    "category": "Verdura",
+    "normalPrice": 2.9,
+    "promoPrice": 1.9,
+    "inPromo": true,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p7",
+    "name": "Uova (10 pz)",
+    "category": "Freschi",
+    "normalPrice": 3.5,
+    "promoPrice": 3.5,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p8",
+    "name": "Yogurt Greco (200g)",
+    "category": "Freschi",
+    "normalPrice": 1.8,
+    "promoPrice": 1.4,
+    "inPromo": true,
+    "plans": [
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p9",
+    "name": "Avena (500g)",
+    "category": "Dispensa",
+    "normalPrice": 1.2,
+    "promoPrice": 1.2,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ],
+    "inCasa": false
+  },
+  {
+    "id": "p10",
+    "name": "Broccoli (500g)",
+    "category": "Verdura",
+    "normalPrice": 2.8,
+    "promoPrice": 2.1,
+    "inPromo": true,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  }
 ]
