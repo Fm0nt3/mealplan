@@ -94,39 +94,39 @@ client = genai.Client(api_key=api_key)
 
 prompt = f"""
 Sei un nutrizionista e Masterchef svizzero. 
-Devi creare un piano pasti di 7 giorni (Lunedì, Martedì, Mercoledì, Giovedì, Venerdì, Sabato, Domenica) per due piani dietetici: 'economico' e 'bilanciato'.
+Devi creare un piano pasti di 7 giorni per due piani dietetici: 'economico' e 'bilanciato'.
 Regola TASSATIVA: Costruisci le ricette attorno a questi prodotti: {offerte_testo}.
 
 REGOLE PER COMPILARE IL MENU:
-1. "qty": Non scrivere solo "Dosi per 1". Devi fare un elenco ESATTO di tutti gli ingredienti necessari con grammi e millilitri (es. "150g pollo, 60g riso, 10g burro, sale, pepe").
-2. "steps": Non essere riassuntivo. Scrivi un procedimento DETTAGLIATO, passo dopo passo, su come tagliare, cuocere e impiattare (es. "1. Taglia a cubetti. 2. Scalda la padella...").
-3. "link": Crea un link di ricerca su Google per trovare ricette simili. Il link deve avere ESATTAMENTE questo formato: "https://www.google.com/search?q=ricetta+" seguito dalle parole principali del piatto separate dal segno +. (Esempio: per il "Pollo al forno", il link sarà "https://www.google.com/search?q=ricetta+pollo+al+forno").
+1. "qty": Elenco ESATTO di tutti gli ingredienti necessari con grammi/quantità (es. "150g pollo, 60g riso, 10g burro, sale, pepe").
+2. "steps": Procedimento DETTAGLIATO, passo dopo passo, su come tagliare, cuocere e impiattare.
+3. "link": Usa questo formato "https://www.google.com/search?q=ricetta+" seguito dalle parole principali del piatto separate dal segno +.
+
+REGOLE PER LA LISTA DELLA SPESA ("shopping_list"):
+Crea una singola lista della spesa che includa TUTTI gli ingredienti necessari per realizzare i menu (compresi pane, marmellata, spezie, ecc.). Unisci le quantità se un ingrediente serve in più ricette.
 
 Restituisci ESCLUSIVAMENTE un file JSON valido che segua ESATTAMENTE questa struttura. Non usare formattazioni Markdown, solo il JSON puro:
 {{
+  "shopping_list": [
+    {{ "item": "Petto di Pollo", "amount": "500g" }},
+    {{ "item": "Marmellata di fragole", "amount": "1 vasetto" }},
+    {{ "item": "Pane integrale", "amount": "1 filone" }}
+  ],
   "economico": [
     {{
       "day": "Lunedì",
       "meals": [
-        {{ "type": "Colazione", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento lungo", "link": "https://www.google.com/search?q=..." }},
-        {{ "type": "Pranzo", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento lungo", "link": "https://www.google.com/search?q=..." }},
-        {{ "type": "Cena", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento lungo", "link": "https://www.google.com/search?q=..." }}
+        {{ "type": "Colazione", "name": "Nome", "qty": "Ingredienti", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }},
+        {{ "type": "Pranzo", "name": "Nome", "qty": "Ingredienti", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }},
+        {{ "type": "Cena", "name": "Nome", "qty": "Ingredienti", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }}
       ]
     }}
   ],
   "bilanciato": [
-    {{
-      "day": "Lunedì",
-      "meals": [
-        {{ "type": "Colazione", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento lungo", "link": "https://www.google.com/search?q=..." }},
-        {{ "type": "Pranzo", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento lungo", "link": "https://www.google.com/search?q=..." }},
-        {{ "type": "Cena", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento lungo", "link": "https://www.google.com/search?q=..." }}
-      ]
-    }}
+    // Stessa struttura per i 7 giorni
   ]
 }}
-"""
-max_retries = 3
+"""max_retries = 3
 
 for attempt in range(max_retries):
     try:
