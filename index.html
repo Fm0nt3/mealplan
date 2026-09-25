@@ -51,6 +51,12 @@
         <div class="tab" onclick="showTab('shopping')">🛒 Lista Spesa & Budget</div>
     </div>
 
+    <div style="text-align: center; margin: 20px 0;">
+        <button onclick="avviaAI()" style="padding: 15px 30px; font-size: 18px; background-color: #007bff; color: white; border: none; border-radius: 8px; cursor: pointer;">
+        ✨ Genera Nuovo Menu con AI
+        </button>
+    </div>
+    
     <div class="dispensa-container">
       <h2>La mia Dispensa</h2>
       <!-- Qui il Javascript inserirà automaticamente tutti i prodotti -->
@@ -194,6 +200,46 @@
         }
     }
 
+    async function avviaAI() {
+        let token = localStorage.getItem('GITHUB_TOKEN');
+        if (!token) {
+            alert("Nessun Token trovato. Spunta prima un prodotto in dispensa per inserirlo.");
+            return;
+        }
+
+    // Inserisci i tuoi dati esatti
+        const repo = "Fm0nt3/mealplan"; 
+        const workflowFile = "update.yml"; // Il nome del tuo file dentro .github/workflows/
+        const branchName = "main"; // Potrebbe essere "master" se il repo è vecchio
+
+        const apiUrl = `https://api.github.com/repos/${repo}/actions/workflows/${workflowFile}/dispatches`;
+
+        try {
+            console.log("Comunico a GitHub di avviare l'AI...");
+            const response = await fetch(apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/vnd.github.v3+json',
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    ref: branchName
+                })
+            });
+
+            if (response.ok) {
+                alert("🚀 Motore AI avviato! Lo script Python sta lavorando in background. Torna tra circa 2 minuti e ricarica la pagina per vedere il nuovo menu e la lista della spesa.");
+            } else {
+                const errorData = await response.json();
+                alert(`Errore nell'avvio: ${errorData.message}. Controlla che il Token abbia il permesso 'workflow'.`);
+            }
+        } catch (error) {
+            console.error("Errore di connessione a GitHub:", error);
+            alert("Impossibile contattare GitHub.");
+        }
+    }
+    
 // Avvia la funzione appena apri il sito
     window.onload = caricaDispensa;
     
