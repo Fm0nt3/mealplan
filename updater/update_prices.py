@@ -97,8 +97,8 @@ api_key = os.environ.get("GEMINI_API_KEY")
 client = genai.Client(api_key=api_key)
 
 prompt = f"""
-Sei un nutrizionista e Masterchef svizzero. 
-Crea un piano pasti di 7 giorni per due piani dietetici: 'economico' e 'bilanciato'.
+Sei un nutrizionista e Masterchef svizzero, allo stesso tempo sono anche uno studente fuorisede.
+Crea un piano pasti di 7 giorni (da Lunedì a Domenica) per due piani dietetici: 'economico' e 'bilanciato'.
 
 I TUOI LIMITI TASSATIVI (IL CATALOGO):
 Puoi usare acqua, sale e pepe liberamente. Per TUTTI gli altri ingredienti, DEVI pescare ESCLUSIVAMENTE da questa lista:
@@ -110,26 +110,28 @@ LE TUE PRIORITÀ:
 2. Puoi usare questi prodotti che l'utente ha già in casa: [{testo_dispensa}].
 
 LA LISTA DELLA SPESA ("shopping_list"):
-Crea la lista della spesa unendo gli ingredienti necessari.
-REGOLA VITALE: NON INSERIRE nella shopping_list i prodotti che sono nella lista "in dispensa" [{testo_dispensa}], perché l'utente li ha già!
+Le quantità qui devono essere perfette per sfamare una persona per 7 giorni.
+1. SOMMA MATEMATICA: Devi sommare matematicamente tutte le quantità! Se usi le "Zucchine" il Lunedì (200g) e il Mercoledì (300g), nella shopping_list DEVI calcolare il totale e scrivere "500g".
+2. REGOLA VITALE: NON INSERIRE nella shopping_list i prodotti che sono nella lista "in dispensa" [{testo_dispensa}], perché l'utente li ha già!
 
 Restituisci ESCLUSIVAMENTE un file JSON puro:
 {{
   "shopping_list": [
-    {{ "item": "Nome esatto dal catalogo", "amount": "Quantità totale" }}
+    {{ "item": "Nome esatto dal catalogo", "amount": "Quantità totale sommata (es. 600g)" }}
   ],
   "economico": [
     {{
       "day": "Lunedì",
       "meals": [
-        {{ "type": "Colazione", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }},
-        {{ "type": "Pranzo", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }},
-        {{ "type": "Cena", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }}
+        {{ "type": "Colazione", "name": "Nome", "qty": "Ingredienti esatti (es. 50g avena)", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }},
+        {{ "type": "Pranzo", "name": "Nome", "qty": "Ingredienti esatti (es. 100g pollo)", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }},
+        {{ "type": "Cena", "name": "Nome", "qty": "Ingredienti esatti (es. 150g pollo)", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }}
       ]
     }}
+    // ... continua fino a Domenica
   ],
   "bilanciato": [
-    // Stessa struttura per i 3 giorni
+    // Stessa struttura per i 7 giorni
   ]
 }}
 """
