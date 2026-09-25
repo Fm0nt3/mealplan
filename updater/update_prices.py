@@ -65,69 +65,72 @@ def scarica_offerte_lidl():
 
 vere_offerte = scarica_offerte_lidl()
 # ==========================================
-# FASE 2: PREPARAZIONE DATI PER L'AI
+# FASE 2: PREPARAZIONE DATI PER L'AI (Catalogo Chiuso)
 # ==========================================
 with open('data/products.json', 'r', encoding='utf-8') as f:
     products = json.load(f)
 
-if vere_offerte and len(vere_offerte) > 0:
-    print(f"🎉 SUCCESSO! Trovate offerte reali sul sito Lidl: {vere_offerte}")
-    offerte_testo = ", ".join(vere_offerte)
-    # In futuro qui possiamo aggiungere il codice per inserire automaticamente questi prodotti in products.json con i loro veri prezzi!
-else:
-    print("⚠️ Uso il piano B: Prendo le offerte salvate nel database locale.")
-    prodotti_in_offerta = [p['name'] for p in products if p.get('inPromo', False)]
-    offerte_testo = ", ".join(prodotti_in_offerta)
+# Creiamo le tre liste fondamentali per l'AI
+catalogo_nomi = [p['name'] for p in products]
+in_dispensa = [p['name'] for p in products if p.get('inCasa', False)]
 
-print(f"Ingredienti in offerta che userò per le ricette: {offerte_testo}")
+if vere_offerte and len(vere_offerte) > 0:
+    offerte_attive = vere_offerte
+else:
+    offerte_attive = [p['name'] for p in products if p.get('inPromo', False)]
+
+testo_catalogo = ", ".join(catalogo_nomi)
+testo_dispensa = ", ".join(in_dispensa) if in_dispensa else "Nessuno"
+testo_offerte = ", ".join(offerte_attive) if offerte_attive else "Nessuna"
+
+print(f"Catalogo inviato all'AI: {len(catalogo_nomi)} prodotti.")
 
 
 # ==========================================
-# FASE 3: INTELLIGENZA ARTIFICIALE (Con Retry)
+# FASE 3: INTELLIGENZA ARTIFICIALE (Con Prompt Restrittivo)
 # ==========================================
 api_key = os.environ.get("GEMINI_API_KEY")
-if not api_key:
-    print("Errore: GEMINI_API_KEY non trovata!")
-    exit(1)
-
 client = genai.Client(api_key=api_key)
 
 prompt = f"""
 Sei un nutrizionista e Masterchef svizzero. 
-Devi creare un piano pasti di 7 giorni per due piani dietetici: 'economico' e 'bilanciato'.
-Regola TASSATIVA: Costruisci le ricette attorno a questi prodotti: {offerte_testo}.
+Crea un piano pasti di 7 giorni per due piani dietetici: 'economico' e 'bilanciato'.
 
-REGOLE PER COMPILARE IL MENU:
-1. "qty": Elenco ESATTO di tutti gli ingredienti necessari con grammi/quantità (es. "150g pollo, 60g riso, 10g burro, sale, pepe").
-2. "steps": Procedimento DETTAGLIATO, passo dopo passo, su come tagliare, cuocere e impiattare.
-3. "link": Usa questo formato "https://www.google.com/search?q=ricetta+" seguito dalle parole principali del piatto separate dal segno +.
+I TUOI LIMITI TASSATIVI (IL CATALOGO):
+Puoi usare acqua, sale e pepe liberamente. Per TUTTI gli altri ingredienti, DEVI pescare ESCLUSIVAMENTE da questa lista:
+[{testo_catalogo}]
+Se un ingrediente non è in questa lista (es. burro, marmellata, pane), NON PUOI USARLO. Cambia ricetta.
 
-REGOLE PER LA LISTA DELLA SPESA ("shopping_list"):
-Crea una singola lista della spesa che includa TUTTI gli ingredienti necessari per realizzare i menu (compresi pane, marmellata, spezie, ecc.). Unisci le quantità se un ingrediente serve in più ricette.
+LE TUE PRIORITÀ:
+1. Devi usare il più possibile questi prodotti in offerta: [{testo_offerte}].
+2. Puoi usare questi prodotti che l'utente ha già in casa: [{testo_dispensa}].
 
-Restituisci ESCLUSIVAMENTE un file JSON valido che segua ESATTAMENTE questa struttura. Non usare formattazioni Markdown, solo il JSON puro:
+LA LISTA DELLA SPESA ("shopping_list"):
+Crea la lista della spesa unendo gli ingredienti necessari.
+REGOLA VITALE: NON INSERIRE nella shopping_list i prodotti che sono nella lista "in dispensa" [{testo_dispensa}], perché l'utente li ha già!
+
+Restituisci ESCLUSIVAMENTE un file JSON puro:
 {{
   "shopping_list": [
-    {{ "item": "Petto di Pollo", "amount": "500g" }},
-    {{ "item": "Marmellata di fragole", "amount": "1 vasetto" }},
-    {{ "item": "Pane integrale", "amount": "1 filone" }}
+    {{ "item": "Nome esatto dal catalogo", "amount": "Quantità totale" }}
   ],
   "economico": [
     {{
       "day": "Lunedì",
       "meals": [
-        {{ "type": "Colazione", "name": "Nome", "qty": "Ingredienti", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }},
-        {{ "type": "Pranzo", "name": "Nome", "qty": "Ingredienti", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }},
-        {{ "type": "Cena", "name": "Nome", "qty": "Ingredienti", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }}
+        {{ "type": "Colazione", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }},
+        {{ "type": "Pranzo", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }},
+        {{ "type": "Cena", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }}
       ]
     }}
   ],
   "bilanciato": [
-    // Stessa struttura per i 7 giorni
+    // Stessa struttura per i 3 giorni
   ]
 }}
-"""max_retries = 3
+"""
 
+max_retries = 3
 for attempt in range(max_retries):
     try:
         print(f"Contatto Gemini (Tentativo {attempt + 1}/{max_retries})...")
@@ -147,13 +150,12 @@ for attempt in range(max_retries):
         with open('data/recipes.json', 'w', encoding='utf-8') as f:
             json.dump(new_recipes, f, indent=2, ensure_ascii=False)
             
-        print("✅ Successo! Nuove ricette salvate in recipes.json.")
+        print("✅ Successo! Menu e lista della spesa intelligente salvati.")
         break
 
     except Exception as e:
         print(f"Errore AI: {e}")
         if attempt < max_retries - 1:
-            print("Server occupati. Attendo 15 secondi...")
             time.sleep(15)
         else:
-            print("❌ Tentativi esauriti. Riproverà al prossimo giro.")
+            print("❌ Tentativi esauriti.")
