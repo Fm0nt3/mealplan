@@ -5,24 +5,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Birchermüesli classico al risparmio",
-          "qty": "80g fiocchi d'avena, 1 mela, 150ml latte, 10g noci",
-          "steps": "Lasciare l'avena in ammollo nel latte tutta la notte. La mattina grattugiare la mela e unire le noci.",
-          "link": ""
+          "name": "Porridge d'Avena e Mela",
+          "qty": "50g fiocchi d'avena, 150ml latte parzialmente scremato, 1 mela (100g), 1g cannella in polvere, 5g zucchero",
+          "steps": "1. Versa i fiocchi d'avena e il latte in un pentolino antiaderente. 2. Cuoci a fuoco medio-basso per circa 5 minuti, mescolando continuamente con un cucchiaio di legno fino a ottenere una consistenza cremosa. 3. Sbuccia la mela e tagliala a dadini di circa 1 cm. 4. Unisci la mela al porridge negli ultimi 2 minuti di cottura. 5. Trasferisci il porridge in una ciotola, spolvera con la cannella e aggiungi lo zucchero prima di servire.",
+          "link": "https://www.google.com/search?q=ricetta+porridge+avena+e+mela"
         },
         {
           "type": "Pranzo",
-          "name": "Zuppa ricca di lenticchie e patate alla svizzera",
-          "qty": "100g lenticchie secche, 150g patate, 1 carota, 500ml brodo vegetale",
-          "steps": "Soffriggere carota e cipolla, aggiungere patate a cubetti e lenticchie. Coprire con brodo e cuocere per 30 min.",
-          "link": ""
+          "name": "Spaghetti integrali con Zucchine e Uovo",
+          "qty": "80g spaghetti integrali, 150g zucchine, 1 uovo grande, 10ml olio extravergine d'oliva, 1 spicchio d'aglio, sale, pepe",
+          "steps": "1. Porta a bollore una pentola d'acqua salata e cuoci gli spaghetti integrali seguendo i tempi riportati sulla confezione. 2. Lava le zucchine e tagliale a rondelle sottili. 3. In una padella, scalda l'olio extravergine d'oliva con lo spicchio d'aglio sbucciato e schiacciato. 4. Aggiungi le zucchine e rosolale per circa 7-8 minuti finché non si ammorbidiscono. 5. In una ciotolina, sbatte l'uovo con un pizzico di sale e pepe. 6. Scola la pasta tenendo da parte due cucchiai di acqua di cottura. 7. Versa la pasta nella padella con le zucchine, rimuovi l'aglio, spegni il fuoco, versa l'uovo sbattuto e l'acqua di cottura tenuta da parte. 8. Manteca rapidamente per creare una crema omogenea e impiatta.",
+          "link": "https://www.google.com/search?q=ricetta+spaghetti+zucchine+e+uovo"
         },
         {
           "type": "Cena",
-          "name": "Frittata di patate e cipolle croccanti",
-          "qty": "2 uova, 150g patate bollite avanzate, 1 cipolla, 1 cucchiaio d'olio",
-          "steps": "Rosolare la cipolla e le patate a fette in padella. Sbattere le uova, versarle sopra e cuocere 5 min per lato.",
-          "link": ""
+          "name": "Polpette di Carne Macinata con Broccoli al Vapore",
+          "qty": "120g carne macinata mista, 150g broccoli, 20g pangrattato, 10ml olio extravergine d'oliva, sale, pepe, prezzemolo",
+          "steps": "1. Lava i broccoli e dividili in cimette uniformi. 2. Cuoci i broccoli al vapore per circa 10 minuti finché non diventano teneri ma saporiti. 3. In una ciotola, unisci la carne macinata mista, il pangrattato, il prezzemolo tritato, sale e pepe. 4. Impasta bene con le mani e forma delle polpette sferiche della dimensione di una noce. 5. Scalda l'olio extravergine d'oliva in una padella antiaderente e cuoci le polpette a fuoco medio per circa 8-10 minuti, girandole da tutti i lati finché non risultano dorate e ben cotte all'interno. 6. Servire le polpette calde accompagnate dai broccoli al vapore conditi con un pizzico di sale.",
+          "link": "https://www.google.com/search?q=ricetta+polpette+di+carne+e+broccoli"
         }
       ]
     },
@@ -31,24 +31,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Porridge caldo cannella e mela",
-          "qty": "70g fiocchi d'avena, 200ml acqua/latte, 1 mela a dadini, cannella",
-          "steps": "Scaldare l'avena nel liquido con i dadini di mela per 5 minuti finché denso. Spolverare di cannella.",
-          "link": ""
+          "name": "Toast dolce con Yogurt Greco e Miele",
+          "qty": "2 fette di pane in cassetta integrale (50g), 50g yogurt greco, 10g miele",
+          "steps": "1. Tosta le fette di pane integrale in un tostapane o in padella per 2-3 minuti fino a doratura. 2. Spalma uniformemente lo yogurt greco su ciascuna fetta. 3. Versa a filo il miele sopra lo yogurt e servi subito.",
+          "link": "https://www.google.com/search?q=ricetta+toast+yogurt+greco+e+miele"
         },
         {
           "type": "Pranzo",
-          "name": "Insalata fredda di lenticchie e carote marinare",
-          "qty": "150g lenticchie cotte (dal giorno prima), 1 carota grattugiata, prezzemolo, vinaigrette",
-          "steps": "Unire lenticchie e carote. Condire con olio, aceto, sale e prezzemolo. Ideale da portare al lavoro.",
-          "link": ""
+          "name": "Riso Saltato con Petto di Pollo e Zucchine",
+          "qty": "70g riso basmati, 120g petto di pollo, 150g zucchine, 10ml olio extravergine d'oliva, 10ml salsa di soia, sale, pepe",
+          "steps": "1. Lessa il riso basmati in abbondante acqua salata, scolalo al dente e tienilo da parte. 2. Taglia il petto di pollo a cubetti di circa 1,5 cm. 3. Lava le zucchine e tagliale a dadini. 4. Scalda l'olio in una padella capiente o wok, aggiungi il pollo e rosolalo per 5 minuti a fiamma viva. 5. Aggiungi le zucchine e cuoci per altri 5 minuti mescolando spesso. 6. Unisci il riso cotto e la salsa di soia nella padella. 7. Salta tutto insieme per 2 minuti a fuoco alto e servi caldo.",
+          "link": "https://www.google.com/search?q=ricetta+riso+pollo+e+zucchine"
         },
         {
           "type": "Cena",
-          "name": "Rösti di patate dorato con uovo al tegamino",
-          "qty": "250g patate, 1 uovo, 10g burro, sale e pepe",
-          "steps": "Grattugiare le patate e compattarle in padella con burro. Cuocere fino a doratura su entrambi i lati e servire con l'uovo.",
-          "link": ""
+          "name": "Frittata Soffice alle Zucchine",
+          "qty": "2 uova medie, 150g zucchine, 10ml olio extravergine d'oliva, 10g formaggio grattugiato, sale, pepe",
+          "steps": "1. Lava le zucchine e grattugiale a fori larghi. 2. In una padella antiaderente, scalda metà dell'olio e stufa le zucchine grattugiate per 5 minuti con un pizzico di sale. 3. In una ciotola sbatti le uova con il formaggio grattugiato, sale e pepe. 4. Unisci le zucchine intiepidite alle uova sbattute e mescola bene. 5. Versa il restante olio nella padella, scaldalo e versa il composto di uova e zucchine. 6. Cuoci a fuoco basso con coperchio per 6 minuti, poi gira la frittata e cuoci per altri 3 minuti finché non risulta dorata su entrambi i lati.",
+          "link": "https://www.google.com/search?q=ricetta+frittata+alle+zucchine"
         }
       ]
     },
@@ -57,24 +57,128 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Birchermüesli classico al risparmio",
-          "qty": "80g fiocchi d'avena, 1 mela, 150ml latte",
-          "steps": "Preparare la sera prima mescolando avena, latte e mela grattugiata.",
-          "link": ""
+          "name": "Fiocchi d'Avena con Banana e Latte",
+          "qty": "50g fiocchi d'avena, 150ml latte parzialmente scremato, 1 banana (100g)",
+          "steps": "1. Scalda il latte in una ciotola al microonde o in un pentolino. 2. Versa i fiocchi d'avena nel latte caldo e lascia riposare per 3 minuti in modo che assorbano il liquido. 3. Taglia la banana a rondelle sfilettate. 4. Disponi le rondelle di banana sopra i fiocchi d'avena e servi.",
+          "link": "https://www.google.com/search?q=ricetta+avena+banana+e+latte"
         },
         {
           "type": "Pranzo",
-          "name": "Risotto semplice ai porri e brodo vegetale",
-          "qty": "80g riso per risotti, 1/2 porro, 400ml brodo, 10g formaggio grattugiato",
-          "steps": "Stufare il porro, tostare il riso e bagnare con brodo fino a cottura. Mantecare con formaggio.",
-          "link": ""
+          "name": "Insalata di Riso Economica con Zucchine e Uovo Sodo",
+          "qty": "80g riso per insalate, 1 uovo grande, 100g zucchine, 30g mais in scatola, 10ml olio extravergine d'oliva, sale, pepe",
+          "steps": "1. Cuoci il riso in acqua salata, scolalo al dente e raffreddalo sotto acqua corrente. 2. Rassoda l'uovo bollendolo per 9 minuti dall'inizio dell'ebollizione, poi sbuccialo e taglialo a spicchi. 3. Taglia le zucchine a dadini piccolissimi e scottale in padella con un filo d'olio per 4 minuti, lasciandole croccanti. 4. In una ciotola unisci il riso raffreddato, le zucchine, il mais scolato e condisci con l'olio extravergine d'oliva, sale e pepe. 5. Decora con gli spicchi d'uovo sodo prima di servire.",
+          "link": "https://www.google.com/search?q=ricetta+insalata+di+riso+con+zucchine+e+uovo"
         },
         {
           "type": "Cena",
-          "name": "Vellutata di carote e patate con crostini di pane raffermo",
-          "qty": "200g carote, 150g patate, pane raffermo a cubetti, olio d'oliva",
-          "steps": "Bollire carote e patate nel brodo, frullare tutto. Tostare il pane in padella con un filo d'olio e servire sopra.",
-          "link": ""
+          "name": "Salmone al Cartoccio con Broccoli",
+          "qty": "120g filetto di salmone surgelato (scontentato), 150g broccoli, 10ml olio extravergine d'oliva, 1 spicchio d'aglio, sale, pepe, limone",
+          "steps": "1. Preriscalda il forno a 180°C. 2. Dividi i broccoli in cimette e scottali in acqua bollente salata per 3 minuti, poi scolali. 3. Stendi un foglio di carta forno su una teglia. 4. Disponi al centro il filetto di salmone scongelato e le cimette di broccoli. 5. Aggiungi lo spicchio d'aglio a fette, condisci con l'olio, sale, pepe e un paio di fette di limone. 6. Chiudi il foglio sigillando i bordi per formare un cartoccio ermetico. 7. Inforna per 18-20 minuti. 8. Apri delicatamente il cartoccio ed impiatta subito.",
+          "link": "https://www.google.com/search?q=ricetta+salmone+al+cartoccio+con+broccoli"
+        }
+      ]
+    },
+    {
+      "day": "Giovedì",
+      "meals": [
+        {
+          "type": "Colazione",
+          "name": "Pane Tostato con Marmellata e Tè",
+          "qty": "60g pane integrale, 20g marmellata di albicocche, 200ml tè nero",
+          "steps": "1. Prepara una tazza di tè nero lasciando la bustina in infusione nell'acqua bollente per 3-4 minuti. 2. Tosta le fette di pane integrale nel tostapane per 2 minuti. 3. Spalma la marmellata sulle fette di pane caldo e servi assieme al tè.",
+          "link": "https://www.google.com/search?q=ricetta+pane+tostato+marmellata"
+        },
+        {
+          "type": "Pranzo",
+          "name": "Penne al Ragù Rapido di Carne Macinata",
+          "qty": "80g penne rigate, 130g carne macinata mista, 100g passata di pomodoro, 20g cipolla, 10ml olio extravergine d'oliva, sale, pepe",
+          "steps": "1. Tritare finemente la cipolla. 2. Scalda l'olio in un tegamino e fai soffriggere la cipolla per 2 minuti. 3. Aggiungi la carne macinata mista e rosolala bene per 5 minuti sgranandola con una forchetta. 4. Versa la passata di pomodoro, aggiusta di sale e pepe, e lascia sobbollire a fuoco lento per 15 minuti. 5. Nel frattempo cuoci la pasta in acqua bollente salata, scolala al dente e versala direttamente nella padella con il ragù. 6. Salta per 1 minuto e servi caldissimo.",
+          "link": "https://www.google.com/search?q=ricetta+penne+ragu+di+carne"
+        },
+        {
+          "type": "Cena",
+          "name": "Zuppa Economica di Lenticchie e Zucchine",
+          "qty": "60g lenticchie secche, 150g zucchine, 30g carota, 20g cipolla, 10ml olio extravergine d'oliva, 400ml brodo vegetale, sale, pepe",
+          "steps": "1. Trita finemente la carota e la cipolla e taglia le zucchine a dadini. 2. In una pentola, rosola la carota e la cipolla con l'olio per 3 minuti. 3. Aggiungi le lenticchie sciacquate e le zucchine. 4. Copri con il brodo vegetale caldo, porta a bollore e cuoci a fuoco basso per 25-30 minuti finché le lenticchie non sono morbide. 5. Aggiusta di sale e pepe e servi calda con un filo d'olio a crudo.",
+          "link": "https://www.google.com/search?q=ricetta+zuppa+lenticchie+e+zucchine"
+        }
+      ]
+    },
+    {
+      "day": "Venerdì",
+      "meals": [
+        {
+          "type": "Colazione",
+          "name": "Pancake Economici all'Avena",
+          "qty": "40g farina d'avena, 1 uovo, 50ml latte parzialmente scremato, 5g zucchero, 5ml olio di semi per la padella",
+          "steps": "1. In una ciotola, sbatti l'uovo con lo zucchero. 2. Aggiungi la farina d'avena e il latte a filo, mescolando con una frusta fino ad ottenere una pastella liscia senza grumi. 3. Ungi leggermente una padella antiaderente con l'olio di semi e scaldala. 4. Versa un mestolino di pastella formandone i pancake. 5. Cuoci per 2 minuti finché compaiono le bollicine, poi gira e cuoci per un altro minuto. 6. Impiatta i pancake sovrapposti.",
+          "link": "https://www.google.com/search?q=ricetta+pancake+avena+semplici"
+        },
+        {
+          "type": "Pranzo",
+          "name": "Petto di Pollo in Padella con Broccoli Ripassati",
+          "qty": "130g petto di pollo, 150g broccoli, 10ml olio extravergine d'oliva, 1 spicchio d'aglio, sale, pepe, origano",
+          "steps": "1. Lessa le cimette di broccoli in acqua salata per 5 minuti, poi scolale bene. 2. In una padella scalda metà dell'olio con l'aglio e rosola i broccoli per 5 minuti per farli insaporire. Rimuovili e tienili al caldo. 3. Nella stessa padella, aggiungi l'olio rimanente e cuoci le fette di petto di pollo 3-4 minuti per lato a fiamma media. 4. Salare, pepare e spolverare con l'origano a fine cottura. 5. Servire il pollo affiancato dai broccoli ripassati.",
+          "link": "https://www.google.com/search?q=ricetta+petto+di+pollo+con+broccoli"
+        },
+        {
+          "type": "Cena",
+          "name": "Salmone Dorato in Padella con Zucchine Trifolate",
+          "qty": "130g filetto di salmone surgelato (scongelato), 150g zucchine, 10ml olio extravergine d'oliva, prezzemolo, sale, pepe",
+          "steps": "1. Taglia le zucchine a mezzelune sottili. 2. In una padella scalda metà dell'olio e cuoci le zucchine a fuoco vivace per 7 minuti con sale e prezzemolo tritato, quindi toglile dalla padella. 3. Asciuga bene il filetto di salmone con carta da cucina. 4. Versa l'olio rimasto nella padella e cuoci il filetto di salmone dal lato della pelle per 4 minuti, poi giralo e cuoci per altri 3 minuti finché dorato. 5. Servire il salmone con le zucchine trifolate come contorno.",
+          "link": "https://www.google.com/search?q=ricetta+salmone+padella+zucchine"
+        }
+      ]
+    },
+    {
+      "day": "Sabato",
+      "meals": [
+        {
+          "type": "Colazione",
+          "name": "Yogurt Greco con Avena e Miele",
+          "qty": "50g yogurt greco, 30g fiocchi d'avena, 10g miele",
+          "steps": "1. Versa lo yogurt greco in una ciotola. 2. Aggiungi i fiocchi d'avena croccanti sopra lo yogurt. 3. Completa il piatto versando il miele a filo.",
+          "link": "https://www.google.com/search?q=ricetta+yogurt+greco+avena+miele"
+        },
+        {
+          "type": "Pranzo",
+          "name": "Risotto Semplice alle Zucchine",
+          "qty": "80g riso arborio, 150g zucchine, 20g cipolla, 10ml olio extravergine d'oliva, 300ml brodo vegetale, 10g formaggio grattugiato",
+          "steps": "1. Trita la cipolla e grattugia le zucchine a fori larghi. 2. In un tegame soffriggi la cipolla con l'olio per 2 minuti. 3. Aggiungi il riso e tostalo per 2 minuti finché diventa lucido. 4. Unisci le zucchine grattugiate e inizia ad aggiungere il brodo vegetale caldo un mestolo alla volta, mescolando costantemente. 5. Portare a cottura il risotto in circa 16-18 minuti. 6. Spegni il fuoco, manteca con il formaggio grattugiato e lascia riposare 2 minuti prima di servire.",
+          "link": "https://www.google.com/search?q=ricetta+risotto+alle+zucchine"
+        },
+        {
+          "type": "Cena",
+          "name": "Burger di Carne Macinata con Patate al Forno",
+          "qty": "125g carne macinata mista, 150g patate, 10ml olio extravergine d'oliva, rosmarino, sale, pepe",
+          "steps": "1. Preriscalda il forno a 200°C. 2. Sbuccia le patate, tagliale a spicchi, condiscile in una ciotola con olio, sale e rosmarino. 3. Disponi le patate su una teglia con carta forno e inforna per 25-30 minuti finché croccanti. 4. Con la carne macinata forma un hamburger compatto condito con sale e pepe. 5. Scalda una piastra o padella e cuoci il burger 4 minuti per lato a fuoco medio. 6. Servire l'hamburger caldo accompagnato dalle patate al forno.",
+          "link": "https://www.google.com/search?q=ricetta+burger+carne+con+patate+al+forno"
+        }
+      ]
+    },
+    {
+      "day": "Domenica",
+      "meals": [
+        {
+          "type": "Colazione",
+          "name": "Pane e Ricotta con Miele",
+          "qty": "50g pane integrale, 40g ricotta vaccina, 10g miele",
+          "steps": "1. Tosta leggermente le fette di pane integrale. 2. Spalma la ricotta fresca sul pane. 3. Decorare con un filo di miele prima di gustare.",
+          "link": "https://www.google.com/search?q=ricetta+pane+ricotta+e+miele"
+        },
+        {
+          "type": "Pranzo",
+          "name": "Pasta al Pesto Leggero di Broccoli",
+          "qty": "80g pasta corta, 100g broccoli, 10ml olio extravergine d'oliva, 10g formaggio grattugiato, 5g noci, sale, pepe",
+          "steps": "1. Lessa le cimette di broccoli in acqua salata per 7 minuti. 2. Trasferisci i broccoli cotti in un mixer lasciando l'acqua di cottura sul fuoco per cuocere la pasta. 3. Aggiungi nel mixer l'olio extravergine, il formaggio grattugiato, le noci, sale e pepe, frullando fino a ottenere una crema liscia. 4. Cuoci la pasta nell'acqua dei broccoli e scolala al dente. 5. Condisci la pasta con la crema di broccoli, allungando con un cucchiaio di acqua di cottura se necessario, e impiatta.",
+          "link": "https://www.google.com/search?q=ricetta+pasta+pesto+di+broccoli"
+        },
+        {
+          "type": "Cena",
+          "name": "Insalata di Pollo, Zucchine Grigliate e Crostini",
+          "qty": "125g petto di pollo, 100g zucchine, 30g pane integrale, 10ml olio extravergine d'oliva, succo di limone, sale, pepe",
+          "steps": "1. Taglia le zucchine a fettine sottili nel senso della lunghezza e grigliale su una piastra calda per 2 minuti per lato. 2. Griglia il petto di pollo sulla piastra ben calda per 3-4 minuti per lato, poi taglialo a striscioline. 3. Taglia il pane a cubetti e tostalo in padella fino a renderlo croccante. 4. In un piatto da portata unisci il pollo, le zucchine grigliate e i crostini di pane. 5. Condisci con l'olio extravergine d'oliva, un'emulsione di succo di limone, sale e pepe.",
+          "link": "https://www.google.com/search?q=ricetta+insalata+pollo+e+zucchine+grigliate"
         }
       ]
     }
@@ -85,24 +189,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Bircher-Proteico con quark magro e frutti rossi",
-          "qty": "60g fiocchi d'avena, 150g quark magro/yogurt greco, 50g frutti rossi, 1 mela",
-          "steps": "Mescolare l'avena con il quark e poca acqua. Aggiungere mela grattugiata e frutti rossi.",
-          "link": ""
+          "name": "Yogurt Greco Proteico con Noci e Miele",
+          "qty": "100g yogurt greco, 15g noci sgusciate, 10g miele, 1g cannella",
+          "steps": "1. Disponi lo yogurt greco in una coppa da colazione. 2. Trita grossolanamente le noci con un coltello. 3. Distribuisci le noci sopra lo yogurt. 4. Decora con il miele a filo e una spolverata di cannella prima di servire.",
+          "link": "https://www.google.com/search?q=ricetta+yogurt+greco+noci+e+miele"
         },
         {
           "type": "Pranzo",
-          "name": "Meal Prep Bowl: Pollo al timo, riso integrale e broccoli",
-          "qty": "120g petto di pollo, 70g riso integrale, 150g broccoli al vapore",
-          "steps": "Grigliare il pollo con timo e limone. Lessare il riso e cuocere i broccoli al vapore. Assemblare nel contenitore.",
-          "link": ""
+          "name": "Bowl di Quinoa con Pollo Grigliato e Zucchine",
+          "qty": "70g quinoa secca, 125g petto di pollo, 150g zucchine, 10ml olio extravergine d'oliva, succo di limone, sale, pepe",
+          "steps": "1. Sciacqua la quinoa sotto acqua corrente e cuocila in 140ml di acqua salata per 12-15 minuti finché il liquido è assorbito. 2. Taglia le zucchine a dadini e saltole in padella con metà dell'olio per 6 minuti. 3. Griglia il petto di pollo su una piastra calda per 3-4 minuti per lato e taglialo a listarelle. 4. Componi la bowl disponendo la quinoa alla base, con sopra il pollo e le zucchine. 5. Condisci con l'olio rimasto, succo di limone, sale e pepe.",
+          "link": "https://www.google.com/search?q=ricetta+quinoa+pollo+e+zucchine"
         },
         {
           "type": "Cena",
-          "name": "Trancio di salmone al forno con patate novelle ed erette",
-          "qty": "130g filetto di salmone, 150g patate novelle, insalata verde misto",
-          "steps": "Infornare salmone e patate a spicchi a 180°C per 20 min. Servire con insalata fresca condita con limone.",
-          "link": ""
+          "name": "Trancio di Salmone al Vapore con Broccoli e Limone",
+          "qty": "125g filetto di salmone surgelato (scongelato), 150g broccoli, 10ml olio extravergine d'oliva, 1/2 limone, sale, pepe",
+          "steps": "1. Lava i broccoli e ricava le cimette. 2. Disponi i broccoli e il filetto di salmone nel cestello per la cottura al vapore. 3. Cuoci a vapore per circa 12-14 minuti finché il salmone è tenero e i broccoli cotti ma ancora sodi. 4. Disponi il salmone e i broccoli in un piatto. 5. Condisci a crudo con l'olio extravergine d'oliva, un'emulsione di succo di limone, sale marino e pepe nero fresco.",
+          "link": "https://www.google.com/search?q=ricetta+salmone+al+vapore+con+broccoli"
         }
       ]
     },
@@ -111,24 +215,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Toast integrale con uovo strapazzato e ricotta",
-          "qty": "2 fette di pane integrale, 1 uovo, 30g ricotta fresca, erba cipollina",
-          "steps": "Tostare il pane, spalmare la ricotta e aggiungere l'uovo strapazzato con erba cipollina.",
-          "link": ""
+          "name": "Pancake Proteici all'Avena e Albume",
+          "qty": "40g farina d'avena, 60ml albume d'uovo, 30ml latte parzialmente scremato, 5g miele",
+          "steps": "1. In una ciotola, mescola la farina d'avena con l'albume d'uovo e il latte usando una frusta fino ad eliminare i grumi. 2. Scalda una padellina antiaderente leggermente unta. 3. Versa metà del composto e cuoci a fuoco basso finché si formano bolle in superficie (circa 2 minuti). 4. Gira il pancake e cuoci per un altro minuto. Ripeti per il secondo pancake. 5. Guarnisci con un filo di miele.",
+          "link": "https://www.google.com/search?q=ricetta+pancake+proteici+avena+albume"
         },
         {
           "type": "Pranzo",
-          "name": "Insalata d'orzo perlato, salmone avanzato e zucchine",
-          "qty": "70g orzo perlato, salmone cotto avanzato (60g), 1 zucchina grigliata",
-          "steps": "Lessare l'orzo, lasciarlo raffreddare e unire la zucchina a cubetti e il salmone sfilacciato.",
-          "link": ""
+          "name": "Riso Venere con Salmone e Zucchine",
+          "qty": "70g riso venere, 125g filetto di salmone surgelato (scongelato), 150g zucchine, 10ml olio extravergine d'oliva, sale, pepe, aneto",
+          "steps": "1. Lessa il riso venere in abbondante acqua salata per circa 20-25 minuti, poi scola. 2. Taglia il salmone a cubetti di 2 cm e le zucchine a mezza luna. 3. In una padella scalda l'olio, unisci le zucchine e cuoci per 5 minuti. 4. Aggiungi i cubetti di salmone e cuoci a fuoco vivo per altri 4 minuti fino a doratura. 5. Unisci il riso venere nella padella, salta per 1 minuto, aggiungi l'aneto fresco tritato e servi.",
+          "link": "https://www.google.com/search?q=ricetta+riso+venere+salmone+e+zucchine"
         },
         {
           "type": "Cena",
-          "name": "Zuppa d'orzo e verdure alla grigionese con dadini di tacchino",
-          "qty": "100g petto di tacchino, 50g orzo, carota, sedano, porro, 400ml brodo leggero",
-          "steps": "Rosolare il tacchino a dadini, aggiungere le verdure triturate, l'orzo e il brodo. Cuocere a fuoco lento per 35 min.",
-          "link": ""
+          "name": "Polpette Magre al Forno con Broccoli",
+          "qty": "125g carne macinata mista, 150g broccoli, 10g parmigiano grattugiato, 10ml olio extravergine d'oliva, sale, pepe, aglio in polvere",
+          "steps": "1. Preriscalda il forno a 190°C. 2. Lessa i broccoli per 5 minuti, scolali e schiacciane metà con la forchetta. 3. In una ciotola unisci la carne macinata, i broccoli schiacciati, il parmigiano, un pizzico di aglio in polvere, sale e pepe. 4. Forma delle polpette e disponile su una teglia rivestita di carta forno. 5. Aggiungi le cimette di broccoli avanzate attorno alle polpette e irrora tutto con l'olio. 6. Cuoci in forno per 18-20 minuti finché sono dorate.",
+          "link": "https://www.google.com/search?q=ricetta+polpette+al+forno+con+broccoli"
         }
       ]
     },
@@ -137,24 +241,128 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Bircher-Proteico con quark magro e frutti rossi",
-          "qty": "60g fiocchi d'avena, 150g quark magro, 1 mela, 10g semi di lino",
-          "steps": "Amalgamare l'avena al quark, aggiungere semi di lino e mela grattugiata.",
-          "link": ""
+          "name": "Oatmeal ai Frutti di Bosco",
+          "qty": "50g fiocchi d'avena, 150ml latte parzialmente scremato, 50g frutti di bosco freschi o surgelati, 5g miele",
+          "steps": "1. Cuoci l'avena nel latte in un pentolino per 4-5 minuti finché diventa cremosa. 2. Se usi frutti di bosco surgelati, scaldali in un padellino per 2 minuti finché rilasciano i loro succhi. 3. Versa l'oatmeal in una ciotola, aggiungi i frutti di bosco in cima e dolcifica con il miele.",
+          "link": "https://www.google.com/search?q=ricetta+oatmeal+frutti+di+bosco"
         },
         {
           "type": "Pranzo",
-          "name": "Bowl di tacchino, orzo e verdure miste",
-          "qty": "Porzione avanzata dalla zuppa/preparazione di martedì (100g tacchino, 70g orzo, verdure)",
-          "steps": "Riscaldare la porzione al microonde o consumare fredda come insalata cereali e proteine.",
-          "link": ""
+          "name": "Insalata Completa di Pollo, Zucchine ed Olio EVO",
+          "qty": "125g petto di pollo, 150g zucchine, 50g insalata mista, 10ml olio extravergine d'oliva, 10g semi di girasole, aceto di mele, sale",
+          "steps": "1. Taglia le zucchine a nastro con un pelapatate e scottale in padella per 2 minuti con un filo d'olio. 2. Cuoci il petto di pollo alla piastra per 4 minuti per lato, condiscilo con sale e taglialo a bocconcini. 3. In una ciotola capiente, disponi la base di insalata mista, unisci le zucchine a nastro e il pollo tiepido. 4. Spolvera con i semi di girasole e condisci con l'olio extravergine d'oliva, aceto di mele e sale.",
+          "link": "https://www.google.com/search?q=ricetta+insalata+di+pollo+e+zucchine"
         },
         {
           "type": "Cena",
-          "name": "Polpette di tacchino magro al merluzzo e purea di cavolfiore",
-          "qty": "120g macinato magro di tacchino, 200g cavolfiore, 1 cucchiaino d'olio, spezie",
-          "steps": "Formare le polpette e cuocerle in padella antiaderente. Lessare il cavolfiore e schiacciarlo a purea con un filo d'olio.",
-          "link": ""
+          "name": "Vellutata di Broccoli e Patate con Crostini Integrali",
+          "qty": "200g broccoli, 100g patate, 20g pane integrale, 10ml olio extravergine d'oliva, 300ml brodo vegetale, sale, pepe",
+          "steps": "1. Sbuccia le patate e tagliale a cubetti; lava i broccoli e dividili in cimette. 2. Versa patate e broccoli in una pentola con il brodo vegetale e cuoci per 20 minuti dall'ebollizione. 3. Nel frattempo taglia il pane a cubetti e tostalo in forno a 180°C per 8 minuti. 4. Frulla le verdure con un mixer ad immersione fino ad ottenere una crema vellutata e omogenea. 5. Regola di sale e pepe, impiatta e completa con i crostini e un filo d'olio extravergine a crudo.",
+          "link": "https://www.google.com/search?q=ricetta+vellutata+di+broccoli+e+patate"
+        }
+      ]
+    },
+    {
+      "day": "Giovedì",
+      "meals": [
+        {
+          "type": "Colazione",
+          "name": "Toast Integrale con Avocado e Uovo",
+          "qty": "1 fetta pane integrale (40g), 30g avocado maturo, 1 uovo grande, sale, pepe nero",
+          "steps": "1. Tosta la fetta di pane integrale finché risulta dorata e croccante. 2. Schiaccia l'avocado in una ciotolina con la forchetta, aggiungendo un pizzico di sale. 3. Cuoci l'uovo in un padellino antiaderente per 3 minuti lasciando il tuorlo morbido (uovo all'occhio di bue). 4. Spalma l'avocado sul pane tostato e adagia sopra l'uovo. 5. Completa con una macinata di pepe nero.",
+          "link": "https://www.google.com/search?q=ricetta+toast+avocado+e+uovo"
+        },
+        {
+          "type": "Pranzo",
+          "name": "Pasta Integrale con Macinato magro e Zucchine",
+          "qty": "70g pasta integrale, 125g carne macinata mista, 150g zucchine, 10ml olio extravergine d'oliva, sale, pepe, timo",
+          "steps": "1. Porta a bollore l'acqua salata e cuoci la pasta integrale al dente. 2. Taglia le zucchine a dadini piccoli. 3. In una padella scalda l'olio e rosola la carne macinata sgranandola per 4 minuti. 4. Aggiungi le zucchine e il timo, continuando la cottura per 6 minuti finché le zucchine sono tenere. 5. Scola la pasta, saltala nella padella con il condimento per 1 minuto ed impiatta ben calda.",
+          "link": "https://www.google.com/search?q=ricetta+pasta+integrale+carne+e+zucchine"
+        },
+        {
+          "type": "Cena",
+          "name": "Salmone alla Piastra con Zucchine Grigliate",
+          "qty": "125g filetto di salmone surgelato (scongelato), 150g zucchine, 10ml olio extravergine d'oliva, prezzemolo, limone, sale",
+          "steps": "1. Taglia le zucchine a fette longitudinali di 5mm di spessore. 2. Scalda bene una piastra di ghisa e griglia le zucchine 3 minuti per lato, poi disponile su un piatto. 3. Sulla stessa piastra, cuoci il trancio di salmone per 4 minuti dal lato della pelle, poi giralo per altri 3 minuti. 4. Prepara un'emulsione con olio, succo di limone, prezzemolo tritato e sale. 5. Servire il salmone e le zucchine irrorandoli con l'emulsione al limone.",
+          "link": "https://www.google.com/search?q=ricetta+salmone+e+zucchine+grigliate"
+        }
+      ]
+    },
+    {
+      "day": "Venerdì",
+      "meals": [
+        {
+          "type": "Colazione",
+          "name": "Yogurt Greco con Avena e Mela a Cubetti",
+          "qty": "50g yogurt greco, 30g fiocchi d'avena, 1 mela (100g), cannella",
+          "steps": "1. Lava e taglia la mela a cubetti piccoli. 2. In un bicchiere o ciotola stratifica lo yogurt greco, i fiocchi d'avena e i cubetti di mela. 3. Spolvera abbondantemente con la cannella prima di gustare.",
+          "link": "https://www.google.com/search?q=ricetta+yogurt+greco+mela+e+avena"
+        },
+        {
+          "type": "Pranzo",
+          "name": "Pollo al Curry Leggero con Riso Basmati e Broccoli",
+          "qty": "125g petto di pollo, 70g riso basmati, 100g broccoli, 5g curry in polvere, 10ml olio extravergine d'oliva, 30ml latte parzialmente scremato, sale",
+          "steps": "1. Cuoci il riso basmati e le cimette di broccoli in due pentole separate in acqua salata. 2. Taglia il petto di pollo a bocconcini. 3. Scalda l'olio in una padella, unisci il pollo e rosolalo per 4 minuti. 4. Sciogli il curry nel latte ed versalo sul pollo, lasciando restringere a fuoco lento per 3 minuti fino a creare una salsa cremosa. 5. Impiatta il riso basmati affiancato dal pollo al curry e dai broccoli al vapore.",
+          "link": "https://www.google.com/search?q=ricetta+pollo+al+curry+con+riso+basmati"
+        },
+        {
+          "type": "Cena",
+          "name": "Omelette con Zucchine e Ricotta Magra",
+          "qty": "2 uova medie, 100g zucchine, 30g ricotta vaccina, 10ml olio extravergine d'oliva, sale, pepe",
+          "steps": "1. Grattugia la zucchina e stufala in padella con metà dell'olio per 4 minuti. 2. Sbatti le uova con sale e pepe in una ciotola. 3. Scalda l'olio rimanente in una padella antiaderente, versa le uova e cuoci a fuoco basso finché la superficie comincia a rassodarsi. 4. Spalma la ricotta e distribuisci le zucchine stufate su metà dell'omelette. 5. Piega l'omelette a metà, cuoci per un altro minuto e servi calda.",
+          "link": "https://www.google.com/search?q=ricetta+omelette+zucchine+e+ricotta"
+        }
+      ]
+    },
+    {
+      "day": "Sabato",
+      "meals": [
+        {
+          "type": "Colazione",
+          "name": "Porridge Caldo d'Avena e Frutta Secca",
+          "qty": "50g fiocchi d'avena, 150ml latte parzialmente scremato, 10g mandorle pelate, 5g miele",
+          "steps": "1. Unisci avena e latte in un pentolino e cuoci per 4 minuti mescolando fino a densità desiderata. 2. Trita le mandorle al coltello. 3. Versa il porridge in una ciotola, aggiungi le mandorle tritate e completa con il miele.",
+          "link": "https://www.google.com/search?q=ricetta+porridge+avena+e+mandorle"
+        },
+        {
+          "type": "Pranzo",
+          "name": "Burger di Carne Macinata con Patata Dolce e Broccoli",
+          "qty": "125g carne macinata mista, 150g patata dolce, 100g broccoli, 10ml olio extravergine d'oliva, sale, rosmarino",
+          "steps": "1. Taglia la patata dolce a fette di 1 cm e cuocila al forno a 200°C con olio e rosmarino per 20 minuti. 2. Cuoci i broccoli al vapore per 8 minuti. 3. Forma un burger compatto con la carne macinata, salalo e cuocilo su una griglia ben calda per 4 minuti per lato. 4. Impiatta l'hamburger affiancato dalle fettine di patata dolce arrosto e dai broccoli al vapore.",
+          "link": "https://www.google.com/search?q=ricetta+burger+di+carne+e+patata+dolce"
+        },
+        {
+          "type": "Cena",
+          "name": "Cartoccio di Salmone con Zucchine e Pomodorini",
+          "qty": "125g filetto di salmone surgelato (scongelato), 100g zucchine, 50g pomodorini, 10ml olio extravergine d'oliva, sale, origano",
+          "steps": "1. Preriscalda il forno a 180°C. 2. Taglia le zucchine a rondelle e i pomodorini a metà. 3. Stendi un foglio di carta forno su una teglia, adagia il filetto di salmone, le zucchine e i pomodorini. 4. Condisci con l'olio extravergine, sale ed origano. 5. Sigilla bene il cartoccio e inforna per 20 minuti. 6. Apri il cartoccio al momento di servire a tavola.",
+          "link": "https://www.google.com/search?q=ricetta+cartoccio+salmone+zucchine+pomodorini"
+        }
+      ]
+    },
+    {
+      "day": "Domenica",
+      "meals": [
+        {
+          "type": "Colazione",
+          "name": "Toast Integrale con Ricotta e Miele",
+          "qty": "50g pane integrale, 40g ricotta vaccina, 10g miele, una spolverata di noci tritate (5g)",
+          "steps": "1. Tosta le fette di pane fino a doratura. 2. Spalma delicatamente la ricotta fresca sopra il pane caldo. 3. Aggiungi le noci tritate e completa con un filo di miele.",
+          "link": "https://www.google.com/search?q=ricetta+toast+ricotta+e+miele"
+        },
+        {
+          "type": "Pranzo",
+          "name": "Risotto Integrale alle Zucchine e Zafferano",
+          "qty": "70g riso integrale, 150g zucchine, 1 bustina zafferano, 20g cipolla, 10ml olio extravergine d'oliva, 300ml brodo vegetale",
+          "steps": "1. Cuoci la cipolla tritata e le zucchine a dadini nell'olio per 4 minuti. 2. Aggiungi il riso integrale e tostalo per 2 minuti. 3. Versa il brodo vegetale caldo poco alla volta e cuoci per circa 35-40 minuti. 4. Negli ultimi 5 minuti sciogli lo zafferano in un cucchiaio di brodo e uniscilo al risotto mescolando bene. 5. Lascia mantecare 2 minuti a fuoco spento prima di servire.",
+          "link": "https://www.google.com/search?q=ricetta+risotto+zucchine+e+zafferano"
+        },
+        {
+          "type": "Cena",
+          "name": "Bocconcini di Pollo al Limone con Broccoli al Vapore",
+          "qty": "125g petto di pollo, 150g broccoli, 10ml olio extravergine d'oliva, succo di 1 limone, 10g farina 00, sale, pepe",
+          "steps": "1. Cuoci le cimette di broccoli al vapore per 10 minuti fino a quando diventano tenere. 2. Taglia il petto di pollo a bocconcini e infarinali leggermente. 3. Scalda l'olio in una padella antiaderente, unisci il pollo e rosolalo per 5 minuti finché dorato. 4. Versa il succo di limone ed un pizzico di sale, mescolando per creare una cremina densa per altri 2 minuti. 5. Servire i bocconcini caldi coperti dalla loro salsa al limone accompagnati dai broccoli.",
+          "link": "https://www.google.com/search?q=ricetta+bocconcini+di+pollo+al+limone"
         }
       ]
     }
