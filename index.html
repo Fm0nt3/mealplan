@@ -96,6 +96,67 @@
         console.error('Error loading JSON:', error);
     });
 
+    // Funzione per aggiornare la dispensa direttamente su GitHub
+    async function aggiornaDispensa(productId, isInCasa) {
+    // 1. Chiede il token la prima volta e lo salva nel telefono
+        let token = localStorage.getItem('GITHUB_TOKEN');
+        if (!token) {
+            token = prompt("Inserisci il tuo GitHub Personal Access Token per sbloccare la modifica della dispensa:");
+            if (!token) return; // Se annulli, si ferma
+            localStorage.setItem('GITHUB_TOKEN', token);
+        }
+
+        const repo = "TUO_NOME_UTENTE/NOME_REPO"; // ES: "mario/mealplan"
+        const path = "data/products.json";
+        const apiUrl = `https://api.github.com/repos/${repo}/contents/${path}`;
+
+        try {
+            console.log("Scarico il catalogo attuale da GitHub...");
+        // 2. Legge il file attuale per ottenere il suo codice segreto (SHA) e il contenuto
+            const getRes = await fetch(apiUrl, {
+                headers: { 'Authorization': `Bearer ${token}` }
+            });
+            const fileData = await getRes.json();
+            const sha = fileData.sha;
+        
+        // Decodifica il testo (GitHub lo trasmette in Base64)
+            const contenutoTesto = decodeURIComponent(escape(atob(fileData.content)));
+            let prodotti = JSON.parse(contenutoTesto);
+
+        // 3. Modifica l'ingrediente che hai cliccato
+            let prodottoTrovato = prodotti.find(p => p.id === productId);
+            if (prodottoTrovato) {
+                prodottoTrovato.inCasa = isInCasa;
+            }
+
+            console.log(`Salvo su GitHub: ${prodottoTrovato.name} -> inCasa: ${isInCasa}`);
+        // 4. Ri-codifica il file e lo invia a GitHub
+            const nuovoContenuto = btoa(unescape(encodeURIComponent(JSON.stringify(prodotti, null, 2))));
+        
+            const putRes = await fetch(apiUrl, {
+                method: 'PUT',
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    message: `App: aggiornato stato inCasa per ${productId}`,
+                    content: nuovoContenuto,
+                    sha: sha
+                })
+            });
+
+            if (putRes.ok) {
+                alert("Dispensa aggiornata con successo!");
+            } else {
+                alert("Errore durante il salvataggio. Controlla il Token.");
+            }
+
+        } catch (error) {
+            console.error("Errore di connessione a GitHub:", error);
+            alert("Impossibile contattare GitHub.");
+        }
+    }
     function updateApp() {
         const selectedPlan = document.getElementById('planType').value;
         
