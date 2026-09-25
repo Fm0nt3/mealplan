@@ -9,60 +9,61 @@ from datetime import datetime
 print(f"[{datetime.now()}] Avvio Motore Completo: Scraping Lidl CH + AI...")
 
 # ==========================================
-# FASE 1: WEB SCRAPING SUL SITO LIDL CH (Mirato sui Prodotti)
+# FASE 1: WEB SCRAPING SUL SITO LIDL CH (Aggiramento Firewall)
 # ==========================================
+import cloudscraper
+from bs4 import BeautifulSoup
+import requests # Teniamo questo per sicurezza
+
 def scarica_offerte_lidl():
     print("Tentativo di connessione al sito Lidl CH (Offerte)...")
     url = "https://www.lidl.ch/c/it-CH/azioni-della-settimana/a10103198"
     
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-    }
-    
     offerte_estratte = []
     
     try:
-        response = requests.get(url, headers=headers, timeout=15)
-        response.raise_for_status()
+        # Usiamo cloudscraper al posto di requests per aggirare i blocchi anti-bot
+        scraper = cloudscraper.create_scraper(browser={
+            'browser': 'chrome',
+            'platform': 'windows',
+            'desktop': True
+        })
+        
+        response = scraper.get(url, timeout=15)
+        
+        if response.status_code != 200:
+            print(f"Errore dal server: {response.status_code}")
+            return None
+            
         soup = BeautifulSoup(response.text, 'html.parser')
         
         # RICERCA MIRATA SUI PRODOTTI
-        # Cerchiamo h3, h4, strong, e div che potrebbero essere i nomi dei prodotti (come "Spinacini bio")
         for tag in soup.find_all(['h3', 'h4', 'strong', 'div']):
-            # Controlliamo se la classe dell'elemento assomiglia a un titolo (Lidl usa spesso 'title' o 'headline')
             classe_tag = tag.get('class', [])
             classe_testo = " ".join(classe_tag).lower()
             
-            # Prendiamo il tag se è un h4/strong, OPPURE se ha una classe che indica che è un titolo
             if tag.name in ['h4', 'strong'] or 'title' in classe_testo or 'headline' in classe_testo:
                 testo = tag.text.strip()
                 
-                # Lista nera: escludiamo i titoli grandi dei reparti e parole di menu
                 parole_ignorate = [
-                "Offerte", "Azioni", "Newsletter", "Servizio", "Lidl", "Menu", 
-                "Filtra", "Categorie", "Frutta", "verdura", "forno", "Pesce", 
-                "carne", "Lista filiali", "Visualizza", "Scopri", 
-                "browser", "supported", "caution", "attention"
-                ]        
+                    "Offerte", "Azioni", "Newsletter", "Servizio", "Lidl", "Menu", 
+                    "Filtra", "Categorie", "Frutta", "verdura", "forno", "Pesce", 
+                    "carne", "Lista filiali", "Visualizza", "Scopri", 
+                    "browser", "supported", "caution", "attention", "javascript"
+                ]
                 
-                # Il testo deve essere lungo almeno 4 lettere e non essere nella lista nera
                 if len(testo) > 3 and not any(parola.lower() in testo.lower() for parola in parole_ignorate):
-                    # Togliamo roba inutile come spazi multipli o ritorni a capo
                     nome_pulito = testo.split('\n')[0].strip()
                     offerte_estratte.append(nome_pulito)
                 
-        # Come vedi dall'immagine, "Uva nera" è doppio. Questo comando rimuove i doppioni!
         offerte_uniche = list(dict.fromkeys(offerte_estratte))
-        
-        # Restituiamo i primi 15 prodotti trovati
         return offerte_uniche[:15]
         
     except Exception as e:
-        print(f"Scraping fallito: {e}")
+        print(f"Scraping fallito (il firewall potrebbe aver bloccato l'IP di GitHub): {e}")
         return None
 
 vere_offerte = scarica_offerte_lidl()
-
 # ==========================================
 # FASE 2: PREPARAZIONE DATI PER L'AI
 # ==========================================
