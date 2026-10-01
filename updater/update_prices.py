@@ -97,38 +97,39 @@ api_key = os.environ.get("GEMINI_API_KEY")
 client = genai.Client(api_key=api_key)
 
 prompt = f"""
-Sei un nutrizionista e Masterchef svizzero, allo stesso tempo sono anche uno studente fuorisede.
+Sei un nutrizionista e Masterchef svizzero. 
 Crea un piano pasti di 7 giorni (da Lunedì a Domenica) per due piani dietetici: 'economico' e 'bilanciato'.
 
-I TUOI LIMITI TASSATIVI (IL CATALOGO):
-Puoi usare acqua, sale e pepe liberamente. Per TUTTI gli altri ingredienti, DEVI pescare ESCLUSIVAMENTE da questa lista:
+IL CATALOGO (COSA PUOI USARE):
+Puoi usare acqua, sale e pepe liberamente. Per il resto, DEVI pescare ESCLUSIVAMENTE da questa lista:
 [{testo_catalogo}]
-Se un ingrediente non è in questa lista (es. burro, marmellata, pane), NON PUOI USARLO. Cambia ricetta.
 
-LE TUE PRIORITÀ:
-1. Devi usare il più possibile questi prodotti in offerta: [{testo_offerte}].
-2. Puoi usare questi prodotti che l'utente ha già in casa: [{testo_dispensa}].
+REGOLA SULLE QUANTITÀ (LE RICETTE SONO IL MOTORE):
+I nomi nel catalogo indicano solo la grandezza della confezione (es. 500g), ma tu hai a disposizione QUANTITÀ ILLIMITATE! 
+NON limitare le tue ricette a 500g totali. Crea porzioni sane, abbondanti e realistiche per 7 giorni. Prima scrivi le ricette con le dosi corrette, e solo dopo fai la somma.
 
-LA LISTA DELLA SPESA ("shopping_list"):
-Le quantità qui devono essere perfette per sfamare una persona per 7 giorni.
-1. SOMMA MATEMATICA: Devi sommare matematicamente tutte le quantità! Se usi le "Zucchine" il Lunedì (200g) e il Mercoledì (300g), nella shopping_list DEVI calcolare il totale e scrivere "500g".
-2. REGOLA VITALE: NON INSERIRE nella shopping_list i prodotti che sono nella lista "in dispensa" [{testo_dispensa}], perché l'utente li ha già!
+PRIORITÀ OFFERTE:
+Usa il più possibile questi prodotti in offerta: [{testo_offerte}].
+
+LA DISPENSA E LA LISTA DELLA SPESA ("shopping_list"):
+L'utente ha GIA' IN CASA questi prodotti: [{testo_dispensa}].
+Passo 1: Somma matematicamente tutte le quantità degli ingredienti usati nelle ricette.
+Passo 2: ELIMINA dalla lista della spesa TUTTI i prodotti che l'utente ha già in casa [{testo_dispensa}]. È severamente vietato inserirli nella shopping_list finale.
 
 Restituisci ESCLUSIVAMENTE un file JSON puro:
 {{
   "shopping_list": [
-    {{ "item": "Nome esatto dal catalogo", "amount": "Quantità totale sommata (es. 600g)" }}
+    {{ "item": "Nome esatto", "amount": "Quantità totale (es. 1.2kg o 3 confezioni)" }}
   ],
   "economico": [
     {{
       "day": "Lunedì",
       "meals": [
-        {{ "type": "Colazione", "name": "Nome", "qty": "Ingredienti esatti (es. 50g avena)", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }},
-        {{ "type": "Pranzo", "name": "Nome", "qty": "Ingredienti esatti (es. 100g pollo)", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }},
-        {{ "type": "Cena", "name": "Nome", "qty": "Ingredienti esatti (es. 150g pollo)", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }}
+        {{ "type": "Colazione", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }},
+        {{ "type": "Pranzo", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }},
+        {{ "type": "Cena", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }}
       ]
     }}
-    // ... continua fino a Domenica
   ],
   "bilanciato": [
     // Stessa struttura per i 7 giorni
