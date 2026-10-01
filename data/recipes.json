@@ -1,52 +1,96 @@
 {
-  "shopping_list": [
+  "shopping_list_economico": [
+    {
+      "item": "Petto di Pollo (500g)",
+      "packages": 1,
+      "calculation": "Totale ricette 800g, 500g già in dispensa = 300g da acquistare, confezione da 500g = 1 pacco"
+    },
     {
       "item": "Carne Macinata mista (500g)",
-      "calculation": "Economico (600g) + Bilanciato (200g) = 800g",
-      "packages": 2,
-      "amount_desc": "800g - 2 conf. da 500g"
-    },
-    {
-      "item": "Salmone surgelato (500g)",
-      "calculation": "Bilanciato (Lun 125g + Mar 125g + Mer 125g + Gio 125g + Dom 125g = 625g)",
-      "packages": 2,
-      "amount_desc": "625g - 2 conf. da 500g"
-    },
-    {
-      "item": "Tonno in scatola (3x80g)",
-      "calculation": "Economico (Lun 80g + Mer 80g + Ven 80g = 240g)",
       "packages": 1,
-      "amount_desc": "240g - 1 conf. da 3x80g"
-    },
-    {
-      "item": "Riso Basmati (1kg)",
-      "calculation": "Economico (560g) + Bilanciato (490g) = 1050g",
-      "packages": 2,
-      "amount_desc": "1.05kg - 2 conf. da 1kg"
+      "calculation": "Totale ricette 500g, confezione da 500g = 1 pacco"
     },
     {
       "item": "Zucchine (1kg)",
-      "calculation": "Economico (950g) + Bilanciato (1050g) = 2000g",
-      "packages": 2,
-      "amount_desc": "2kg - 2 conf. da 1kg"
-    },
-    {
-      "item": "Uova (10 pz)",
-      "calculation": "Economico (14 pz) + Bilanciato (6 pz) = 20 pz",
-      "packages": 2,
-      "amount_desc": "20 pz - 2 conf. da 10 pz"
-    },
-    {
-      "item": "Yogurt Greco (200g)",
-      "calculation": "Bilanciato (Lun 100g + Mer 100g + Ven 100g + Dom 100g = 400g)",
-      "packages": 2,
-      "amount_desc": "400g - 2 conf. da 200g"
+      "packages": 1,
+      "calculation": "Totale ricette 1000g (1kg), confezione da 1kg = 1 pacco"
     },
     {
       "item": "Broccoli (500g)",
-      "calculation": "Economico (500g) + Bilanciato (950g) = 1450g",
+      "packages": 1,
+      "calculation": "Totale ricette 500g, confezione da 500g = 1 pacco"
+    },
+    {
+      "item": "Riso Basmati (1kg)",
+      "packages": 1,
+      "calculation": "Totale ricette 560g, confezione da 1kg = 1 pacco"
+    },
+    {
+      "item": "Uova (10 pz)",
+      "packages": 1,
+      "calculation": "Totale ricette 10 uova, confezione da 10 pz = 1 pacco"
+    },
+    {
+      "item": "Yogurt Greco (200g)",
+      "packages": 1,
+      "calculation": "Totale ricette 200g, confezione da 200g = 1 pacco"
+    },
+    {
+      "item": "Avena (500g)",
+      "packages": 0,
+      "calculation": "Totale ricette 350g, 500g già in dispensa = 0 pacchi da acquistare"
+    }
+  ],
+  "shopping_list_bilanciato": [
+    {
+      "item": "Salmone surgelato (500g)",
+      "packages": 1,
+      "calculation": "Totale ricette 500g, confezione da 500g = 1 pacco"
+    },
+    {
+      "item": "Tonno in scatola (3x80g)",
+      "packages": 1,
+      "calculation": "Totale ricette 240g (3 scatolette da 80g), confezione da 3x80g = 1 pacco"
+    },
+    {
+      "item": "Carne Macinata mista (500g)",
+      "packages": 1,
+      "calculation": "Totale ricette 500g, confezione da 500g = 1 pacco"
+    },
+    {
+      "item": "Zucchine (1kg)",
+      "packages": 2,
+      "calculation": "Totale ricette 1400g (1.4kg), confezioni da 1kg = 2 pacchi"
+    },
+    {
+      "item": "Broccoli (500g)",
       "packages": 3,
-      "amount_desc": "1.45kg - 3 conf. da 500g"
+      "calculation": "Totale ricette 1050g (1.05kg), confezioni da 500g = 3 pacchi"
+    },
+    {
+      "item": "Riso Basmati (1kg)",
+      "packages": 1,
+      "calculation": "Totale ricette 610g, confezione da 1kg = 1 pacco"
+    },
+    {
+      "item": "Uova (10 pz)",
+      "packages": 1,
+      "calculation": "Totale ricette 8 uova, confezione da 10 pz = 1 pacco"
+    },
+    {
+      "item": "Yogurt Greco (200g)",
+      "packages": 1,
+      "calculation": "Totale ricette 200g, confezione da 200g = 1 pacco"
+    },
+    {
+      "item": "Petto di Pollo (500g)",
+      "packages": 0,
+      "calculation": "Totale ricette 500g, 500g già in dispensa = 0 pacchi da acquistare"
+    },
+    {
+      "item": "Avena (500g)",
+      "packages": 0,
+      "calculation": "Totale ricette 320g, 500g già in dispensa = 0 pacchi da acquistare"
     }
   ],
   "economico": [
@@ -55,24 +99,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Porridge Essenziale all'Acqua",
-          "qty": "40g Avena, 200ml Acqua, sale",
-          "steps": "Cuocere l'avena nell'acqua con un pizzico di sale a fuoco lento finché non si addensa.",
-          "link": "https://www.google.com/search?q=porridge+acqua+avena"
+          "name": "Porridge d'Avena e Yogurt Greco",
+          "qty": "50g Avena, 50g Yogurt Greco",
+          "steps": "Cuoci l'avena con acqua calda per 3 minuti fino a densità desiderata, poi incorpora lo yogurt greco.",
+          "link": "https://www.google.com/search?q=ricetta+porridge+avena+yogurt"
         },
         {
           "type": "Pranzo",
-          "name": "Riso Basmati con Tonno e Zucchine Spadellate",
-          "qty": "80g Riso Basmati, 80g Tonno in scatola, 150g Zucchine, sale, pepe",
-          "steps": "Lesso il riso. In una padella spandere le zucchine a cubetti con un filo d'acqua, sale e pepe. Unire il tonno sgocciolato e il riso.",
-          "link": "https://www.google.com/search?q=riso+tonno+zucchine"
+          "name": "Riso Basmati con Petto di Pollo e Zucchine",
+          "qty": "80g Riso Basmati, 150g Petto di Pollo, 100g Zucchine",
+          "steps": "Lessa il riso. Salta in padella il pollo a dadini con le zucchine a rondelle per 10 minuti. Unisci al riso.",
+          "link": "https://www.google.com/search?q=ricetta+riso+pollo+zucchine"
         },
         {
           "type": "Cena",
-          "name": "Frittata di Zucchine Dorata",
-          "qty": "2 Uova, 150g Zucchine, sale, pepe",
-          "steps": "Grattugiare le zucchine, stufarle con acqua e sale, poi unire le uova sbattute e cuocere entrambi i lati.",
-          "link": "https://www.google.com/search?q=frittata+zucchine"
+          "name": "Frittata di Zucchine",
+          "qty": "2 Uova, 100g Zucchine",
+          "steps": "Stufa le zucchine tagliate sottili in padella. Sbatte le uova e versale sopra, cuocendo da entrambi i lati.",
+          "link": "https://www.google.com/search?q=ricetta+frittata+zucchine"
         }
       ]
     },
@@ -81,24 +125,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Omelette Semplice al Pepe",
-          "qty": "2 Uova, sale, pepe",
-          "steps": "Sbattere le uova con sale e pepe, versare in padella antiaderente calda e cuocere da entrambi i lati.",
-          "link": "https://www.google.com/search?q=omelette+semplice"
+          "name": "Porridge d'Avena e Yogurt Greco",
+          "qty": "50g Avena, 50g Yogurt Greco",
+          "steps": "Scalda l'avena in pentolino con acqua. Mescola finché non si addensa, spegni il fuoco e unisci lo yogurt greco.",
+          "link": "https://www.google.com/search?q=ricetta+porridge+avena+yogurt"
         },
         {
           "type": "Pranzo",
-          "name": "Riso con Carne Macinata e Zucchine",
-          "qty": "80g Riso Basmati, 100g Carne Macinata mista, 100g Zucchine, sale, pepe",
-          "steps": "Bollire il riso. Rosolare la carne macinata in padella con zucchine a dadini, sale e pepe. Mescolare al riso.",
-          "link": "https://www.google.com/search?q=riso+carne+macinata+zucchine"
+          "name": "Riso Basmati con Petto di Pollo e Broccoli",
+          "qty": "80g Riso Basmati, 150g Petto di Pollo, 100g Broccoli",
+          "steps": "Cuoci il riso. Cuoci i broccoli al vapore. Cuoci il pollo a straccetti in padella e assembla il piatto.",
+          "link": "https://www.google.com/search?q=ricetta+riso+pollo+broccoli"
         },
         {
           "type": "Cena",
-          "name": "Polpette di Carne e Broccoli",
-          "qty": "100g Carne Macinata mista, 100g Broccoli, sale, pepe",
-          "steps": "Cuocere i broccoli al vapore e schiacciarli. Unire alla carne, formare polpette e cuocere in padella antiaderente.",
-          "link": "https://www.google.com/search?q=polpette+carne+broccoli"
+          "name": "Polpette di Carne Macinata e Zucchine",
+          "qty": "150g Carne Macinata mista, 100g Zucchine",
+          "steps": "Grattugia la zucchina e uniscila alla carne macinata. Forme delle polpette e cuocile in padella rigirandole.",
+          "link": "https://www.google.com/search?q=ricetta+polpette+carne+zucchine"
         }
       ]
     },
@@ -107,24 +151,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Porridge all'Acqua e Sale",
-          "qty": "40g Avena, 200ml Acqua, sale",
-          "steps": "Bollire l'avena in acqua salata per 5 minuti fino ad ottenere una consistenza cremosa.",
-          "link": "https://www.google.com/search?q=porridge+avena+salato"
+          "name": "Porridge d'Avena e Yogurt Greco",
+          "qty": "50g Avena, 50g Yogurt Greco",
+          "steps": "Cuoci l'avena in acqua, poi mescola a freddo con lo yogurt greco fino ad ottenere una crema omogenea.",
+          "link": "https://www.google.com/search?q=ricetta+porridge+avena+yogurt"
         },
         {
           "type": "Pranzo",
-          "name": "Riso con Tonno al Limone e Pepe",
-          "qty": "80g Riso Basmati, 80g Tonno in scatola, sale, pepe",
-          "steps": "Cuocere il riso basmati, scolando bene. Condire con tonno sgocciolato, pepe nero e un pizzico di sale.",
-          "link": "https://www.google.com/search?q=insalata+riso+tonno"
+          "name": "Riso Basmati con Petto di Pollo e Broccoli",
+          "qty": "80g Riso Basmati, 200g Petto di Pollo, 150g Broccoli",
+          "steps": "Boil rice and broccoli together. Griglia il petto di pollo e servilo accompagnato dal riso e dai broccoli.",
+          "link": "https://www.google.com/search?q=ricetta+pollo+riso+broccoli"
         },
         {
           "type": "Cena",
-          "name": "Uova Strapazzate con Broccoli Stufati",
-          "qty": "2 Uova, 100g Broccoli, sale, pepe",
-          "steps": "Lessare i broccoli. In padella, strapazzare le uova aggiungendo i broccoli sgranati, sale e pepe.",
-          "link": "https://www.google.com/search?q=uova+strapazzate+broccoli"
+          "name": "Uova Strapazzate con Zucchine",
+          "qty": "2 Uova, 100g Zucchine",
+          "steps": "Salta le zucchine a dadini in padella. Aggiungi le uova sbattute e mescola continuamente a fuoco dolce.",
+          "link": "https://www.google.com/search?q=ricetta+uova+strapazzate+zucchine"
         }
       ]
     },
@@ -133,24 +177,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Porridge Classico Economico",
-          "qty": "40g Avena, 200ml Acqua, sale",
-          "steps": "Scaldare l'avena con l'acqua mescolando continuamente fino a densità desiderata.",
-          "link": "https://www.google.com/search?q=porridge+classico"
+          "name": "Porridge d'Avena e Yogurt Greco",
+          "qty": "50g Avena, 50g Yogurt Greco",
+          "steps": "Prepara il porridge d'avena bollendo l'avena con acqua e completa la preparazione amalgamando lo yogurt greco.",
+          "link": "https://www.google.com/search?q=ricetta+porridge+avena+yogurt"
         },
         {
           "type": "Pranzo",
-          "name": "Spadellata di Riso, Carne Macinata e Zucchine",
-          "qty": "80g Riso Basmati, 100g Carne Macinata mista, 150g Zucchine, sale, pepe",
-          "steps": "Lessare il riso. Salire la carne in padella antiaderente con le zucchine a rondelle. Servire insieme.",
-          "link": "https://www.google.com/search?q=carne+macinata+zucchine+riso"
+          "name": "Riso Basmati con Carne Macinata e Zucchine",
+          "qty": "80g Riso Basmati, 175g Carne Macinata mista, 100g Zucchine",
+          "steps": "Cuoci il riso basmati. Rosola la carne macinata con le zucchine in padella per 10 minuti e unisci il riso.",
+          "link": "https://www.google.com/search?q=ricetta+riso+carne+macinata+zucchine"
         },
         {
           "type": "Cena",
-          "name": "Frittata Soffice di Zucchine",
-          "qty": "2 Uova, 100g Zucchine, sale, pepe",
-          "steps": "Saltare le zucchine a fettine, aggiungere le uova sbatte e cuocere coperto a fuoco lento.",
-          "link": "https://www.google.com/search?q=frittata+zucchine+padella"
+          "name": "Uova al Tegame con Broccoli",
+          "qty": "2 Uova, 150g Broccoli",
+          "steps": "Lessa i broccoli. In una padella rompi le uova e cuocile al tegamino, servendo insieme ai broccoli caldi.",
+          "link": "https://www.google.com/search?q=ricetta+uova+tegamino+broccoli"
         }
       ]
     },
@@ -159,24 +203,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Omelette Salata",
-          "qty": "2 Uova, sale, pepe",
-          "steps": "Sbattere energicamente le uova con un pizzico di sale e pepe e cuocere in padella calda.",
-          "link": "https://www.google.com/search?q=omelette+salata"
+          "name": "Omelette d'Avena Dolce",
+          "qty": "50g Avena, 2 Uova",
+          "steps": "Frulla l'avena con le uova e un goccio d'acqua. Versa il composto in padella antiaderente e cuoci entrambi i lati.",
+          "link": "https://www.google.com/search?q=ricetta+omelette+avena+uova"
         },
         {
           "type": "Pranzo",
-          "name": "Riso Basmati al Tonno",
-          "qty": "80g Riso Basmati, 80g Tonno in scatola, sale, pepe",
-          "steps": "Bollire il riso, scolarllo al dente e mescolarlo con il tonno ben sgranato e spolverata di pepe.",
-          "link": "https://www.google.com/search?q=riso+basmati+tonno"
+          "name": "Riso Basmati con Carne Macinata e Zucchine",
+          "qty": "80g Riso Basmati, 175g Carne Macinata mista, 100g Zucchine",
+          "steps": "Lessa il riso. Salta in padella la carne macinata sgranandola e aggiungi le zucchine a cubetti. Salta il tutto.",
+          "link": "https://www.google.com/search?q=ricetta+riso+carne+macinata"
         },
         {
           "type": "Cena",
-          "name": "Carne Macinata Saltata con Broccoli",
-          "qty": "100g Carne Macinata mista, 150g Broccoli, sale, pepe",
-          "steps": "Sbollentare i broccoli. Cuocere la carne macinata sgranandola con la forchetta, unire i broccoli e insaporire.",
-          "link": "https://www.google.com/search?q=carne+macinata+broccoli"
+          "name": "Zucchine Ripiene Semplici",
+          "qty": "100g Zucchine",
+          "steps": "Scava leggermente le zucchine, cuocile in padella o al forno fino a renderle morbide e dorate.",
+          "link": "https://www.google.com/search?q=ricetta+zucchine+grigliate+padella"
         }
       ]
     },
@@ -185,24 +229,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Porridge all'Acqua",
-          "qty": "40g Avena, 200ml Acqua, sale",
-          "steps": "Portare a bollore l'acqua con l'avena e far addensare per pochi minuti.",
-          "link": "https://www.google.com/search?q=porridge+avena"
+          "name": "Pancake Avena e Uova",
+          "qty": "50g Avena, 2 Uova",
+          "steps": "Mescola bene l'avena con le uova. Forma dei piccoli dischi su padella ben calda e gira dopo 2 minuti.",
+          "link": "https://www.google.com/search?q=ricetta+pancake+avena+uova"
         },
         {
           "type": "Pranzo",
-          "name": "Riso saltato con Uova e Zucchine",
-          "qty": "80g Riso Basmati, 2 Uova, 100g Zucchine, sale, pepe",
-          "steps": "Cuocere il riso. Salare le zucchine a cubetti, aggiungere le uova strapazzate e il riso. Saltare tutto insieme.",
-          "link": "https://www.google.com/search?q=riso+saltato+uova+zucchine"
+          "name": "Riso Basmati con Petto di Pollo e Zucchine",
+          "qty": "80g Riso Basmati, 150g Petto di Pollo, 150g Zucchine",
+          "steps": "Bolla il riso. Taglia il pollo e le zucchine a bocconcini e cuocili in padella antiaderente. Unisci tutto.",
+          "link": "https://www.google.com/search?q=ricetta+riso+pollo+zucchine"
         },
         {
           "type": "Cena",
-          "name": "Polpette Semplici con Zucchine Spadellate",
-          "qty": "100g Carne Macinata mista, 100g Zucchine, sale, pepe",
-          "steps": "Formare polpette con la carne insaporita con sale e pepe. Cuocere in padella insieme alle zucchine a fettine.",
-          "link": "https://www.google.com/search?q=polpette+carne+zucchine"
+          "name": "Broccoli e Zucchine al Vapore",
+          "qty": "100g Broccoli, 150g Zucchine",
+          "steps": "Taglia le verdure e cuocile al vapore per circa 12 minuti fino a quando diventano tenere.",
+          "link": "https://www.google.com/search?q=ricetta+verdure+al+vapore"
         }
       ]
     },
@@ -211,24 +255,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Porridge Mattutino",
-          "qty": "40g Avena, 200ml Acqua, sale",
-          "steps": "Cuocere l'avena in acqua salata fino a raggiungere la consistenza di una crema morbida.",
-          "link": "https://www.google.com/search?q=porridge+avena"
+          "name": "Pancake Avena e Uova",
+          "qty": "50g Avena, 2 Uova",
+          "steps": "Sbatti uova e avena, versa in una padella antiaderente calda e cuoci 2 minuti per lato.",
+          "link": "https://www.google.com/search?q=ricetta+pancake+avena+uova"
         },
         {
           "type": "Pranzo",
-          "name": "Carne Macinata con Riso e Broccoli",
-          "qty": "80g Riso Basmati, 100g Carne Macinata mista, 150g Broccoli, sale, pepe",
-          "steps": "Lessare riso e broccoli. Cuocere la carne macinata e unire tutti gli ingredienti in padella per insaporire.",
-          "link": "https://www.google.com/search?q=riso+carne+macinata+broccoli"
+          "name": "Riso Basmati con Petto di Pollo e Zucchine",
+          "qty": "80g Riso Basmati, 150g Petto di Pollo, 100g Zucchine",
+          "steps": "Lessa il riso Basmati. Salta il pollo e le zucchine in padella per 8-10 minuti e componi il piatto.",
+          "link": "https://www.google.com/search?q=ricetta+riso+pollo+zucchine"
         },
         {
           "type": "Cena",
-          "name": "Uova in Camicia con Zucchine Grigliate",
-          "qty": "2 Uova, 100g Zucchine, sale, pepe",
-          "steps": "Grigliare le zucchine in padella. Cuocere le uova in acqua bollente salata acida e servire sulle zucchine.",
-          "link": "https://www.google.com/search?q=uova+in+camicia+zucchine"
+          "name": "Zucchine Saltate in Padella",
+          "qty": "100g Zucchine",
+          "steps": "Taglia le zucchine a dadini e saltale a fuoco vivo in padella per 10 minuti fino a doratura.",
+          "link": "https://www.google.com/search?q=ricetta+zucchine+saltate+padella"
         }
       ]
     }
@@ -239,24 +283,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Yogurt Greco Proteico con Avena",
-          "qty": "100g Yogurt Greco, 40g Avena",
-          "steps": "Mescolare l'avena grezza nello yogurt greco e servire fresco.",
-          "link": "https://www.google.com/search?q=yogurt+greco+avena"
+          "name": "Porridge d'Avena con Yogurt Greco",
+          "qty": "50g Avena, 50g Yogurt Greco",
+          "steps": "Cuoci l'avena in poca acqua calda. Una volta addensata, rimuovi dal fuoco e incorpora lo yogurt greco.",
+          "link": "https://www.google.com/search?q=ricetta+porridge+avena+yogurt"
         },
         {
           "type": "Pranzo",
-          "name": "Petto di Pollo Masterchef con Riso e Broccoli al Vapore",
-          "qty": "125g Petto di Pollo, 70g Riso Basmati, 150g Broccoli, sale, pepe",
-          "steps": "Grigliare il pollo speziato con sale e pepe. Cuocere il riso basmati e i broccoli al vapore.",
-          "link": "https://www.google.com/search?q=petto+pollo+riso+broccoli"
+          "name": "Riso Basmati con Salmone e Broccoli",
+          "qty": "80g Riso Basmati, 125g Salmone surgelato, 150g Broccoli",
+          "steps": "Lessa il riso e i broccoli. Cuoci il trancio di salmone in padella antiaderente per 8 minuti e servilo col riso.",
+          "link": "https://www.google.com/search?q=ricetta+riso+salmone+broccoli"
         },
         {
           "type": "Cena",
-          "name": "Trancio di Salmone al Forno con Zucchine",
-          "qty": "125g Salmone surgelato, 200g Zucchine, sale, pepe",
-          "steps": "Scongelare il salmone. Disporlo su teglia con zucchine a fette, sale e pepe. Infornare a 180°C per 15 minuti.",
-          "link": "https://www.google.com/search?q=salmone+forno+zucchine"
+          "name": "Insalata Tiepida di Riso, Tonno e Zucchine",
+          "qty": "50g Riso Basmati, 80g Tonno in scatola, 200g Zucchine",
+          "steps": "Lessa il riso. Griglia le zucchine. Unisci riso, zucchine e il tonno sgocciolato in una ciotola.",
+          "link": "https://www.google.com/search?q=ricetta+riso+tonno+zucchine"
         }
       ]
     },
@@ -265,24 +309,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Porridge all'Acqua e Avena",
-          "qty": "40g Avena, 200ml Acqua, sale",
-          "steps": "Scaldare l'avena con acqua e un pizzico di sale fino a consistenza cremosa.",
-          "link": "https://www.google.com/search?q=porridge+avena"
+          "name": "Pancake Avena e Uova",
+          "qty": "40g Avena, 2 Uova",
+          "steps": "Mescola l'avena con le uova fino a creare un composto omogeneo. Versa in padella calda e cuoci entrambi i lati.",
+          "link": "https://www.google.com/search?q=ricetta+pancake+avena+uova"
         },
         {
           "type": "Pranzo",
-          "name": "Bowl di Salmone Scottato, Riso e Broccoli",
-          "qty": "125g Salmone surgelato, 70g Riso Basmati, 150g Broccoli, sale, pepe",
-          "steps": "Scottare il salmone a cubetti in padella. Assemblare la bowl con riso bollito e broccoli al vapore.",
-          "link": "https://www.google.com/search?q=salmone+bowl+riso+broccoli"
+          "name": "Riso Basmati con Petto di Pollo e Zucchine",
+          "qty": "80g Riso Basmati, 150g Petto di Pollo, 200g Zucchine",
+          "steps": "Lessa il riso basmati. Taglia il petto di pollo e le zucchine a tocchetti e salta tutto in padella.",
+          "link": "https://www.google.com/search?q=ricetta+riso+pollo+zucchine"
         },
         {
           "type": "Cena",
-          "name": "Tagliata di Pollo alle Erbe con Zucchine Spadellate",
-          "qty": "125g Petto di Pollo, 200g Zucchine, sale, pepe",
-          "steps": "Cuocere il pollo in padella antiaderente con pepe e sale, poi tagliarlo a fette. A parte saltare le zucchine.",
-          "link": "https://www.google.com/search?q=tagliata+pollo+zucchine"
+          "name": "Carne Macinata con Broccoli saltati",
+          "qty": "150g Carne Macinata mista, 150g Broccoli",
+          "steps": "Sbollenta i broccoli. Cuoci la carne macinata in padella sgranandola e unisci i broccoli a fine cottura.",
+          "link": "https://www.google.com/search?q=ricetta+carne+macinata+broccoli"
         }
       ]
     },
@@ -291,24 +335,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Yogurt Greco e Avena",
-          "qty": "100g Yogurt Greco, 40g Avena",
-          "steps": "Unire l'avena allo yogurt greco per una colazione bilanciata a basso indice glicemico.",
-          "link": "https://www.google.com/search?q=yogurt+greco+avena"
+          "name": "Porridge d'Avena con Yogurt Greco",
+          "qty": "50g Avena, 50g Yogurt Greco",
+          "steps": "Prepara l'avena cotta in acqua. Fai intiepidire e aggiungi lo yogurt greco mescolando bene.",
+          "link": "https://www.google.com/search?q=ricetta+porridge+avena+yogurt"
         },
         {
           "type": "Pranzo",
-          "name": "Petto di Pollo Saltato con Riso e Zucchine",
-          "qty": "125g Petto di Pollo, 70g Riso Basmati, 150g Zucchine, sale, pepe",
-          "steps": "Tagliare il pollo a bocconcini e rosolarlo con zucchine e pepe. Servire accompagnato da riso basmati.",
-          "link": "https://www.google.com/search?q=bocconcini+pollo+zucchine+riso"
+          "name": "Riso Basmati con Salmone e Zucchine",
+          "qty": "80g Riso Basmati, 125g Salmone surgelato, 200g Zucchine",
+          "steps": "Cuoci il riso. Salta in padella il salmone a dadini con le zucchine per circa 10 minuti. Manteca col riso.",
+          "link": "https://www.google.com/search?q=ricetta+riso+salmone+zucchine"
         },
         {
           "type": "Cena",
-          "name": "Salmone alla Piastra su Letto di Broccoli",
-          "qty": "125g Salmone surgelato, 150g Broccoli, sale, pepe",
-          "steps": "Cuocere il salmone sulla piastra calda. Servire sopra i broccoli sbollentati e insaporiti con pepe.",
-          "link": "https://www.google.com/search?q=salmone+piastra+broccoli"
+          "name": "Tonno e Broccoli al Vapore",
+          "qty": "80g Tonno in scatola, 150g Broccoli",
+          "steps": "Cuoci i broccoli al vapore. Impiatta aggiungendo il tonno ben sgocciolato.",
+          "link": "https://www.google.com/search?q=ricetta+tonno+broccoli"
         }
       ]
     },
@@ -317,24 +361,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Omelette Light con Zucchine",
-          "qty": "2 Uova, 50g Zucchine, sale, pepe",
-          "steps": "Grattugiare la zucchina e unirla alle uova sbattute. Cuocere in padella antiaderente.",
-          "link": "https://www.google.com/search?q=omelette+zucchine"
+          "name": "Pancake Avena e Uova",
+          "qty": "40g Avena, 2 Uova",
+          "steps": "Amalgama farina d'avena e uova. Forma i pancake su padella ben calda cuocendoli fino a doratura.",
+          "link": "https://www.google.com/search?q=ricetta+pancake+avena+uova"
         },
         {
           "type": "Pranzo",
-          "name": "Salmone al Vapore con Riso Basmati e Broccoli",
-          "qty": "125g Salmone surgelato, 70g Riso Basmati, 150g Broccoli, sale, pepe",
-          "steps": "Cuocere il salmone e i broccoli al vapore per preservare i nutirenti. Servire col riso basmati.",
-          "link": "https://www.google.com/search?q=salmone+vapore+broccoli+riso"
+          "name": "Riso Basmati con Petto di Pollo e Broccoli",
+          "qty": "80g Riso Basmati, 150g Petto di Pollo, 150g Broccoli",
+          "steps": "Cuoci il riso e i broccoli. Griglia il pollo e unisci tutti gli ingredienti in un unico piatto unico.",
+          "link": "https://www.google.com/search?q=ricetta+riso+pollo+broccoli"
         },
         {
           "type": "Cena",
-          "name": "Petto di Pollo Grigliato e Zucchine al Pepe",
-          "qty": "125g Petto di Pollo, 200g Zucchine, sale, pepe",
-          "steps": "Grigliare le fettine di pollo e le zucchine tagliate per lungo. Salare e pepare finemente.",
-          "link": "https://www.google.com/search?q=petto+pollo+zucchine+griglia"
+          "name": "Frittata al Forno con Zucchine",
+          "qty": "2 Uova, 200g Zucchine",
+          "steps": "Taglia le zucchine a rondelle, mescolale con le uova sbattute e cuoci in forno a 180°C per 15 minuti.",
+          "link": "https://www.google.com/search?q=ricetta+frittata+zucchine+forno"
         }
       ]
     },
@@ -343,24 +387,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Bowl Proteica Yogurt e Avena",
-          "qty": "100g Yogurt Greco, 40g Avena",
-          "steps": "Unire lo yogurt con l'avena in una ciotola e mescolare bene prima di consumare.",
-          "link": "https://www.google.com/search?q=bowl+yogurt+greco+avena"
+          "name": "Porridge d'Avena con Yogurt Greco",
+          "qty": "50g Avena, 50g Yogurt Greco",
+          "steps": "Bolla l'avena in acqua fino a consistenza cremosa, spegni e unisci lo yogurt greco.",
+          "link": "https://www.google.com/search?q=ricetta+porridge+avena+yogurt"
         },
         {
           "type": "Pranzo",
-          "name": "Riso con Carne Macinata magra e Broccoli",
-          "qty": "70g Riso Basmati, 100g Carne Macinata mista, 100g Broccoli, sale, pepe",
-          "steps": "Cucinare la carne macinata in padella senza grassi aggiunti. Unire il riso bollito e i broccoli tritati.",
-          "link": "https://www.google.com/search?q=riso+carne+macinata+broccoli"
+          "name": "Riso Basmati con Salmone e Zucchine",
+          "qty": "80g Riso Basmati, 125g Salmone surgelato, 200g Zucchine",
+          "steps": "Cuoci il riso basmati. Scotti il salmone e le zucchine a fette in padella antiaderente e unisci il riso.",
+          "link": "https://www.google.com/search?q=ricetta+riso+salmone+zucchine"
         },
         {
           "type": "Cena",
-          "name": "Omelette con Verdure Miste (Broccoli e Zucchine)",
-          "qty": "2 Uova, 100g Broccoli, 100g Zucchine, sale, pepe",
-          "steps": "Saltare le verdure tagliate finemente. Sbattere le uova, versarle sulle verdure e dorare da entrambi i lati.",
-          "link": "https://www.google.com/search?q=omelette+verdure"
+          "name": "Carne Macinata in Padella con Broccoli",
+          "qty": "150g Carne Macinata mista, 150g Broccoli",
+          "steps": "Sbollenta i broccoli. Rosola la carne macinata sgranata e aggiungi i broccoli lasciando insaporire per 5 minuti.",
+          "link": "https://www.google.com/search?q=ricetta+carne+macinata+broccoli"
         }
       ]
     },
@@ -369,24 +413,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Porridge all'Acqua",
-          "qty": "40g Avena, 200ml Acqua, sale",
-          "steps": "Avena cotta in acqua a fuoco dolcissimo fino a consistenza morbida.",
-          "link": "https://www.google.com/search?q=porridge+avena"
+          "name": "Pancake Avena e Uova",
+          "qty": "40g Avena, 2 Uova",
+          "steps": "Frulla avena e uova. Versa il composto a mestolate su padella antiaderente e cuoci da entrambi i lati.",
+          "link": "https://www.google.com/search?q=ricetta+pancake+avena+uova"
         },
         {
           "type": "Pranzo",
-          "name": "Petto di Pollo al Vapore con Riso e Broccoli",
-          "qty": "125g Petto di Pollo, 70g Riso Basmati, 100g Broccoli, sale, pepe",
-          "steps": "Cuocere il pollo a dadini al vapore insieme ai broccoli. Servire affiancato al riso basmati.",
-          "link": "https://www.google.com/search?q=pollo+vapore+riso+broccoli"
+          "name": "Riso Basmati con Petto di Pollo e Zucchine",
+          "qty": "80g Riso Basmati, 200g Petto di Pollo, 200g Zucchine",
+          "steps": "Cuoci il riso. Salta in padella il pollo a bocconcini assieme alle zucchine fino a doratura.",
+          "link": "https://www.google.com/search?q=ricetta+riso+pollo+zucchine"
         },
         {
           "type": "Cena",
-          "name": "Hamburger di Carne Macinata con Zucchine al Forno",
-          "qty": "100g Carne Macinata mista, 200g Zucchine, sale, pepe",
-          "steps": "Formare un hamburger con la carne, sale e pepe. Infornare insieme alle zucchine a bastoncino a 200°C.",
-          "link": "https://www.google.com/search?q=hamburger+carne+zucchine+forno"
+          "name": "Tonno in Scatola con Broccoli",
+          "qty": "80g Tonno in scatola, 150g Broccoli",
+          "steps": "Cuoci i broccoli al vapore o bolliti, poi unisci il tonno sgocciolato.",
+          "link": "https://www.google.com/search?q=ricetta+tonno+broccoli"
         }
       ]
     },
@@ -395,24 +439,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Yogurt Greco e Avena",
-          "qty": "100g Yogurt Greco, 40g Avena",
-          "steps": "Ciotola di yogurt greco cremoso abbinato all'avena.",
-          "link": "https://www.google.com/search?q=yogurt+greco+avena"
+          "name": "Porridge d'Avena con Yogurt Greco",
+          "qty": "50g Avena, 50g Yogurt Greco",
+          "steps": "Cuoci l'avena con acqua, fai raffreddare leggermente e aggiungi lo yogurt greco.",
+          "link": "https://www.google.com/search?q=ricetta+porridge+avena+yogurt"
         },
         {
           "type": "Pranzo",
-          "name": "Salmone Scottato Gourmet con Riso e Zucchine",
-          "qty": "125g Salmone surgelato, 70g Riso Basmati, 150g Zucchine, sale, pepe",
-          "steps": "Scottare il filetto di salmone sulla pelle rendendolo croccante. Servire su riso basmati e zucchine saltate.",
-          "link": "https://www.google.com/search?q=salmone+scottato+riso+zucchine"
+          "name": "Riso Basmati con Salmone e Broccoli",
+          "qty": "80g Riso Basmati, 125g Salmone surgelato, 150g Broccoli",
+          "steps": "Lessa il riso e i broccoli. Cuoci il salmone in padella antiaderente e componi il piatto.",
+          "link": "https://www.google.com/search?q=ricetta+riso+salmone+broccoli"
         },
         {
           "type": "Cena",
-          "name": "Frittata al Forno con Broccoli",
-          "qty": "2 Uova, 150g Broccoli, sale, pepe",
-          "steps": "Sbollentare i broccoli, sgranarli nelle uova sbattute e versare in una pirofila. Cuocere al forno a 180°C per 15 min.",
-          "link": "https://www.google.com/search?q=frittata+forno+broccoli"
+          "name": "Hamburger di Carne Macinata con Zucchine Grigliate",
+          "qty": "200g Carne Macinata mista, 200g Zucchine",
+          "steps": "Forma un hamburger con la carne macinata e cuocilo in padella. Griglia le zucchine a fette come contorno.",
+          "link": "https://www.google.com/search?q=ricetta+hamburger+zucchine+grigliate"
         }
       ]
     }
