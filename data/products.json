@@ -5,7 +5,7 @@
     "category": "Carne",
     "normalPrice": 9.5,
     "promoPrice": 7.5,
-    "inPromo": true,
+    "inPromo": false,
     "plans": [
       "economico",
       "bilanciato"
@@ -14,13 +14,14 @@
   },
   {
     "id": "p2",
-    "name": "Carne Macinata mista (500g)",
+    "name": "Carne Macinata mista (700g)",
     "category": "Carne",
-    "normalPrice": 6.5,
+    "normalPrice": 9.49,
     "promoPrice": 5,
-    "inPromo": true,
+    "inPromo": false,
     "plans": [
-      "economico"
+      "economico",
+      "bilanciato"
     ]
   },
   {
@@ -29,8 +30,9 @@
     "category": "Pesce",
     "normalPrice": 11.9,
     "promoPrice": 9.9,
-    "inPromo": true,
+    "inPromo": false,
     "plans": [
+      "economico",
       "bilanciato"
     ]
   },
@@ -62,9 +64,9 @@
     "id": "p6",
     "name": "Zucchine (1kg)",
     "category": "Verdura",
-    "normalPrice": 2.9,
+    "normalPrice": 2.49,
     "promoPrice": 1.9,
-    "inPromo": true,
+    "inPromo": false,
     "plans": [
       "economico",
       "bilanciato"
@@ -72,9 +74,9 @@
   },
   {
     "id": "p7",
-    "name": "Uova (10 pz)",
+    "name": "Uova (15 pz)",
     "category": "Freschi",
-    "normalPrice": 3.5,
+    "normalPrice": 4.78,
     "promoPrice": 3.5,
     "inPromo": false,
     "plans": [
@@ -88,8 +90,9 @@
     "category": "Freschi",
     "normalPrice": 1.8,
     "promoPrice": 1.4,
-    "inPromo": true,
+    "inPromo": false,
     "plans": [
+      "economico",
       "bilanciato"
     ]
   },
@@ -108,14 +111,316 @@
   },
   {
     "id": "p10",
-    "name": "Broccoli (500g)",
+    "name": "Patate dolci (1kg)",
     "category": "Verdura",
-    "normalPrice": 2.8,
+    "normalPrice": 1.19,
     "promoPrice": 2.1,
-    "inPromo": true,
+    "inPromo": false,
     "plans": [
       "economico",
       "bilanciato"
     ]
-  }
+  },
+  {
+    "id": "p11",
+    "name": "Salsicce di maiale (200g)",
+    "category": "Carne",
+    "normalPrice": 2.69,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p12",
+    "name": "Piselli in scatola (250g)",
+    "category": "Verdura",
+    "normalPrice": 0.99,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p13",
+    "name": "Pane bianco in cassetta (500g)",
+    "category": "Dispensa",
+    "normalPrice": 1.19,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p13",
+    "name": "Mozzarella (150g)",
+    "category": "Freschi",
+    "normalPrice": 0.79,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p14",
+    "name": "Formaggio fresco spalmabile (250g)",
+    "category": "Freschi",
+    "normalPrice": 1.49,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  
+  {
+    "id": "p15",
+    "name": "Salamino a fette (200g)",
+    "category": "Carne",
+    "normalPrice": 2.49,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p16",
+    "name": "Pomodori (1kg)",
+    "category": "Verdura",
+    "normalPrice": 3.39,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p17",
+    "name": "Mais in scatola (250g)",
+    "category": "Verdura",
+    "normalPrice": 0.95,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p18",
+    "name": "Verza svizzera (1kg)",
+    "category": "Verdura",
+    "normalPrice": 3.49,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p19",
+    "name": "Rucola (125g)",
+    "category": "Verdura",
+    "normalPrice": 0.79,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p20",
+    "name": "Peperoni rossi (500g)",
+    "category": "Verdura",
+    "normalPrice": 1.59,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p21",
+    "name": "Latte intero (1500 ml)",
+    "category": "Freschi",
+    "normalPrice": 1.69,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p22",
+    "name": "Banane (1kg)",
+    "category": "Freschi",
+    "normalPrice": 1.19,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p23",
+    "name": "Wraps (6x25cm)",
+    "category": "Dispensa",
+    "normalPrice": 1.49,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p24",
+    "name": "Toast americani (500g)",
+    "category": "Freschi",
+    "normalPrice": 1.79,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p25",
+    "name": "Funghi champignons in scatola (250g)",
+    "category": "Dispensa",
+    "normalPrice": 0.99,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  }, 
+  {
+    "id": "p26",
+    "name": "Rosti di patate calssico (500g)",
+    "category": "Dispensa",
+    "normalPrice": 2.19,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p27",
+    "name": "Miele millefiori (500g)",
+    "category": "Dispensa",
+    "normalPrice": 2.99,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p28",
+    "name": "Cornflakes",
+    "category": "Dispensa",
+    "normalPrice": 1.35,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p29",
+    "name": "Lattuga cappuccio",
+    "category": "Verdura",
+    "normalPrice": 1.79,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p30",
+    "name": "Pezzi di maiale (500g)",
+    "category": "Carne",
+    "normalPrice": 6.49,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p31",
+    "name": "Pane per hotdog (4 pezzi)",
+    "category": "Dispensa",
+    "normalPrice": 1.65,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  
+  {
+    "id": "p32",
+    "name": "Salsicce di pollo (500g)",
+    "category": "Carne",
+    "normalPrice": 3.69,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p33",
+    "name": "Ricotta (250g)",
+    "category": "Freschi",
+    "normalPrice": 1.49,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
+  {
+    "id": "p34",
+    "name": "Patate normali (2,5kg)",
+    "category": "Dispensa",
+    "normalPrice": 3.75,
+    "promoPrice": 2.1,
+    "inPromo": false,
+    "plans": [
+      "economico",
+      "bilanciato"
+    ]
+  },
 ]
