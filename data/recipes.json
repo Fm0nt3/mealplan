@@ -2,35 +2,35 @@
   "shopping_list": [
     {
       "item": "Carne Macinata mista",
-      "amount": "600g"
+      "amount": "1.2kg (3 confezioni da 500g)"
     },
     {
       "item": "Salmone surgelato",
-      "amount": "600g"
+      "amount": "1.0kg (2 confezioni da 500g)"
     },
     {
       "item": "Tonno in scatola",
-      "amount": "320g"
+      "amount": "5 scatolette (2 confezioni da 3x80g)"
     },
     {
       "item": "Riso Basmati",
-      "amount": "910g"
+      "amount": "2.0kg (2 confezioni da 1kg)"
     },
     {
       "item": "Zucchine",
-      "amount": "1700g"
-    },
-    {
-      "item": "Broccoli",
-      "amount": "1100g"
+      "amount": "4.0kg (4 confezioni da 1kg)"
     },
     {
       "item": "Uova",
-      "amount": "15 pz"
+      "amount": "30 pz (3 confezioni da 10 pz)"
     },
     {
       "item": "Yogurt Greco",
-      "amount": "200g"
+      "amount": "1.2kg (6 confezioni da 200g)"
+    },
+    {
+      "item": "Broccoli",
+      "amount": "3.5kg (7 confezioni da 500g)"
     }
   ],
   "economico": [
@@ -39,24 +39,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Porridge Minimalista all'Acqua",
-          "qty": "40g Avena, Acqua, Sale",
-          "steps": "Cuocere l'Avena in acqua bollente con un pizzico di sale mescolando finché non diventa cremosa.",
-          "link": "https://www.google.com/search?q=porridge+avena+acqua+sale"
+          "name": "Porridge d'Avena Semplice",
+          "qty": "Avena 60g, Acqua 200ml, un pizzico di sale",
+          "steps": "Cuocere l'avena nell'acqua calda con un pizzico di sale mescolando fino a ottenere una consistenza cremosa.",
+          "link": "https://www.google.com/search?q=porridge+avena+acqua+ricetta"
         },
         {
           "type": "Pranzo",
-          "name": "Riso Basmati con Tonno e Zucchine Spadellate",
-          "qty": "60g Riso Basmati, 80g Tonno in scatola, 100g Zucchine, Acqua, Sale, Pepe",
-          "steps": "Lessa il Riso Basmati in acqua salata. Salta in padella antiaderente le zucchine a cubetti con acqua, sale e pepe. Unisci il tonno sgocciolato e il riso.",
+          "name": "Riso Basmati con Tonno e Zucchine",
+          "qty": "Riso Basmati 80g, Tonno in scatola 80g, Zucchine 150g, sale, pepe",
+          "steps": "Lessa il riso basmati in acqua salata. Cuoci le zucchine a cubetti in padella con acqua, sale e pepe. Unisci riso e tonno sgocciolato.",
           "link": "https://www.google.com/search?q=riso+basmati+tonno+zucchine"
         },
         {
           "type": "Cena",
-          "name": "Petto di Pollo Scottato e Broccoli al Vapore",
-          "qty": "80g Petto di Pollo, 100g Broccoli, Acqua, Sale, Pepe",
-          "steps": "Cuoci i broccoli al vapore in pentola con acqua e sale. Griglia il petto di pollo su padella rovente con sale e pepe.",
-          "link": "https://www.google.com/search?q=petto+di+pollo+grigliato+broccoli"
+          "name": "Frittata di Zucchine al Pepato",
+          "qty": "Uova 3 pz, Zucchine 200g, sale, pepe",
+          "steps": "Grattugia le zucchine e cuocile in padella antiaderente con sale e pepe. Sbatte le uova e versale sulle zucchine. Cuoci da entrambi i lati.",
+          "link": "https://www.google.com/search?q=frittata+zucchine+ricetta"
         }
       ]
     },
@@ -65,24 +65,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Uovo al Tegamino d'Acqua",
-          "qty": "1 pz Uova, Acqua, Sale, Pepe",
-          "steps": "Scalda un velo d'acqua in padella antiaderente, rompi l'uovo e cuoci a fuoco lento aggiustando di sale e pepe.",
-          "link": "https://www.google.com/search?q=uovo+al+tegamino+in+acqua"
+          "name": "Uova Strapazzate Speziate",
+          "qty": "Uova 3 pz, sale, pepe, acqua 1 cucchiaio",
+          "steps": "Sbatte le uova con sale, pepe e un sorso d'acqua. Cuoci in padella antiaderente a fuoco dolce mescolando continuativamente.",
+          "link": "https://www.google.com/search?q=uova+strapazzate+morbide"
         },
         {
           "type": "Pranzo",
-          "name": "Riso Basmati e Carne Macinata con Zucchine",
-          "qty": "60g Riso Basmati, 100g Carne Macinata mista, 100g Zucchine, Acqua, Sale, Pepe",
-          "steps": "Lessa il riso. Rosola la carne macinata con le zucchine a dadini in padella usando poca acqua, sale e pepe. Servire insieme.",
-          "link": "https://www.google.com/search?q=riso+carne+macinata+zucchine"
+          "name": "Petto di Pollo con Broccoli e Riso",
+          "qty": "Petto di Pollo 150g, Broccoli 150g, Riso Basmati 80g, sale, pepe",
+          "steps": "Lessa il riso e sbollenta i broccoli. Taglia il pollo a straccetti e cuocilo in padella antiaderente con sale e pepe. Unisci tutto.",
+          "link": "https://www.google.com/search?q=pollo+broccoli+riso+basmati"
         },
         {
           "type": "Cena",
-          "name": "Petto di Pollo in Guazzetto con Broccoli",
-          "qty": "80g Petto di Pollo, 100g Broccoli, Acqua, Sale, Pepe",
-          "steps": "Lessa i broccoli. Stufa il pollo tagliato a bocconcini in padella con poca acqua salata e pepe finché non risulta tenero.",
-          "link": "https://www.google.com/search?q=bocconcini+pollo+broccoli"
+          "name": "Polpette di Carne Macinata e Zucchine",
+          "qty": "Carne Macinata mista 150g, Zucchine 150g, sale, pepe",
+          "steps": "Grattugia le zucchine, uniscile alla carne macinata con sale e pepe. Forma delle polpette e cuocile in padella antiaderente ben calda.",
+          "link": "https://www.google.com/search?q=polpette+carne+macinata+zucchine"
         }
       ]
     },
@@ -91,24 +91,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Porridge Caldo Caldo",
-          "qty": "40g Avena, Acqua, Sale",
-          "steps": "Lessa l'Avena in acqua salata per 5 minuti mescolando energicamente.",
+          "name": "Porridge d'Avena caldo",
+          "qty": "Avena 60g, Acqua 200ml, un pizzico di sale",
+          "steps": "Cuocere l'avena in acqua bollente salata a fuoco lento fino al completo assorbimento dei liquidi.",
           "link": "https://www.google.com/search?q=porridge+avena+acqua"
         },
         {
           "type": "Pranzo",
-          "name": "Riso Basmati, Tonno e Zucchine Grigliate",
-          "qty": "60g Riso Basmati, 80g Tonno in scatola, 100g Zucchine, Acqua, Sale, Pepe",
-          "steps": "Lessa il riso. Griglia le zucchine a fette su piastra ben calda con sale e pepe, poi amalgama con il tonno e il riso.",
-          "link": "https://www.google.com/search?q=riso+basmati+tonno+zucchine+grigliate"
+          "name": "Riso con Carne Macinata e Broccoli",
+          "qty": "Riso Basmati 80g, Carne Macinata mista 150g, Broccoli 150g, sale, pepe",
+          "steps": "Lessa il riso basmati. Cuoci i broccoli al vapore. Rosola la carne macinata in padella antiaderente con sale e pepe, poi unisci il riso e i broccoli.",
+          "link": "https://www.google.com/search?q=riso+carne+macinata+broccoli"
         },
         {
           "type": "Cena",
-          "name": "Petto di Pollo Piastrato con Zucchine",
-          "qty": "90g Petto di Pollo, 100g Zucchine, Acqua, Sale, Pepe",
-          "steps": "Cuoci il petto di pollo e le zucchine tagliate a rondelle su padella antiaderente rovente con sale e pepe.",
-          "link": "https://www.google.com/search?q=petto+di+pollo+zucchine+padella"
+          "name": "Petto di Pollo alla Piastra con Zucchine Grill",
+          "qty": "Petto di Pollo 200g, Zucchine 200g, sale, pepe",
+          "steps": "Taglia le zucchine a fette sottili e grigliale. Cuoci il petto di pollo alla piastra con sale e abbondante pepe nero.",
+          "link": "https://www.google.com/search?q=petto+di+pollo+piastra+zucchine"
         }
       ]
     },
@@ -117,24 +117,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Uovo Strapazzato Senza Grassi",
-          "qty": "1 pz Uova, Acqua, Sale, Pepe",
-          "steps": "Sbatte l'uovo con un cucchiaio d'acqua, sale e pepe. Cuoci in padella antiaderente mescolando continuamente.",
-          "link": "https://www.google.com/search?q=uovo+strapazzato+senza+olio"
+          "name": "Uova Sode al Pepe",
+          "qty": "Uova 3 pz, sale, pepe",
+          "steps": "Fai bollire le uova in acqua per 8-9 minuti. Sbucciale e insaporisci con sale e pepe nero appena macinato.",
+          "link": "https://www.google.com/search?q=uova+sode+tempo+cottura"
         },
         {
           "type": "Pranzo",
-          "name": "Bowl di Riso, Carne Macinata e Broccoli",
-          "qty": "60g Riso Basmati, 100g Carne Macinata mista, 100g Broccoli, Acqua, Sale, Pepe",
-          "steps": "Lessa riso e broccoli in acqua salata. Cuoci la carne macinata in padella aggiungendo sale e pepe. Unisci tutti gli ingredienti.",
-          "link": "https://www.google.com/search?q=bowl+riso+carne+macinata+broccoli"
+          "name": "Riso Basmati con Tonno e Broccoli",
+          "qty": "Riso Basmati 80g, Tonno in scatola 80g, Broccoli 150g, sale, pepe",
+          "steps": "Cuoci il riso basmati e i broccoli al vapore. Unisci il tonno al naturale sgocciolato, condisci con sale e pepe.",
+          "link": "https://www.google.com/search?q=riso+tonno+broccoli"
         },
         {
           "type": "Cena",
-          "name": "Tonno e Zucchine Ripassate",
-          "qty": "80g Tonno in scatola, 100g Zucchine, Acqua, Sale, Pepe",
-          "steps": "Stufa le zucchine in padella con poca acqua, sale e pepe per 10 minuti, poi aggiungi il tonno negli ultimi minuti.",
-          "link": "https://www.google.com/search?q=tonno+zucchine+padella"
+          "name": "Frittata Verde ai Broccoli",
+          "qty": "Uova 3 pz, Broccoli 150g, sale, pepe",
+          "steps": "Lessa i broccoli, schiacciali leggermente con una forchetta. Sbatte le uova con sale e pepe, amalgama i broccoli e cuoci in padella.",
+          "link": "https://www.google.com/search?q=frittata+di+broccoli"
         }
       ]
     },
@@ -143,24 +143,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Porridge all'Acqua Nutriente",
-          "qty": "40g Avena, Acqua, Sale",
-          "steps": "Cuoci l'Avena in acqua bollente salata fino a raggiungere la densità desiderata.",
-          "link": "https://www.google.com/search?q=porridge+avena+semplice"
+          "name": "Porridge d'Avena Cremoso",
+          "qty": "Avena 60g, Acqua 220ml, un pizzico di sale",
+          "steps": "Fai bollire acqua e avena mescolando vigorosamente fino ad ottenere una crema calda.",
+          "link": "https://www.google.com/search?q=porridge+avena+cremoso"
         },
         {
           "type": "Pranzo",
-          "name": "Riso Basmati con Salmone e Zucchine",
-          "qty": "60g Riso Basmati, 100g Salmone surgelato, 100g Zucchine, Acqua, Sale, Pepe",
-          "steps": "Scongela e cuoci il salmone a vapore con le zucchine. Lessa il riso e unisci il tutto con sale e pepe.",
-          "link": "https://www.google.com/search?q=riso+salmone+zucchine"
+          "name": "Straccetti di Pollo e Zucchine con Riso",
+          "qty": "Petto di Pollo 150g, Zucchine 150g, Riso Basmati 80g, sale, pepe",
+          "steps": "Lessa il riso. Taglia pollo e zucchine a dadini, saltali in padella antiaderente con acqua, sale e pepe fino a cottura completa.",
+          "link": "https://www.google.com/search?q=straccetti+pollo+zucchine+riso"
         },
         {
           "type": "Cena",
-          "name": "Petto di Pollo alla Griglia con Broccoli",
-          "qty": "100g Petto di Pollo, 100g Broccoli, Acqua, Sale, Pepe",
-          "steps": "Lessa i broccoli in acqua salata. Cuoci il pollo su padella antiaderente con sale e pepe.",
-          "link": "https://www.google.com/search?q=pollo+griglia+broccoli"
+          "name": "Burger di Carne Macinata con Broccoli Steamed",
+          "qty": "Carne Macinata mista 200g, Broccoli 200g, sale, pepe",
+          "steps": "Forma un burger con la carne macinata insaporita con sale e pepe. Cuocilo alla piastra. Servilo con broccoli cotti al vapore.",
+          "link": "https://www.google.com/search?q=hamburger+carne+macinata+piastra"
         }
       ]
     },
@@ -169,24 +169,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Uovo Sodo Classico",
-          "qty": "1 pz Uova, Acqua, Sale, Pepe",
-          "steps": "Lessa l'uovo in acqua bollente per 8 minuti. Sbuccia e condisci con sale e pepe.",
-          "link": "https://www.google.com/search?q=uovo+sodo"
+          "name": "Omelette Semplice al Pepe",
+          "qty": "Uova 3 pz, sale, pepe",
+          "steps": "Sbatte le uova con sale e pepe. Versa in padella antiaderente calda, piega a metà e servi.",
+          "link": "https://www.google.com/search?q=omelette+semplice"
         },
         {
           "type": "Pranzo",
-          "name": "Riso con Carne Macinata e Zucchine",
-          "qty": "60g Riso Basmati, 100g Carne Macinata mista, 100g Zucchine, Acqua, Sale, Pepe",
-          "steps": "Lessa il riso. Salta in padella la carne e le zucchine con poca acqua salata e pepe fino a cottura.",
+          "name": "Riso Basmati con Macinata e Zucchine",
+          "qty": "Riso Basmati 80g, Carne Macinata mista 150g, Zucchine 150g, sale, pepe",
+          "steps": "Cuoci il riso. Cuoci in padella la carne macinata con le zucchine tagliate a rondelle, aggiustando di sale e pepe. Unisci al riso.",
           "link": "https://www.google.com/search?q=riso+carne+macinata+zucchine"
         },
         {
           "type": "Cena",
-          "name": "Zucchine Saltate con Uovo Strapazzato",
-          "qty": "100g Zucchine, 1 pz Uova, Acqua, Sale, Pepe",
-          "steps": "Cuoci le zucchine a cubetti in padella con poca acqua. Aggiungi l'uovo sbattuto con sale e pepe e mescola velocemente.",
-          "link": "https://www.google.com/search?q=zucchine+uovo+strapazzato"
+          "name": "Petto di Pollo al Vapore con Broccoli",
+          "qty": "Petto di Pollo 200g, Broccoli 200g, sale, pepe",
+          "steps": "Cuoci il petto di pollo e i broccoli al vapore per preservare la succhiosità. Completa con sale e abbondante pepe.",
+          "link": "https://www.google.com/search?q=pollo+al+vapore+broccoli"
         }
       ]
     },
@@ -195,24 +195,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Porridge Domenicale",
-          "qty": "40g Avena, Acqua, Sale",
-          "steps": "Scalda l'Avena nell'acqua salata mescolando con cura fino ad ottenere una crema morbida.",
+          "name": "Porridge d'Avena denso",
+          "qty": "Avena 60g, Acqua 180ml, un pizzico di sale",
+          "steps": "Cuoci l'avena in acqua finché diventa densa e corposa. Aggiungi un pizzico di sale.",
           "link": "https://www.google.com/search?q=porridge+avena"
         },
         {
           "type": "Pranzo",
-          "name": "Riso Basmati, Salmone e Broccoli",
-          "qty": "60g Riso Basmati, 100g Salmone surgelato, 100g Broccoli, Acqua, Sale, Pepe",
-          "steps": "Cuoci il riso e i broccoli in acqua salata. Cuoci il salmone a vapore e unisci il tutto condendo con pepe.",
-          "link": "https://www.google.com/search?q=riso+salmone+broccoli"
+          "name": "Tonno, Riso e Zucchine Saltate",
+          "qty": "Tonno in scatola 80g, Riso Basmati 80g, Zucchine 150g, sale, pepe",
+          "steps": "Lessa il riso basmati. Salta le zucchine a cubetti in padella con poca acqua, sale e pepe. Mescola riso, zucchine e tonno.",
+          "link": "https://www.google.com/search?q=riso+tonno+zucchine"
         },
         {
           "type": "Cena",
-          "name": "Frittata d'Acqua con Zucchine",
-          "qty": "2 pz Uova, 100g Zucchine, Acqua, Sale, Pepe",
-          "steps": "Stufa le zucchine tagliate fini con poca acqua. Sbatte le uova con sale e pepe, versale sopra e cuoci a fuoco lento coperto.",
-          "link": "https://www.google.com/search?q=frittata+zucchine+senza+olio"
+          "name": "Uova al Tegamino con Broccoli e Riso",
+          "qty": "Uova 3 pz, Broccoli 150g, Riso Basmati 50g, sale, pepe",
+          "steps": "Cuoci le uova al tegamino in padella antiaderente. Servile accompagnate da riso basmati e broccoli bolliti con sale e pepe.",
+          "link": "https://www.google.com/search?q=uova+al+tegamino+con+riso"
         }
       ]
     }
@@ -223,24 +223,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Bowl Protein Avena e Yogurt Greco",
-          "qty": "50g Yogurt Greco, 30g Avena, Acqua",
-          "steps": "Molla l'Avena con un filo d'acqua tiepida per ammorbidirla, poi amalgamala allo Yogurt Greco.",
-          "link": "https://www.google.com/search?q=yogurt+greco+avena"
+          "name": "Yogurt Greco con Avena",
+          "qty": "Yogurt Greco 200g, Avena 50g, poca acqua per ammorbidire",
+          "steps": "Mescola lo yogurt greco con l'avena. Se preferisci una consistenza più morbida, aggiungi 2 cucchiai d'acqua.",
+          "link": "https://www.google.com/search?q=yogurt+greco+avena+colazione"
         },
         {
           "type": "Pranzo",
-          "name": "Basmati Bilanciato con Pollo e Broccoli",
-          "qty": "70g Riso Basmati, 80g Petto di Pollo, 100g Broccoli, Acqua, Sale, Pepe",
-          "steps": "Lessa riso e broccoli in acqua salata. Griglia il petto di pollo su una piastra rovente, taglialo a striscioline e unisci il tutto.",
-          "link": "https://www.google.com/search?q=riso+basmati+petto+di+pollo+broccoli"
+          "name": "Salmone al Vapore con Riso e Broccoli",
+          "qty": "Salmone surgelato 150g, Riso Basmati 80g, Broccoli 150g, sale, pepe",
+          "steps": "Cuoci il trancio di salmone al vapore e il riso in acqua salata. Cuoci i broccoli al vapore. Unisci e insaporisci con pepe.",
+          "link": "https://www.google.com/search?q=salmone+vapore+riso+broccoli"
         },
         {
           "type": "Cena",
-          "name": "Salmone al Vapore con Zucchine",
-          "qty": "100g Salmone surgelato, 100g Zucchine, Acqua, Sale, Pepe",
-          "steps": "Cuoci il salmone surgelato e le zucchine a fette al vapore. Condisci con sale e pepe a fine cottura.",
-          "link": "https://www.google.com/search?q=salmone+vapore+zucchine"
+          "name": "Petto di Pollo Grigliato con Zucchine",
+          "qty": "Petto di Pollo 180g, Zucchine 200g, sale, pepe",
+          "steps": "Griglia il pollo a fettine con sale e pepe. Taglia le zucchine a nastri e cuocile in padella antiaderente.",
+          "link": "https://www.google.com/search?q=petto+di+pollo+grigliato+zucchine"
         }
       ]
     },
@@ -249,24 +249,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Uova Sode e Oatmeal Salato",
-          "qty": "2 pz Uova, 30g Avena, Acqua, Sale, Pepe",
-          "steps": "Lessa le uova per 8 minuti. Prepara un oatmeal salato cuocendo l'Avena in acqua con un pizzico di sale e pepe.",
-          "link": "https://www.google.com/search?q=uova+sode+oatmeal+salato"
+          "name": "Omelette Proteica con Zucchine",
+          "qty": "Uova 3 pz, Zucchine 100g, sale, pepe",
+          "steps": "Salta le zucchine a julienne in padella. Versa le uova sbattute salate e pepate, cuoci l'omelette fino a doratura.",
+          "link": "https://www.google.com/search?q=omelette+zucchine"
         },
         {
           "type": "Pranzo",
-          "name": "Riso con Macinata Magra e Zucchine",
-          "qty": "70g Riso Basmati, 100g Carne Macinata mista, 100g Zucchine, Acqua, Sale, Pepe",
-          "steps": "Lessa il riso. Salta la carne macinata in padella antiaderente con le zucchine a cubetti e qualche goccia d'acqua, sale e pepe.",
-          "link": "https://www.google.com/search?q=riso+carne+macinata+zucchine"
+          "name": "Carne Macinata con Riso Basmati e Broccoli",
+          "qty": "Carne Macinata mista 150g, Riso Basmati 80g, Broccoli 150g, sale, pepe",
+          "steps": "Lessa il riso e i broccoli. Rosola la carne macinata mista in padella senza grassi aggiunti, con sale e pepe. Amalgama il tutto.",
+          "link": "https://www.google.com/search?q=carne+macinata+riso+broccoli"
         },
         {
           "type": "Cena",
-          "name": "Petto di Pollo e Broccoli Scottati",
-          "qty": "85g Petto di Pollo, 100g Broccoli, Acqua, Sale, Pepe",
-          "steps": "Cuoci i broccoli al vapore. Cuoci il petto di pollo alla piastra condendolo con sale e pepe.",
-          "link": "https://www.google.com/search?q=petto+di+pollo+broccoli"
+          "name": "Salmone Scottato con Zucchine al Vapore",
+          "qty": "Salmone surgelato 180g, Zucchine 200g, sale, pepe",
+          "steps": "Scottare il filetto di salmone in padella antiaderente su entrambi i lati. Servire con zucchine cotte al vapore, sale e pepe.",
+          "link": "https://www.google.com/search?q=salmone+scottato+zucchine"
         }
       ]
     },
@@ -275,24 +275,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Yogurt Greco e Avena",
-          "qty": "50g Yogurt Greco, 30g Avena",
-          "steps": "Mescola lo Yogurt Greco con l'Avena fino ad ottenere un composto omogeneo.",
-          "link": "https://www.google.com/search?q=yogurt+greco+avena"
+          "name": "Yogurt Greco e Avena Tostata",
+          "qty": "Yogurt Greco 200g, Avena 50g",
+          "steps": "Tosta leggermente l'avena in padella antiaderente secca per 2 minuti. Uniscila allo yogurt greco fresco.",
+          "link": "https://www.google.com/search?q=yogurt+greco+avena+tostata"
         },
         {
           "type": "Pranzo",
-          "name": "Salmone Scottato con Riso e Zucchine",
-          "qty": "100g Salmone surgelato, 70g Riso Basmati, 100g Zucchine, Acqua, Sale, Pepe",
-          "steps": "Lessa il riso. Cuoci il salmone in padella antiaderente ben calda senza grassi e rosola le zucchine a fettine con acqua, sale e pepe.",
-          "link": "https://www.google.com/search?q=salmone+riso+zucchine"
+          "name": "Petto di Pollo con Riso Basmati e Broccoli",
+          "qty": "Petto di Pollo 150g, Riso Basmati 80g, Broccoli 150g, sale, pepe",
+          "steps": "Taglia il pollo a dadini e cuocilo in padella con poca acqua, sale e pepe. Servi con riso basmati bollito e broccoli al vapore.",
+          "link": "https://www.google.com/search?q=petto+di+pollo+riso+basmati+broccoli"
         },
         {
           "type": "Cena",
-          "name": "Uova Affogate con Broccoli",
-          "qty": "2 pz Uova, 100g Broccoli, Acqua, Sale, Pepe",
-          "steps": "Lessa i broccoli. Cuoci le uova in acqua bollente salata leggermente acidulata o mossa per 3 minuti. Servile sui broccoli con pepe.",
-          "link": "https://www.google.com/search?q=uova+affogate+broccoli"
+          "name": "Insalata Calda di Tonno, Uova e Zucchine",
+          "qty": "Tonno in scatola 80g, Uova 2 pz, Zucchine 200g, sale, pepe",
+          "steps": "Lessa le uova sode e griglia le zucchine. Mescola le zucchine grigliate, il tonno e le uova a spicchi. Aggiusta di sale e pepe.",
+          "link": "https://www.google.com/search?q=tonno+uova+sode+zucchine"
         }
       ]
     },
@@ -301,24 +301,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Omelette soffice all'Acqua",
-          "qty": "2 pz Uova, Acqua, Sale, Pepe",
-          "steps": "Sbatte le uova con un cucchiaio d'acqua, sale e pepe. Versa in padella antiaderente rovente e cuoci fino a doratura.",
-          "link": "https://www.google.com/search?q=omelette+acqua+senza+olio"
+          "name": "Porridge d'Avena e Yogurt Greco",
+          "qty": "Avena 50g, Yogurt Greco 150g, Acqua 100ml, un pizzico di sale",
+          "steps": "Cuoci l'avena con l'acqua e il sale. Una volta intiepidito, amalgama lo yogurt greco per una consistenza cremosissima.",
+          "link": "https://www.google.com/search?q=porridge+avena+yogurt+greco"
         },
         {
           "type": "Pranzo",
-          "name": "Riso Basmati con Pollo e Zucchine",
-          "qty": "70g Riso Basmati, 85g Petto di Pollo, 100g Zucchine, Acqua, Sale, Pepe",
-          "steps": "Lessa il riso. Salta in padella il pollo a cubetti e le zucchine con un po' d'acqua, sale e pepe. Unisci al riso.",
-          "link": "https://www.google.com/search?q=riso+pollo+zucchine"
+          "name": "Salmone al Forno con Riso e Zucchine",
+          "qty": "Salmone surgelato 150g, Riso Basmati 80g, Zucchine 150g, sale, pepe",
+          "steps": "Cuoci il salmone al forno a 180°C con sale e pepe. Servi insieme a riso basmati bollito e zucchine spadellate.",
+          "link": "https://www.google.com/search?q=salmone+forno+riso+zucchine"
         },
         {
           "type": "Cena",
-          "name": "Carne Macinata e Broccoli Saltati",
-          "qty": "100g Carne Macinata mista, 100g Broccoli, Acqua, Sale, Pepe",
-          "steps": "Lessa i broccoli. Cuoci la carne macinata in padella antiaderente, unisci i broccoli e insaporisci con sale e pepe.",
-          "link": "https://www.google.com/search?q=carne+macinata+broccoli"
+          "name": "Sauté di Carne Macinata e Broccoli",
+          "qty": "Carne Macinata mista 180g, Broccoli 200g, sale, pepe",
+          "steps": "Salta la carne macinata in padella antiaderente. Aggiungi i broccoli precedentemente sbollentati e salta insieme a fuoco vivo con abbondante pepe.",
+          "link": "https://www.google.com/search?q=carne+macinata+broccoli+padella"
         }
       ]
     },
@@ -327,24 +327,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Bowl Proteica con Yogurt Greco e Avena",
-          "qty": "50g Yogurt Greco, 30g Avena",
-          "steps": "Unisci l'Avena allo Yogurt Greco e mescola bene per una colazione completa e bilanciata.",
-          "link": "https://www.google.com/search?q=yogurt+greco+avena+colazione"
+          "name": "Bowl di Yogurt Greco e Avena",
+          "qty": "Yogurt Greco 200g, Avena 50g",
+          "steps": "Versa lo yogurt greco in una ciotola e completa con l'avena a crudo per un'ottima spinta proteica.",
+          "link": "https://www.google.com/search?q=yogurt+greco+avena+bowl"
         },
         {
           "type": "Pranzo",
-          "name": "Riso Basmati con Tonno e Zucchine",
-          "qty": "70g Riso Basmati, 80g Tonno in scatola, 100g Zucchine, Acqua, Sale, Pepe",
-          "steps": "Lessa il riso. Cuoci le zucchine in padella con poca acqua, aggiungi il tonno sgocciolato, il riso, e aggiusta di sale e pepe.",
-          "link": "https://www.google.com/search?q=riso+basmati+tonno+zucchine"
+          "name": "Pollo Saltato con Zucchine e Riso Basmati",
+          "qty": "Petto di Pollo 150g, Zucchine 150g, Riso Basmati 80g, sale, pepe",
+          "steps": "Lessa il riso. Taglia il pollo a straccetti e cuocilo in padella con zucchine a rondelle, acqua, sale e pepe.",
+          "link": "https://www.google.com/search?q=pollo+zucchine+riso"
         },
         {
           "type": "Cena",
-          "name": "Salmone al Vapore con Broccoli",
-          "qty": "100g Salmone surgelato, 100g Broccoli, Acqua, Sale, Pepe",
-          "steps": "Cuoci il salmone ed i broccoli al vapore in pentola per 10 minuti. Condisci con sale e pepe.",
-          "link": "https://www.google.com/search?q=salmone+vapore+broccoli"
+          "name": "Salmone alla Piastra con Broccoli",
+          "qty": "Salmone surgelato 180g, Broccoli 200g, sale, pepe",
+          "steps": "Cuoci il filetto di salmone su una piastra ben calda. Accompagna con broccoli al vapore conditi con sale e pepe.",
+          "link": "https://www.google.com/search?q=salmone+piastra+broccoli"
         }
       ]
     },
@@ -353,24 +353,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Uova Sode con Crema d'Avena",
-          "qty": "2 pz Uova, 30g Avena, Acqua, Sale, Pepe",
-          "steps": "Lessa le uova per 8 minuti. Prepara la crema d'Avena cuocendola in poca acqua salata.",
-          "link": "https://www.google.com/search?q=uova+sode+avena"
+          "name": "Uova Strapazzate e Avena Tostata",
+          "qty": "Uova 2 pz, Avena 40g, sale, pepe",
+          "steps": "Cuoci le uova strapazzate in padella con sale e pepe. Tosta l'avena a secco per un minuto e servila come contorno croccante.",
+          "link": "https://www.google.com/search?q=uova+strapazzate+colazione"
         },
         {
           "type": "Pranzo",
-          "name": "Riso, Carne Macinata e Zucchine",
-          "qty": "70g Riso Basmati, 100g Carne Macinata mista, 100g Zucchine, Acqua, Sale, Pepe",
-          "steps": "Lessa il riso Basmati. Stufa la carne e le zucchine tagliate fini in padella con poca acqua salata e pepe.",
-          "link": "https://www.google.com/search?q=riso+carne+macinata+zucchine"
+          "name": "Riso Basmati con Macinata e Zucchine",
+          "qty": "Carne Macinata mista 150g, Riso Basmati 80g, Zucchine 150g, sale, pepe",
+          "steps": "Lessa il riso. Cuoci la carne macinata in padella antiaderente assieme alle zucchine a dadini. Condisci con sale e pepe e unisci il riso.",
+          "link": "https://www.google.com/search?q=carne+macinata+zucchine+riso"
         },
         {
           "type": "Cena",
-          "name": "Petto di Pollo Piastrato e Zucchine",
-          "qty": "80g Petto di Pollo, 100g Zucchine, Acqua, Sale, Pepe",
-          "steps": "Griglia il pollo su padella rovente. Griglia le zucchine a fette con un pizzico di sale e pepe.",
-          "link": "https://www.google.com/search?q=pollo+grigliato+zucchine"
+          "name": "Petto di Pollo al Vapore, Broccoli e Riso Light",
+          "qty": "Petto di Pollo 180g, Broccoli 150g, Riso Basmati 50g, sale, pepe",
+          "steps": "Cuoci pollo e broccoli al vapore. Accompagna con una piccola porzione di riso basmati bollito e spolverata di pepe.",
+          "link": "https://www.google.com/search?q=pollo+al+vapore+broccoli+riso"
         }
       ]
     },
@@ -379,24 +379,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Yogurt Greco Proteico e Avena",
-          "qty": "50g Yogurt Greco, 30g Avena",
-          "steps": "Amalgama lo Yogurt Greco con l'Avena in una ciotola.",
+          "name": "Yogurt Greco e Avena",
+          "qty": "Yogurt Greco 200g, Avena 50g",
+          "steps": "Mescola lo yogurt greco con l'avena in una ciotola e servi immediatamente.",
           "link": "https://www.google.com/search?q=yogurt+greco+avena"
         },
         {
           "type": "Pranzo",
-          "name": "Riso Basmati con Salmone e Broccoli",
-          "qty": "70g Riso Basmati, 100g Salmone surgelato, 100g Broccoli, Acqua, Sale, Pepe",
-          "steps": "Lessa il riso e i broccoli. Cuoci il salmone a vapore e unisci gli ingredienti aggiustando di sale e pepe.",
-          "link": "https://www.google.com/search?q=riso+salmone+broccoli"
+          "name": "Salmone al Vapore con Riso Basmati e Broccoli",
+          "qty": "Salmone surgelato 150g, Riso Basmati 80g, Broccoli 150g, sale, pepe",
+          "steps": "Cuoci al vapore salmone e broccoli. Cuoci il riso basmati in acqua salata. Servire insieme regolando di sale e pepe.",
+          "link": "https://www.google.com/search?q=salmone+vapore+riso+broccoli"
         },
         {
           "type": "Cena",
-          "name": "Tortino d'Uova e Zucchine in Padella",
-          "qty": "2 pz Uova, 100g Zucchine, Acqua, Sale, Pepe",
-          "steps": "Cuoci le zucchine a rondelle in padella antiaderente con acqua e sale. Versa le uova sbattute con pepe e cuoci coperto a fuoco basso.",
-          "link": "https://www.google.com/search?q=tortino+uova+zucchine+padella"
+          "name": "Omelette Farcita con Tonno e Zucchine",
+          "qty": "Uova 3 pz, Tonno in scatola 80g, Zucchine 150g, sale, pepe",
+          "steps": "Salta prima le zucchine in padella. Sbatte le uova, versale sopra le zucchine e aggiungi il tonno prima di chiudere l'omelette a libro.",
+          "link": "https://www.google.com/search?q=omelette+tonno+zucchine"
         }
       ]
     }
