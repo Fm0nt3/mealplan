@@ -97,45 +97,37 @@ api_key = os.environ.get("GEMINI_API_KEY")
 client = genai.Client(api_key=api_key)
 
 prompt = f"""
-Sei un nutrizionista e Masterchef svizzero. 
-Crea un piano pasti di 7 giorni (da Lunedì a Domenica) per due piani dietetici: 'economico' e 'bilanciato'.
+Sei un nutrizionista. Crea un piano pasti di 7 giorni per due piani: 'economico' e 'bilanciato'.
 
-IL CATALOGO (COSA PUOI USARE):
-Puoi usare acqua, sale e pepe liberamente. Per il resto, DEVI pescare ESCLUSIVAMENTE da questa lista:
-[{testo_catalogo}]
+CATALOGO (PESCA SOLO DA QUI): [{testo_catalogo}]
+OFFERTE: [{testo_offerte}]
+DISPENSA (NON COMPRARE, L'UTENTE LI HA GIA'): [{testo_dispensa}]
 
-REGOLA SULLE QUANTITÀ E CALCOLO MATEMATICO (MOLTO IMPORTANTE):
-1. Le ricette comandano: decidi porzioni realistiche per 7 giorni.
-2. Per la lista della spesa, DEVI fare i calcoli precisi. Se usi 200g di broccoli il Lunedì e 300g il Martedì, il totale è 500g.
-3. Guarda la dimensione della confezione nel nome del prodotto (es. 500g). Se ti servono 1.2kg di un prodotto da 500g, devi calcolare "packages": 3.
+REGOLE PER LE DUE LISTE DELLA SPESA:
+Devi creare DUE liste separate: "shopping_list_economico" e "shopping_list_bilanciato".
+Per ogni prodotto che decidi di usare, fai questo calcolo:
+1. Somma i grammi totali usati nei 7 giorni per quel piano.
+2. Guarda la grandezza della confezione nel nome del prodotto (es. 500g).
+3. Dividi i grammi totali per la confezione e ARROTONDA PER ECCESSO (es. se ti servono 1200g di Broccoli (500g), devi calcolare "packages": 3).
 
-PRIORITÀ OFFERTE:
-Usa il più possibile questi prodotti in offerta: [{testo_offerte}].
-
-LA DISPENSA E LA LISTA DELLA SPESA ("shopping_list"):
-L'utente ha GIA' IN CASA questi prodotti: [{testo_dispensa}]. NON inserirli mai nella shopping_list.
-
-Restituisci ESCLUSIVAMENTE un file JSON puro con questa struttura esatta:
+Restituisci ESCLUSIVAMENTE un JSON puro con questa esatta struttura (NON DIMENTICARE IL CAMPO "packages"):
 {{
-  "shopping_list": [
-    {{ 
-      "item": "Nome esatto dal catalogo", 
-      "calculation": "Mostra la somma (es. Lun 200g + Mer 300g = 500g)",
-      "packages": 2,
-      "amount_desc": "Quantità totale e confezioni (es. 1kg - 2 conf. da 500g)"
-    }}
+  "shopping_list_economico": [
+    {{ "item": "Broccoli (500g)", "packages": 3, "calculation": "Totale ricette 1.2kg, confezioni da 500g = 3 pacchi" }}
+  ],
+  "shopping_list_bilanciato": [
+    {{ "item": "Petto di Pollo (500g)", "packages": 2, "calculation": "Totale ricette 800g, confezioni da 500g = 2 pacchi" }}
   ],
   "economico": [
     {{
       "day": "Lunedì",
       "meals": [
-        {{ "type": "Colazione", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }}
-        // ... continua con Pranzo e Cena
+        {{ "type": "Colazione", "name": "Nome", "qty": "Ingredienti", "steps": "Procedimento", "link": "link_google" }}
       ]
     }}
   ],
   "bilanciato": [
-    // Stessa struttura per i 7 giorni
+    // Stessa struttura
   ]
 }}
 """
