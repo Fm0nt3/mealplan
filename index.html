@@ -283,7 +283,7 @@
         let sumNormal = 0;
         let sumFinal = 0;
 
-        const aiShoppingList = globalRecipes.shopping_list;
+        const aiShoppingList = globalRecipes['shopping_list_' + selectedPlan];
 
         if (!aiShoppingList || aiShoppingList.length === 0) {
             listDiv.innerHTML = '<p style="padding: 15px; color: #555;">La lista è vuota. Hai già tutto in dispensa!</p>';
