@@ -276,21 +276,19 @@
         }
 
         // ==========================================
-        // 2. GENERA LA LISTA SPESA DINAMICA (Nuovo codice!)
+        // 2. GENERA LA LISTA SPESA DINAMICA (Con Calcolo Totali)
         // ==========================================
         const listDiv = document.getElementById('shopping-list');
         listDiv.innerHTML = '';
         let sumNormal = 0;
         let sumFinal = 0;
 
-        // Pesca la lista calcolata dall'Intelligenza Artificiale!
         const aiShoppingList = globalRecipes.shopping_list;
 
         if (!aiShoppingList || aiShoppingList.length === 0) {
             listDiv.innerHTML = '<p style="padding: 15px; color: #555;">La lista è vuota. Hai già tutto in dispensa!</p>';
         } else {
             aiShoppingList.forEach(itemAI => {
-                // Cerca l'ingrediente nel catalogo per recuperare il prezzo e capire se è in offerta
                 const prodottoBase = globalProducts.find(p => p.name.includes(itemAI.item) || itemAI.item.includes(p.name));
                 
                 const row = document.createElement('div');
@@ -298,27 +296,38 @@
                 
                 let promoBadge = '';
                 let priceDisplay = '';
+                
+                // Prende il numero di confezioni deciso dall'AI (se manca, usa 1 di default)
+                let numPackages = itemAI.packages || 1;
 
                 if (prodottoBase) {
-                    sumNormal += prodottoBase.normalPrice;
+                    // Moltiplica i prezzi per il numero di confezioni!
+                    let totalItemNormal = prodottoBase.normalPrice * numPackages;
                     let activePrice = prodottoBase.inPromo ? prodottoBase.promoPrice : prodottoBase.normalPrice;
-                    sumFinal += activePrice;
+                    let totalItemActive = activePrice * numPackages;
+
+                    sumNormal += totalItemNormal;
+                    sumFinal += totalItemActive;
 
                     if (prodottoBase.inPromo) {
                         promoBadge = '<span class="tag-promo">OFFERTA SETTIMANA</span>';
-                        priceDisplay = `<div class="prices"><span class="old-price">${prodottoBase.normalPrice.toFixed(2)} CHF</span><strong>${prodottoBase.promoPrice.toFixed(2)} CHF</strong></div>`;
+                        priceDisplay = `<div class="prices"><span class="old-price">${totalItemNormal.toFixed(2)} CHF</span><strong>${totalItemActive.toFixed(2)} CHF</strong></div>`;
                     } else {
-                        priceDisplay = `<div class="prices"><strong>${prodottoBase.normalPrice.toFixed(2)} CHF</strong></div>`;
+                        priceDisplay = `<div class="prices"><strong>${totalItemNormal.toFixed(2)} CHF</strong></div>`;
                     }
                 } else {
                     priceDisplay = `<div class="prices"><em>Prezzo non disponibile</em></div>`;
                 }
 
-                // Stampa l'ingrediente con la QUANTITÀ ESATTA decisa dall'AI
+                // Stampa anche il calcolo fatto dall'AI per trasparenza
+                let calcoloExtra = itemAI.calculation ? `<br><small style="color: #777;">Calcolo: ${itemAI.calculation}</small>` : '';
+
                 row.innerHTML = `
                     <span>
                         <input type="checkbox"> 
-                        <strong>${itemAI.item}</strong> (Quantità: ${itemAI.amount}) ${promoBadge}
+                        <strong>${itemAI.item}</strong> (x${numPackages} confezioni)
+                        ${promoBadge}
+                        ${calcoloExtra}
                     </span>
                     ${priceDisplay}
                 `;
@@ -326,7 +335,6 @@
             });
         }
 
-        // Calcola e aggiorna il box finale dei costi
         let saved = sumNormal - sumFinal;
         document.getElementById('total-normal').innerText = sumNormal.toFixed(2) + ' CHF';
         document.getElementById('total-saved').innerText = '-' + saved.toFixed(2) + ' CHF';
