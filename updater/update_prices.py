@@ -104,30 +104,33 @@ IL CATALOGO (COSA PUOI USARE):
 Puoi usare acqua, sale e pepe liberamente. Per il resto, DEVI pescare ESCLUSIVAMENTE da questa lista:
 [{testo_catalogo}]
 
-REGOLA SULLE QUANTITÀ (LE RICETTE SONO IL MOTORE):
-I nomi nel catalogo indicano solo la grandezza della confezione (es. 500g), ma tu hai a disposizione QUANTITÀ ILLIMITATE! 
-NON limitare le tue ricette a 500g totali. Crea porzioni sane, abbondanti e realistiche per 7 giorni. Prima scrivi le ricette con le dosi corrette, e solo dopo fai la somma.
+REGOLA SULLE QUANTITÀ E CALCOLO MATEMATICO (MOLTO IMPORTANTE):
+1. Le ricette comandano: decidi porzioni realistiche per 7 giorni.
+2. Per la lista della spesa, DEVI fare i calcoli precisi. Se usi 200g di broccoli il Lunedì e 300g il Martedì, il totale è 500g.
+3. Guarda la dimensione della confezione nel nome del prodotto (es. 500g). Se ti servono 1.2kg di un prodotto da 500g, devi calcolare "packages": 3.
 
 PRIORITÀ OFFERTE:
 Usa il più possibile questi prodotti in offerta: [{testo_offerte}].
 
 LA DISPENSA E LA LISTA DELLA SPESA ("shopping_list"):
-L'utente ha GIA' IN CASA questi prodotti: [{testo_dispensa}].
-Passo 1: Somma matematicamente tutte le quantità degli ingredienti usati nelle ricette.
-Passo 2: ELIMINA dalla lista della spesa TUTTI i prodotti che l'utente ha già in casa [{testo_dispensa}]. È severamente vietato inserirli nella shopping_list finale.
+L'utente ha GIA' IN CASA questi prodotti: [{testo_dispensa}]. NON inserirli mai nella shopping_list.
 
-Restituisci ESCLUSIVAMENTE un file JSON puro:
+Restituisci ESCLUSIVAMENTE un file JSON puro con questa struttura esatta:
 {{
   "shopping_list": [
-    {{ "item": "Nome esatto", "amount": "Quantità totale (es. 1.2kg o 3 confezioni)" }}
+    {{ 
+      "item": "Nome esatto dal catalogo", 
+      "calculation": "Mostra la somma (es. Lun 200g + Mer 300g = 500g)",
+      "packages": 2,
+      "amount_desc": "Quantità totale e confezioni (es. 1kg - 2 conf. da 500g)"
+    }}
   ],
   "economico": [
     {{
       "day": "Lunedì",
       "meals": [
-        {{ "type": "Colazione", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }},
-        {{ "type": "Pranzo", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }},
-        {{ "type": "Cena", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }}
+        {{ "type": "Colazione", "name": "Nome", "qty": "Ingredienti esatti", "steps": "Procedimento", "link": "https://www.google.com/search?q=..." }}
+        // ... continua con Pranzo e Cena
       ]
     }}
   ],
