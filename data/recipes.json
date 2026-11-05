@@ -1,66 +1,81 @@
 {
   "shopping_list_economico": [
     {
-      "item": "Patate normali (2,5kg)",
+      "item": "Latte intero (1500 ml)",
       "packages": 1,
-      "calculation": "Totale ricette 1200g, confezione da 2.5kg = 1 pacco"
-    },
-    {
-      "item": "Riso Basmati (1kg)",
-      "packages": 1,
-      "calculation": "Totale ricette 400g, confezione da 1kg = 1 pacco"
-    },
-    {
-      "item": "Tonno in scatola (3x80g)",
-      "packages": 1,
-      "calculation": "Totale ricette 240g, confezione da 240g (3x80g) = 1 pacco"
-    },
-    {
-      "item": "Uova (15 pz)",
-      "packages": 1,
-      "calculation": "Totale ricette 8 uova, confezione da 15 pz = 1 pacco"
-    },
-    {
-      "item": "Piselli in scatola (250g)",
-      "packages": 1,
-      "calculation": "Totale ricette 250g, confezione da 250g = 1 pacco"
-    },
-    {
-      "item": "Pomodori (1kg)",
-      "packages": 1,
-      "calculation": "Totale ricette 700g, confezione da 1kg = 1 pacco"
+      "calculation": "Totale ricette 600ml, confezione da 1500ml = 1 pacco"
     },
     {
       "item": "Banane (1kg)",
       "packages": 1,
-      "calculation": "Totale ricette 700g, confezione da 1kg = 1 pacco"
+      "calculation": "Totale ricette 400g, confezione da 1kg = 1 pacco"
     },
     {
-      "item": "Latte intero (1500 ml)",
+      "item": "Miele millefiori (500g)",
       "packages": 1,
-      "calculation": "Totale ricette 1050ml, confezione da 1500ml = 1 pacco"
+      "calculation": "Totale ricette 40g, confezione da 500g = 1 pacco"
     },
     {
-      "item": "Petto di Pollo (500g)",
-      "packages": 0,
-      "calculation": "Totale ricette 450g, coperto interamente dalla dispensa (500g) = 0 pacchi"
+      "item": "Pane bianco in cassetta (500g)",
+      "packages": 1,
+      "calculation": "Totale ricette 300g, confezione da 500g = 1 pacco"
     },
     {
-      "item": "Avena (500g)",
-      "packages": 0,
-      "calculation": "Totale ricette 250g, coperta interamente dalla dispensa (500g) = 0 pacchi"
+      "item": "Uova (15 pz)",
+      "packages": 1,
+      "calculation": "Totale ricette 14 uova, confezione da 15 pz = 1 pacco"
+    },
+    {
+      "item": "Riso Basmati (1kg)",
+      "packages": 1,
+      "calculation": "Totale ricette 480g, confezione da 1kg = 1 pacco"
+    },
+    {
+      "item": "Piselli in scatola (250g)",
+      "packages": 2,
+      "calculation": "Totale ricette 400g, confezioni da 250g = 2 pacchi"
+    },
+    {
+      "item": "Tonno in scatola (3x80g)",
+      "packages": 1,
+      "calculation": "Totale ricette 240g (3 lattine), confezione da 3x80g = 1 pacco"
+    },
+    {
+      "item": "Verza svizzera (1kg)",
+      "packages": 1,
+      "calculation": "Totale ricette 550g, confezione da 1kg = 1 pacco"
+    },
+    {
+      "item": "Patate normali (2,5kg)",
+      "packages": 1,
+      "calculation": "Totale ricette 1550g, confezione da 2.5kg = 1 pacco"
+    },
+    {
+      "item": "Salsicce di pollo (500g)",
+      "packages": 1,
+      "calculation": "Totale ricette 300g, confezione da 500g = 1 pacco"
+    },
+    {
+      "item": "Pomodori (1kg)",
+      "packages": 1,
+      "calculation": "Totale ricette 450g, confezione da 1kg = 1 pacco"
+    },
+    {
+      "item": "Pezzi di maiale (500g)",
+      "packages": 1,
+      "calculation": "Totale ricette 200g, confezione da 500g = 1 pacco"
     }
   ],
   "shopping_list_bilanciato": [
     {
-      "item": "Salmone surgelato (500g)",
+      "item": "Petto di Pollo (500g)",
       "packages": 1,
-      "calculation": "Totale ricette 400g, confezione da 500g = 1 pacco"
+      "calculation": "Totale ricette 600g, 500g in dispensa, servono 100g extra = 1 pacco"
     },
     {
       "item": "Yogurt Greco (200g)",
-      "packages": 3,
-      "calculation": "Totale ricette 600g, confezioni da 200g = 3 pacchi"
+      "packages": 2,
+      "calculation": "Totale ricette 300g, confezioni da 200g = 2 pacchi"
     },
     {
       "item": "Banane (1kg)",
@@ -70,20 +85,55 @@
     {
       "item": "Miele millefiori (500g)",
       "packages": 1,
-      "calculation": "Totale ricette 105g, confezione da 500g = 1 pacco"
+      "calculation": "Totale ricette 70g, confezione da 500g = 1 pacco"
+    },
+    {
+      "item": "Ricotta (250g)",
+      "packages": 1,
+      "calculation": "Totale ricette 240g, confezione da 250g = 1 pacco"
+    },
+    {
+      "item": "Toast americani (500g)",
+      "packages": 1,
+      "calculation": "Totale ricette 420g, confezione da 500g = 1 pacco"
+    },
+    {
+      "item": "Salmone surgelato (500g)",
+      "packages": 1,
+      "calculation": "Totale ricette 450g, confezione da 500g = 1 pacco"
     },
     {
       "item": "Riso Basmati (1kg)",
       "packages": 1,
-      "calculation": "Totale ricette 240g, confezione da 1kg = 1 pacco"
-    },
-    {
-      "item": "Petto di Pollo (500g)",
-      "packages": 1,
-      "calculation": "Totale ricette 600g, dispensa 500g, rimangono 100g = 1 pacco extra da 500g"
+      "calculation": "Totale ricette 400g, confezione da 1kg = 1 pacco"
     },
     {
       "item": "Zucchine (1kg)",
+      "packages": 1,
+      "calculation": "Totale ricette 750g, confezione da 1kg = 1 pacco"
+    },
+    {
+      "item": "Tonno in scatola (3x80g)",
+      "packages": 1,
+      "calculation": "Totale ricette 160g (2 lattine), confezione 3x80g = 1 pacco"
+    },
+    {
+      "item": "Pomodori (1kg)",
+      "packages": 1,
+      "calculation": "Totale ricette 450g, confezione da 1kg = 1 pacco"
+    },
+    {
+      "item": "Mais in scatola (250g)",
+      "packages": 1,
+      "calculation": "Totale ricette 160g, confezione da 250g = 1 pacco"
+    },
+    {
+      "item": "Rucola (125g)",
+      "packages": 1,
+      "calculation": "Totale ricette 125g, confezione da 125g = 1 pacco"
+    },
+    {
+      "item": "Patate dolci (1kg)",
       "packages": 1,
       "calculation": "Totale ricette 600g, confezione da 1kg = 1 pacco"
     },
@@ -93,44 +143,29 @@
       "calculation": "Totale ricette 400g, confezione da 500g = 1 pacco"
     },
     {
-      "item": "Patate dolci (1kg)",
+      "item": "Carne Macinata mista (700g)",
       "packages": 1,
-      "calculation": "Totale ricette 500g, confezione da 1kg = 1 pacco"
-    },
-    {
-      "item": "Ricotta (250g)",
-      "packages": 1,
-      "calculation": "Totale ricette 250g, confezione da 250g = 1 pacco"
-    },
-    {
-      "item": "Tonno in scatola (3x80g)",
-      "packages": 1,
-      "calculation": "Totale ricette 160g, confezione da 240g (3x80g) = 1 pacco"
-    },
-    {
-      "item": "Rucola (125g)",
-      "packages": 1,
-      "calculation": "Totale ricette 120g, confezione da 125g = 1 pacco"
+      "calculation": "Totale ricette 450g, confezione da 700g = 1 pacco"
     },
     {
       "item": "Wraps (6x25cm)",
       "packages": 1,
-      "calculation": "Totale ricette 4 wraps, confezione da 6 wraps = 1 pacco"
+      "calculation": "Totale ricette 200g (4 wraps), confezione da 6 pz = 1 pacco"
+    },
+    {
+      "item": "Formaggio fresco spalmabile (250g)",
+      "packages": 1,
+      "calculation": "Totale ricette 100g, confezione da 250g = 1 pacco"
     },
     {
       "item": "Uova (15 pz)",
       "packages": 1,
-      "calculation": "Totale ricette 4 uova, confezione da 15 pz = 1 pacco"
+      "calculation": "Totale ricette 5 uova, confezione da 15 pz = 1 pacco"
     },
     {
-      "item": "Pomodori (1kg)",
+      "item": "Mozzarella (150g)",
       "packages": 1,
-      "calculation": "Totale ricette 450g, confezione da 1kg = 1 pacco"
-    },
-    {
-      "item": "Avena (500g)",
-      "packages": 0,
-      "calculation": "Totale ricette 160g, coperta interamente dalla dispensa (500g) = 0 pacchi"
+      "calculation": "Totale ricette 150g, confezione da 150g = 1 pacco"
     }
   ],
   "economico": [
@@ -139,24 +174,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Porridge Avena e Banana",
-          "qty": "50g Avena, 150ml Latte intero, 100g Banana",
-          "steps": "Cuocere l'avena nel latte caldo per 5 minuti, aggiungere la banana a fette.",
-          "link": "https://www.google.com/search?q=porridge+avena+e+banana"
+          "name": "Porridge d'Avena al Latte e Banana",
+          "qty": "40g Avena, 150ml Latte intero, 100g Banane, 10g Miele millefiori",
+          "steps": "Cuocere l'avena nel latte a fuoco lento per 5 minuti. Servire con banana a fette e miele.",
+          "link": "https://www.google.com/search?q=ricetta+porridge+avena+latte+banana"
         },
         {
           "type": "Pranzo",
-          "name": "Riso al Tonno e Pomodoro",
-          "qty": "100g Riso Basmati, 80g Tonno in scatola, 100g Pomodori",
-          "steps": "Lessare il riso. Unire il tonno sgocciolato e i pomodori a cubetti.",
-          "link": "https://www.google.com/search?q=insalata+di+riso+tonno+e+pomodoro"
+          "name": "Riso con Piselli e Tonno",
+          "qty": "80g Riso Basmati, 100g Piselli in scatola, 80g Tonno in scatola",
+          "steps": "Lavorare il riso bollito insieme ai piselli e al tonno sgocciolato.",
+          "link": "https://www.google.com/search?q=ricetta+riso+piselli+tonno"
         },
         {
           "type": "Cena",
-          "name": "Uova Sode con Patate e Piselli",
-          "qty": "2 Uova, 300g Patate normali, 125g Piselli in scatola",
-          "steps": "Lessare le patate e le uova sode. Servire insieme ai piselli riscaldati.",
-          "link": "https://www.google.com/search?q=patate+uova+sode+piselli"
+          "name": "Petto di Pollo con Patate al Forno",
+          "qty": "150g Petto di Pollo, 250g Patate normali",
+          "steps": "Tagliare le patate a cubetti e infornare a 200°C. Grigliare il pollo in padella.",
+          "link": "https://www.google.com/search?q=ricetta+petto+di+pollo+patate+al+forno"
         }
       ]
     },
@@ -165,24 +200,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Porridge Avena e Banana",
-          "qty": "50g Avena, 150ml Latte intero, 100g Banana",
-          "steps": "Cuocere l'avena nel latte caldo, aggiungere banana tagliata.",
-          "link": "https://www.google.com/search?q=porridge+avena+e+banana"
+          "name": "Toast con Uova Strapazzate",
+          "qty": "60g Pane bianco in cassetta, 2 Uova",
+          "steps": "Tostare il pane e preparare le uova strapazzate in padella.",
+          "link": "https://www.google.com/search?q=ricetta+toast+uova+strapazzate"
         },
         {
           "type": "Pranzo",
-          "name": "Petto di Pollo con Riso",
-          "qty": "150g Petto di Pollo, 100g Riso Basmati, 100g Pomodori",
-          "steps": "Grigliare il pollo e accompagnarlo con riso basmati bollito e pomodori a fette.",
-          "link": "https://www.google.com/search?q=petto+di+pollo+grigliato+riso+basmati"
+          "name": "Frittata di Verza con Patate Lessate",
+          "qty": "2 Uova, 150g Verza svizzera, 200g Patate normali",
+          "steps": "Stufare la verza, sbattere le uova e cuocere la frittata. Servire con patate bollite.",
+          "link": "https://www.google.com/search?q=ricetta+frittata+verza+patate"
         },
         {
           "type": "Cena",
-          "name": "Frittata di Patate",
-          "qty": "2 Uova, 300g Patate normali, 100g Pomodori",
-          "steps": "Lessare leggermente le patate a cubetti, sbattere le uova e cuocere in padella. Servire con pomodori.",
-          "link": "https://www.google.com/search?q=frittata+di+patate"
+          "name": "Riso al Tonno e Pomodoro Fresh",
+          "qty": "80g Riso Basmati, 80g Tonno in scatola, 150g Pomodori",
+          "steps": "Lessare il riso e condire a freddo con tonno e pomodori a cubetti.",
+          "link": "https://www.google.com/search?q=ricetta+insalata+riso+tonno+pomodoro"
         }
       ]
     },
@@ -191,24 +226,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Porridge Avena e Banana",
-          "qty": "50g Avena, 150ml Latte intero, 100g Banana",
-          "steps": "Cuocere l'avena nel latte e guarnire con banana.",
-          "link": "https://www.google.com/search?q=porridge+avena+e+banana"
+          "name": "Porridge d'Avena al Latte e Banana",
+          "qty": "40g Avena, 150ml Latte intero, 100g Banane, 10g Miele millefiori",
+          "steps": "Scaldare latte e avena fino a densità desiderata, guarire con banana e miele.",
+          "link": "https://www.google.com/search?q=ricetta+porridge+avena+latte+banana"
         },
         {
           "type": "Pranzo",
-          "name": "Riso al Tonno e Pomodoro",
-          "qty": "100g Riso Basmati, 80g Tonno in scatola, 100g Pomodori",
-          "steps": "Lessare il riso, far raffreddare e mescolare con tonno e pomodoro.",
-          "link": "https://www.google.com/search?q=insalata+di+riso+tonno+e+pomodoro"
+          "name": "Riso con Piselli e Tonno",
+          "qty": "80g Riso Basmati, 100g Piselli in scatola, 80g Tonno in scatola",
+          "steps": "Lessare il riso basmati e mescolarlo con piselli e tonno.",
+          "link": "https://www.google.com/search?q=ricetta+riso+piselli+tonno"
         },
         {
           "type": "Cena",
-          "name": "Petto di Pollo e Piselli",
-          "qty": "150g Petto di Pollo, 125g Piselli in scatola, 300g Patate normali",
-          "steps": "Cucinare il pollo in padella, scaldare i piselli e accompagnare con patate lesse.",
-          "link": "https://www.google.com/search?q=petto+di+pollo+con+piselli+e+patate"
+          "name": "Pollo in Padella con Verza Stufata",
+          "qty": "150g Petto di Pollo, 200g Verza svizzera",
+          "steps": "Stufare la verza in padella con coperchio. Cuocere il petto di pollo a straccetti.",
+          "link": "https://www.google.com/search?q=ricetta+pollo+verza+stufata"
         }
       ]
     },
@@ -217,24 +252,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Porridge Avena e Banana",
-          "qty": "50g Avena, 150ml Latte intero, 100g Banana",
-          "steps": "Cuocere l'avena nel latte, completare con banana a fette.",
-          "link": "https://www.google.com/search?q=porridge+avena+e+banana"
+          "name": "Toast con Uova Strapazzate",
+          "qty": "60g Pane bianco in cassetta, 2 Uova",
+          "steps": "Tostare le fette di pane e adagiarvi le uova strapazzate.",
+          "link": "https://www.google.com/search?q=ricetta+toast+uova+strapazzate"
         },
         {
           "type": "Pranzo",
-          "name": "Riso al Tonno e Pomodoro",
-          "qty": "100g Riso Basmati, 80g Tonno in scatola, 100g Pomodori",
-          "steps": "Unire il riso cotto al tonno e ai pomodori freschi.",
-          "link": "https://www.google.com/search?q=insalata+di+riso+tonno+e+pomodoro"
+          "name": "Salsicce di Pollo e Patate al Forno",
+          "qty": "150g Salsicce di pollo, 300g Patate normali",
+          "steps": "Tagliare le patate e cuocere in forno insieme alle salsicce di pollo a 200°C per 30 min.",
+          "link": "https://www.google.com/search?q=ricetta+salsicce+pollo+patate+al+forno"
         },
         {
           "type": "Cena",
-          "name": "Uova Strapazzate e Patate",
-          "qty": "2 Uova, 300g Patate normali, 100g Pomodori",
-          "steps": "Saltare le patate precedentemente lesse in padella, aggiungere le uova strapazzate e servire con pomodori.",
-          "link": "https://www.google.com/search?q=uova+strapazzate+con+patate"
+          "name": "Omelette ai Pomodori e Pane",
+          "qty": "2 Uova, 150g Pomodori, 60g Pane bianco in cassetta",
+          "steps": "Preparare l'omelette e farcirla con pomodori a fette. Accompagnare con pane tostati.",
+          "link": "https://www.google.com/search?q=ricetta+omelette+pomodoro"
         }
       ]
     },
@@ -243,24 +278,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Porridge Avena e Banana",
-          "qty": "50g Avena, 150ml Latte intero, 100g Banana",
-          "steps": "Cuocere l'avena nel latte caldo e aggiungere la banana.",
-          "link": "https://www.google.com/search?q=porridge+avena+e+banana"
+          "name": "Porridge d'Avena al Latte e Banana",
+          "qty": "40g Avena, 150ml Latte intero, 100g Banane, 10g Miele millefiori",
+          "steps": "Cuocere l'avena nel latte caldissimo, aggiungere le banane e dolcificare col miele.",
+          "link": "https://www.google.com/search?q=ricetta+porridge+avena+latte+banana"
         },
         {
           "type": "Pranzo",
-          "name": "Petto di Pollo e Pomodori",
-          "qty": "150g Petto di Pollo, 100g Pomodori, 100g Banana (frutta)",
-          "steps": "Cuocere il pollo alla piastra e servirlo con una fresca insalata di pomodori.",
-          "link": "https://www.google.com/search?q=petto+di+pollo+e+pomodori"
+          "name": "Riso al Pomodoro con Uova Sode",
+          "qty": "80g Riso Basmati, 150g Pomodori, 2 Uova",
+          "steps": "Bollire il riso e le uova (8 min). Saltare i pomodori in padella e unire tutto.",
+          "link": "https://www.google.com/search?q=ricetta+riso+pomodoro+uova+sode"
         },
         {
           "type": "Cena",
-          "name": "Uova Sode con Patate",
-          "qty": "2 Uova, 300g Patate normali, 100g Pomodori",
-          "steps": "Boil patate e uova. Servire insieme con pomodori a cubetti.",
-          "link": "https://www.google.com/search?q=uova+sode+e+patate"
+          "name": "Petto di Pollo e Patate al Vapore",
+          "qty": "150g Petto di Pollo, 250g Patate normali",
+          "steps": "Cuocere patate e pollo al vapore o piastra per una cena leggera.",
+          "link": "https://www.google.com/search?q=ricetta+petto+di+pollo+patate+vapore"
         }
       ]
     },
@@ -269,24 +304,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Banana e Latte intero",
-          "qty": "100g Banana, 150ml Latte intero",
-          "steps": "Frullare la banana con il latte per ottenere un frullato veloce.",
-          "link": "https://www.google.com/search?q=frullato+banana+e+latte"
+          "name": "Toast con Uova Strapazzate",
+          "qty": "60g Pane bianco in cassetta, 2 Uova",
+          "steps": "Preparare 2 uova strapazzate ben calde su toast di pane bianco.",
+          "link": "https://www.google.com/search?q=ricetta+toast+uova+strapazzate"
         },
         {
           "type": "Pranzo",
-          "name": "Insalata di Patate e Tonno",
-          "qty": "300g Patate normali, 80g Tonno in scatola, 100g Pomodori",
-          "steps": "Lessare le patate, farle raffreddare e mescolare con tonno e pomodori.",
-          "link": "https://www.google.com/search?q=insalata+di+patate+e+tonno"
+          "name": "Zuppa Economica di Verza e Patate",
+          "qty": "200g Verza svizzera, 250g Patate normali, 60g Pane bianco in cassetta",
+          "steps": "Bollire verza e patate a tocchetti in brodo per 25 min. Servire con pane.",
+          "link": "https://www.google.com/search?q=ricetta+zuppa+verza+patate"
         },
         {
           "type": "Cena",
-          "name": "Uova al Tegamino con Pomodori",
-          "qty": "2 Uova, 100g Pomodori",
-          "steps": "Cuocere le uova al tegamino e servire con pomodori tagliati.",
-          "link": "https://www.google.com/search?q=uova+al+tegamino+con+pomodoro"
+          "name": "Riso Saltato con Uova e Piselli",
+          "qty": "80g Riso Basmati, 2 Uova, 100g Piselli in scatola",
+          "steps": "Cuocere il riso, poi saltarlo in padella antiaderente con l'uovo strapazzato e i piselli.",
+          "link": "https://www.google.com/search?q=ricetta+riso+saltato+uova+piselli"
         }
       ]
     },
@@ -295,24 +330,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Banana e Latte intero",
-          "qty": "100g Banana, 150ml Latte intero",
-          "steps": "Consumare la banana accompagnata da un bicchiere di latte caldo.",
-          "link": "https://www.google.com/search?q=colazione+banana+e+latte"
+          "name": "Porridge d'Avena al Latte e Banana",
+          "qty": "40g Avena, 150ml Latte intero, 100g Banane, 10g Miele millefiori",
+          "steps": "Cuocere l'avena nel latte e servire con fette di banana e miele.",
+          "link": "https://www.google.com/search?q=ricetta+porridge+avena+latte+banana"
         },
         {
           "type": "Pranzo",
-          "name": "Petto di Pollo alla Piastra con Patate",
-          "qty": "150g Petto di Pollo, 300g Patate normali",
-          "steps": "Cuocere il pollo alla piastra e servire con patate al forno o lesse.",
-          "link": "https://www.google.com/search?q=petto+di+pollo+con+patate"
+          "name": "Riso con Salsicce di Pollo e Piselli",
+          "qty": "80g Riso Basmati, 150g Salsicce di pollo, 100g Piselli in scatola",
+          "steps": "Rosolare le salsicce a pezzi, aggiungere i piselli e unire al riso basmati bollito.",
+          "link": "https://www.google.com/search?q=ricetta+riso+salsiccia+piselli"
         },
         {
           "type": "Cena",
-          "name": "Uova Sode e Piselli",
-          "qty": "2 Uova, 125g Piselli in scatola, 100g Pomodori",
-          "steps": "Preparare le uova sode e servirle con piselli e pomodori.",
-          "link": "https://www.google.com/search?q=uova+sode+con+piselli"
+          "name": "Spezzatino di Maiale con Patate",
+          "qty": "200g Pezzi di maiale, 300g Patate normali",
+          "steps": "Rosolare la carne di maiale a dadini, unire le patate e cuocere con coperchio a fuoco lento.",
+          "link": "https://www.google.com/search?q=ricetta+spezzatino+maiale+patate"
         }
       ]
     }
@@ -323,24 +358,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Yogurt Greco con Banana, Avena e Miele",
-          "qty": "200g Yogurt Greco, 40g Avena, 100g Banana, 15g Miele millefiori",
-          "steps": "Unire lo yogurt all'avena, aggiungere banana a fette e un filo di miele.",
-          "link": "https://www.google.com/search?q=yogurt+greco+avena+banana+miele"
+          "name": "Yogurt Greco con Avena, Banana e Miele",
+          "qty": "100g Yogurt Greco, 50g Avena, 100g Banane, 10g Miele millefiori",
+          "steps": "Unire lo yogurt greco all'avena, aggiungere la banana affettata e un filo di miele.",
+          "link": "https://www.google.com/search?q=ricetta+yogurt+greco+avena+banana+miele"
         },
         {
           "type": "Pranzo",
-          "name": "Bowl di Pollo, Riso e Zucchine",
-          "qty": "200g Petto di Pollo, 80g Riso Basmati, 200g Zucchine",
-          "steps": "Grigliare il pollo e le zucchine, servire con riso basmati bollito.",
-          "link": "https://www.google.com/search?q=bowl+pollo+riso+zucchine"
+          "name": "Salmone Grigliato con Riso Basmati e Zucchine",
+          "qty": "150g Salmone surgelato, 80g Riso Basmati, 150g Zucchine",
+          "steps": "Cuocere il salmone alla piastra. Grigliare le zucchine e servire con riso basmati.",
+          "link": "https://www.google.com/search?q=ricetta+salmone+riso+basmati+zucchine"
         },
         {
           "type": "Cena",
-          "name": "Salmone al Forno con Patate Dolci",
-          "qty": "200g Salmone surgelato, 250g Patate dolci",
-          "steps": "Cuocere il salmone e le patate dolci a cubetti al forno per 20 minuti.",
-          "link": "https://www.google.com/search?q=salmone+al+forno+con+patate+dolci"
+          "name": "Uova Strapazzate con Rucola, Toast e Formaggio Spalmabile",
+          "qty": "2 Uova, 30g Rucola, 60g Toast americani, 30g Formaggio fresco spalmabile",
+          "steps": "Cuocere le uova strapazzate. Spalmare il formaggio sui toast e servire con rucola fresca.",
+          "link": "https://www.google.com/search?q=ricetta+uova+strapazzate+toast+rucola"
         }
       ]
     },
@@ -349,24 +384,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Yogurt Greco con Banana e Miele",
-          "qty": "200g Yogurt Greco, 100g Banana, 15g Miele millefiori",
-          "steps": "Mescolare yogurt greco con banana tagliata e miele.",
-          "link": "https://www.google.com/search?q=yogurt+greco+banana+miele"
+          "name": "Toast dolce con Ricotta, Banana e Miele",
+          "qty": "60g Toast americani, 60g Ricotta, 100g Banane, 10g Miele millefiori",
+          "steps": "Tostare le fette di pane, spalmare la ricotta fresca e completare con banana e miele.",
+          "link": "https://www.google.com/search?q=ricetta+toast+ricotta+banana+miele"
         },
         {
           "type": "Pranzo",
-          "name": "Wrap con Tonno, Ricotta e Rucola",
-          "qty": "2 Wraps (6x25cm), 80g Tonno in scatola, 125g Ricotta, 60g Rucola",
-          "steps": "Spalmare la ricotta sul wrap, aggiungere tonno e rucola, poi arrotolare.",
-          "link": "https://www.google.com/search?q=wrap+tonno+ricotta+rucola"
+          "name": "Insalata Ricca di Riso, Tonno, Pomodori e Mais",
+          "qty": "80g Riso Basmati, 80g Tonno in scatola, 100g Pomodori, 80g Mais in scatola, 30g Rucola",
+          "steps": "Lessare il riso e unire a freddo tonno, mais, pomodori a cubetti e rucola.",
+          "link": "https://www.google.com/search?q=ricetta+insalata+riso+tonno+mais+pomodoro"
         },
         {
           "type": "Cena",
-          "name": "Pollo Saltato con Peperoni e Zucchine",
-          "qty": "200g Petto di Pollo, 200g Peperoni rossi, 200g Zucchine",
-          "steps": "Tagliare il pollo a bocconcini e saltarlo in padella con peperoni e zucchine.",
-          "link": "https://www.google.com/search?q=pollo+saltato+con+peperoni+e+zucchine"
+          "name": "Carne Macinata Saltata con Peperoni e Riso",
+          "qty": "150g Carne Macinata mista, 150g Peperoni rossi, 80g Riso Basmati",
+          "steps": "Saltare in padella la carne macinata insieme ai peperoni a listarelle. Servire col riso.",
+          "link": "https://www.google.com/search?q=ricetta+carne+macinata+peperoni+riso"
         }
       ]
     },
@@ -375,24 +410,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Porridge Avena, Banana e Miele",
-          "qty": "40g Avena, 100g Banana, 15g Miele millefiori",
-          "steps": "Cuocere l'avena con acqua o vapore, guarnire con banana e miele.",
-          "link": "https://www.google.com/search?q=porridge+avena+banana+miele"
+          "name": "Yogurt Greco con Avena, Banana e Miele",
+          "qty": "100g Yogurt Greco, 50g Avena, 100g Banane, 10g Miele millefiori",
+          "steps": "Mescolare yogurt e avena in una ciotola, guarnire con banana e miele.",
+          "link": "https://www.google.com/search?q=ricetta+yogurt+greco+avena+banana+miele"
         },
         {
           "type": "Pranzo",
-          "name": "Riso Basmati con Salmone e Zucchine",
-          "qty": "80g Riso Basmati, 200g Salmone surgelato, 200g Zucchine",
-          "steps": "Cuocere il riso basmati, saltare il salmone a cubetti con le zucchine e unire.",
-          "link": "https://www.google.com/search?q=riso+basmati+salmone+zucchine"
+          "name": "Petto di Pollo con Patate Dolci e Peperoni",
+          "qty": "150g Petto di Pollo, 200g Patate dolci, 150g Peperoni rossi",
+          "steps": "Tagliare patate dolci e peperoni a dadini e infornare a 200°C. Grigliare il pollo.",
+          "link": "https://www.google.com/search?q=ricetta+petto+pollo+patate+dolci+peperoni"
         },
         {
           "type": "Cena",
-          "name": "Omelette con Pomodori e Ricotta",
-          "qty": "2 Uova, 125g Ricotta, 150g Pomodori",
-          "steps": "Preparare un'omelette con le uova e farcirla con ricotta e pomodori a cubetti.",
-          "link": "https://www.google.com/search?q=omelette+con+ricotta+e+pomodori"
+          "name": "Salmone al Forno con Zucchine Trifolate",
+          "qty": "150g Salmone surgelato, 150g Zucchine",
+          "steps": "Infornare il salmone a 180°C per 15 min. Saltare le zucchine a fette in padella.",
+          "link": "https://www.google.com/search?q=ricetta+salmone+forno+zucchine"
         }
       ]
     },
@@ -401,24 +436,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Yogurt Greco con Banana, Avena e Miele",
-          "qty": "200g Yogurt Greco, 40g Avena, 100g Banana, 15g Miele millefiori",
-          "steps": "Unire yogurt, avena, fette di banana e miele in una ciotola.",
-          "link": "https://www.google.com/search?q=yogurt+greco+avena+banana+miele"
+          "name": "Toast dolce con Ricotta, Banana e Miele",
+          "qty": "60g Toast americani, 60g Ricotta, 100g Banane, 10g Miele millefiori",
+          "steps": "Spalmare la ricotta sul pane tostato, adagiare la banana e versare il miele.",
+          "link": "https://www.google.com/search?q=ricetta+toast+ricotta+banana+miele"
         },
         {
           "type": "Pranzo",
-          "name": "Wrap con Pollo, Peperoni e Rucola",
-          "qty": "2 Wraps (6x25cm), 200g Petto di Pollo, 200g Peperoni rossi, 60g Rucola",
-          "steps": "Grigliare il pollo e i peperoni, adagiarli nel wrap con rucola fresca e arrotolare.",
-          "link": "https://www.google.com/search?q=wrap+pollo+peperoni+rucola"
+          "name": "Riso Basmati con Carne Macinata e Zucchine",
+          "qty": "80g Riso Basmati, 150g Carne Macinata mista, 150g Zucchine",
+          "steps": "Rosolare la carne macinata con le zucchine a cubetti e saltare col riso basmati bollito.",
+          "link": "https://www.google.com/search?q=ricetta+riso+carne+macinata+zucchine"
         },
         {
           "type": "Cena",
-          "name": "Uova al Tegamino con Patate Dolci",
-          "qty": "2 Uova, 250g Patate dolci, 150g Pomodori",
-          "steps": "Arrostire le patate dolci al forno, cuocere le uova al tegamino e servire con pomodori.",
-          "link": "https://www.google.com/search?q=uova+al+tegamino+con+patate+dolci"
+          "name": "Petto di Pollo alla Piastra con Patate Dolci e Rucola",
+          "qty": "150g Petto di Pollo, 200g Patate dolci, 35g Rucola",
+          "steps": "Cuocere le patate dolci al vapore o forno. Piastrare il pollo e servire con rucola.",
+          "link": "https://www.google.com/search?q=ricetta+petto+pollo+patate+dolci+rucola"
         }
       ]
     },
@@ -427,24 +462,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Porridge Avena, Banana e Miele",
-          "qty": "40g Avena, 100g Banana, 15g Miele millefiori",
-          "steps": "Preparare il porridge d'avena caldo e finire con banana a fette e miele.",
-          "link": "https://www.google.com/search?q=porridge+avena+banana+miele"
+          "name": "Yogurt Greco con Avena, Banana e Miele",
+          "qty": "100g Yogurt Greco, 50g Avena, 100g Banane, 10g Miele millefiori",
+          "steps": "Unire gli ingredienti per una colazione proteica ed energetica.",
+          "link": "https://www.google.com/search?q=ricetta+yogurt+greco+avena+banana+miele"
         },
         {
           "type": "Pranzo",
-          "name": "Insalata di Riso, Tonno e Pomodori",
-          "qty": "80g Riso Basmati, 80g Tonno in scatola, 150g Pomodori",
-          "steps": "Bollire il riso basmati, lasciar raffreddare e unire il tonno e i pomodori.",
-          "link": "https://www.google.com/search?q=insalata+di+riso+tonno+e+pomodoro"
+          "name": "Salmone al Forno con Patate Dolci e Rucola",
+          "qty": "150g Salmone surgelato, 200g Patate dolci, 30g Rucola",
+          "steps": "Cuocere salmone e patate dolci a fette al forno a 190°C per 20 min. Servire con rucola.",
+          "link": "https://www.google.com/search?q=ricetta+salmone+patate+dolci+rucola"
         },
         {
           "type": "Cena",
-          "name": "Petto di Pollo alla Piastra con Zucchine",
-          "qty": "200g Petto di Pollo, 200g Zucchine",
-          "steps": "Cucinare il petto di pollo alla piastra insieme alle zucchine a fette.",
-          "link": "https://www.google.com/search?q=petto+di+pollo+e+zucchine+alla+piastra"
+          "name": "Wrap Proteico con Tonno, Formaggio Spalmabile e Mais",
+          "qty": "100g Wraps (2 pz), 80g Tonno in scatola, 40g Formaggio fresco spalmabile, 80g Mais in scatola",
+          "steps": "Spalmare il formaggio sul wrap, farcire con tonno e mais, arrotolare e scaldare 2 minuti.",
+          "link": "https://www.google.com/search?q=ricetta+wrap+tonno+formaggio+mais"
         }
       ]
     },
@@ -453,24 +488,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Banana con Miele e Avena",
-          "qty": "100g Banana, 15g Miele millefiori, 40g Avena",
-          "steps": "Tagliare la banana, cospargere di avena e Miele.",
-          "link": "https://www.google.com/search?q=banana+avena+miele"
+          "name": "Toast dolce con Ricotta, Banana e Miele",
+          "qty": "60g Toast americani, 60g Ricotta, 100g Banane, 10g Miele millefiori",
+          "steps": "Preparare i toast guarniti con ricotta fresca, rondelle di banana e miele.",
+          "link": "https://www.google.com/search?q=ricetta+toast+ricotta+banana+miele"
         },
         {
           "type": "Pranzo",
-          "name": "Salmone Scottato con Peperoni",
-          "qty": "200g Salmone surgelato, 200g Peperoni rossi",
-          "steps": "Scottare il salmone in padella e saltare i peperoni a listarelle.",
-          "link": "https://www.google.com/search?q=salmone+scottato+con+peperoni"
+          "name": "Wrap al Pollo con Formaggio Spalmabile e Pomodori",
+          "qty": "100g Wraps (2 pz), 150g Petto di Pollo, 30g Formaggio fresco spalmabile, 100g Pomodori",
+          "steps": "Cuocere il pollo a straccetti. Farcire i wraps con formaggio, pollo e pomodoro fresco.",
+          "link": "https://www.google.com/search?q=ricetta+wrap+pollo+pomodoro"
         },
         {
           "type": "Cena",
-          "name": "Pollo e Zucchine al Forno",
-          "qty": "200g Petto di Pollo, 200g Zucchine",
-          "steps": "Tagliare pollo e zucchine, cuocere al forno a 180°C per 25 minuti.",
-          "link": "https://www.google.com/search?q=pollo+e+zucchine+al+forno"
+          "name": "Caprese di Mozzarella con Toast e Peperoni Grigliati",
+          "qty": "75g Mozzarella, 150g Pomodori, 60g Toast americani, 100g Peperoni rossi",
+          "steps": "Affettare mozzarella e pomodoro. Servire con peperoni grigliati e toast.",
+          "link": "https://www.google.com/search?q=ricetta+caprese+mozzarella+pomodoro"
         }
       ]
     },
@@ -479,24 +514,24 @@
       "meals": [
         {
           "type": "Colazione",
-          "name": "Banana con Miele",
-          "qty": "100g Banana, 15g Miele millefiori",
-          "steps": "Tagliare la banana a rondelle e aggiungere il miele.",
-          "link": "https://www.google.com/search?q=banana+e+miele"
+          "name": "Toast dolce con Ricotta, Banana e Miele",
+          "qty": "60g Toast americani, 60g Ricotta, 100g Banane, 10g Miele millefiori",
+          "steps": "Tostare il pane e farcire con ricotta, banana a fette e miele millefiori.",
+          "link": "https://www.google.com/search?q=ricetta+toast+ricotta+banana+miele"
         },
         {
           "type": "Pranzo",
-          "name": "Petto di Pollo con Patate Dolci",
-          "qty": "200g Petto di Pollo, 250g Patate dolci",
-          "steps": "Grigliare il pollo e servire con patate dolci al vapore o al forno.",
-          "link": "https://www.google.com/search?q=petto+di+pollo+con+patate+dolci"
+          "name": "Omelette con Mozzarella, Pomodoro e Toast",
+          "qty": "3 Uova, 75g Mozzarella, 100g Pomodori, 60g Toast americani",
+          "steps": "Sbattere le uova, cuocere in padella e farcire con mozzarella e pomodori a cubetti. Servire con toast.",
+          "link": "https://www.google.com/search?q=ricetta+omelette+mozzarella+pomodoro"
         },
         {
           "type": "Cena",
-          "name": "Omelette con Rucola e Pomodori",
-          "qty": "2 Uova, 60g Rucola, 150g Pomodori",
-          "steps": "Preparare l'omelette e servire accompagnata da un'insalata di rucola e pomodori.",
-          "link": "https://www.google.com/search?q=omelette+con+rucola+e+pomodori"
+          "name": "Polpette di Carne Macinata con Zucchine e Riso",
+          "qty": "150g Carne Macinata mista, 150g Zucchine, 80g Riso Basmati",
+          "steps": "Formare le polpette con la carne macinata, cuocerle in padella con le zucchine e servire col riso.",
+          "link": "https://www.google.com/search?q=ricetta+polpette+carne+zucchine+riso"
         }
       ]
     }
